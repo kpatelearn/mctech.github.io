@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.clr {
+    clear: both;
+}
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url("images/background.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    margin: auto;
+}
+
+.logo img {
+    width: 80px;
+    float: left;
+    height: auto;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    font-family: 'Baloo Tamma 2', Verdana, sans-serif;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    background-color: #fff;
+    color: #162e00;
+    font-weight: bold;    
+}
+
+.welcome-text {
+    position: absolute;
+    width: 60%;
+    margin: 20% 20%;
+    line-height: 3em;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
