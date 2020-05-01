@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-area {
-    float: right;
+    float: left;
     list-style: none;
     margin-top: 30px;
     font-family: 'Baloo Tamma 2', Verdana, sans-serif;
