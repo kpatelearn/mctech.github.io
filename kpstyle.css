@@ -31,12 +31,6 @@ nav {
     margin: auto;
 }
 
-.logo img {
-    width: 80px;
-    float: left;
-    height: auto;
-}
-
 .nav-area {
     float: center;
     list-style: none;
