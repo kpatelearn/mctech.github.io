@@ -32,9 +32,12 @@ nav {
 }
 
 .nav-area {
-    float: center;
+    float: none;
+    position: absolute;
     list-style: none;
-    margin-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Baloo Tamma 2', Verdana, sans-serif;
 }
 
