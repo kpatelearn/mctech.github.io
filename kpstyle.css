@@ -24,8 +24,7 @@ header {
 }
 
 nav {
-    position: fixed;
-    top: 0;
+    position: relative;
     left: 2.5%;
     width: 95%;
     margin: auto;
