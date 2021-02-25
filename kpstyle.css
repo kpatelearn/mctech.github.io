@@ -23,41 +23,6 @@ header {
     background-size: cover;
 }
 
-nav {
-    position: relative;
-    left: 2.5%;
-    width: 95%;
-    margin: auto;
-}
-
-.nav-area {
-    float: none;
-    position: absolute;
-    list-style: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Baloo Tamma 2', Verdana, sans-serif;
-}
-
-.nav-area li {
-    display: inline-block;
-}
-
-.nav-area li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.nav-area li a:hover {
-    background-color: #fff;
-    color: #162e00;
-    font-weight: bold;    
-}
-
 .welcome-text {
     position: absolute;
     width: 60%;
