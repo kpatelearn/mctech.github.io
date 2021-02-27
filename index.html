@@ -1,33 +1,64 @@
-<!DOCTYPE HTML>  
+<!DOCTYPE html>
 <html>
-<head>
-	<title>MC Tech</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="kpstyle.css"/>	
-</head>  
-<body>
-	
-<div class="container-fluid">
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a id="len1" class="hoverable" href="#">Home</a></li>
-        <li><a id="len2" class="hoverable" href="#">About</a></li>
-        <li><a id="len3" class="hoverable" href="#">Portfolio</a></li>
-        <li><a id="len4" class="hoverable" href="house.html">House Points</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-	
-	<header>
-		<div class="welcome-text">
-			<h1>Digital Technology at Marist College</h1>
-		</div>
-	</header>
-
-	<script src="script.js"></script>
-</body>  	
-</html>  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="juniors.html">Juniors</a></li>
+                        <li><a href="seniors.html">Seniors</a></li>
+                        <li><a href="house.html">House Points</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        <section class="home">
+            <main>
+                <article id="title">
+                  <h1>Digital Technology <br> at Marist College</h1>
+                </article>
+              </main>
+        </section>
+        <div style="height: 1000px">
+            <!-- just to make scrolling effect possible -->
+                <h2 class="myH2">What happens in Digital Technology at Marist?</h2>
+                <p class="myP">This subject is where you learn how to make digital outcomes such as <br> websites, apps, videos, animations, games, 3D content and even your own computer systems</p>
+                <p class="myP">Find out more about what has been happening in the <a href="juniors.html">Junior School</a>
+                and in the <a href="seniors.html">Senior School</a></p>
+        </div>
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+      
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
 
