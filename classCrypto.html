@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Points</title>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./human_standard_token_abi.js"></script>
+</head>
+<body>
+    <div id="intro">
+        <h1 id="title">Tech Class Crypto</h1>
+    </div>
+    <div id="showPoints">
+        <button id ="showPointsButton" onclick="getValues();">Show Coins</button>
+    </div>
+    <table>
+        <tr>
+            <td id="charlotte" class="student"></td>
+            <td id="ava" class="student"></td>
+            <td id="tia" class="student"></td>
+        </tr>
+        <tr>
+            <td id="gina" class="student"></td>
+            <td id="kate" class="student"></td>
+            <td id="sharon" class="student"></td>
+        </tr>
+        <tr>
+            <td id="princya" class="student"></td> 
+        </tr>
+      </table>
+
+      <h4 id="h"></h4>
+
+    <style>
+        #intro {text-align: center; padding-top: 1%;}
+        #title {color: floralwhite;}
+        #h {color: floralwhite;}
+
+
+        #showPoints {
+            height:7%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.6%;
+        }
+
+        button {
+            color: #1D9AF2;
+            background-color: #292D3E;
+            border: 1px solid #267ebd;
+            border-radius: 4px;
+            padding: 15px 18px 30px 15px;
+            cursor: pointer;
+            height:32px;
+            font-size:14px;
+            box-shadow: 0 0 4px #999;
+            background-position: center;
+            transition: background 0.8s;
+        }
+        
+        button:hover {
+            background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+            color: white;
+        }
+        button:active{
+            background-color:#292d3e;
+            background-size: 100%;
+            transition: background 0s;
+        }
+
+        
+        table {
+            margin-left:auto; 
+            margin-right:auto;
+            height: 70%;
+            width: 95%;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background-color: rgb(30, 28, 44);
+        }
+        .student {
+            color: floralwhite;
+            font-size: x-large;
+            text-align: center;
+            vertical-align: middle;
+            width: 33%;
+            background-color: rgb(78, 72, 92);
+        }
+    </style>
+
+<script type="text/javascript" src="classCrypto.js"></script>
+
+</body>
+</html>
