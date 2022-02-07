@@ -61,7 +61,8 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url(https://ast.porttechnology.org/wp-content/media/20190413201008/Digital_Technology_Telefonica_1280_800_84_s_c1.jpg);
+    background-color: darkslategray;
+    color: floralwhite;
     background-position: center top;
 	background-size:cover;
 }
