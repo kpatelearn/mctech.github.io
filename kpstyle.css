@@ -89,26 +89,50 @@ body {
 }
 
 .button-71 {
-display: inline-block;
-outline: 0;
-border: none;
-box-shadow: none;
-cursor: pointer;
-padding: 9px 22px;
-font-size: 22px;
-height: 50px;
-font-weight: 400;
-color: #fff;
-text-align: center;
-line-height: normal;
-background: linear-gradient(90deg,#02508f 0,#659ed3 100%);
-border-radius: 50px;
-transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
-}
-.button-71:hover{
-    box-shadow: 0 0 0 0.15rem #5ceace;
-}
-
+    background-color: #0078d0;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    padding: 16px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-71:before {
+    background-color: initial;
+    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+    border-radius: 125px;
+    content: "";
+    height: 50%;
+    left: 4%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+    width: 92%;
+  }
+  
+  .button-71:hover {
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 768px) {
+    .button-71 {
+      padding: 16px 48px;
+    }
+  }
 
 
 /* Media qurey section */
@@ -183,5 +207,4 @@ transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
 		padding:2%;
 	}
 }
-
 
