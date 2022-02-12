@@ -25,8 +25,7 @@ const promisify = (inner) =>
 async function getValues() {
     var classAddress = document.querySelector("#classAddress");
     var classAddressValue = classAddress.value;
-    var userAddress, contractAddress, contractABI, tokenContract, decimals,
-        userAddress = classAddressValue;
+    var classAddressValue, contractAddress, contractABI, tokenContract, decimals;
 
     contractAddress = "0xb58e0bf63fbe4e5565ab719d3369058707ab6a02";
     contractABI = human_standard_token_abi
@@ -34,7 +33,7 @@ async function getValues() {
     tokenContract = web3.eth.contract(contractABI).at(contractAddress)
 
     decimals = promisify(cb => tokenContract.decimals(cb))
-    balanceUser = promisify(cb => tokenContract.balanceOf(userAddress, cb))
+    balanceUser = promisify(cb => tokenContract.balanceOf(classAddressValue, cb))
 
     try {
         adjustedBalanceUser = await balanceUser / Math.pow(10, await decimals);
