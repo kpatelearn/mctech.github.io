@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <style>
+        body {background-color: rgb(37, 54, 54);}
+        #intro {text-align: center; color: floralwhite;}
+        #greetingInput {text-align: center;}
+        #quiz {text-align: center; color: floralwhite;}
+    </style>
+
+    <title>Badges</title>
+</head>
+<body>
+    <div id="intro">
+        <h1>Welcome to Mr. Paterson's Quiz</h1> <br>
+        <h2 id="greetingHeader">What is your name?</h2> <br>
+    </div>
+    <div id="greetingInput">
+        <input id="userName"> <br><br>
+        <button onclick="greeting()">Submit</button>
+    </div>
+    <div id="quiz">
+        <h3 id="question"></h3>
+        <div id="q1a" onclick="q1aFunction()"></div>
+        <div id="q1b" onclick="q1bFunction()"></div>
+        <div id="q1c" onclick="q1cFunction()"></div>
+        <div id="q1d" onclick="q1dFunction()"></div> <br>
+
+        
+        <div id="qn1Button"><button onclick="submitQn1()">Submit Qn1</button></div>
+        <div id="qn2Button"><button onclick="submitQn2()">Submit Qn2</button></div>
+        <div id="qn3Button"><button onclick="submitQn3()">Submit Qn3</button></div>
+        
+    </div>
+        
+ 
+
+    <script src="badge.js"></script>
+
+</body>
+</html>
