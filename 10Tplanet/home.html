@@ -1,1 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body         {
+            margin: 10px;
+            background-image: url('https://ak.picdn.net/shutterstock/videos/1033914530/thumb/1.jpg');;
+        }
+        
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 10px 10px;
+        }
+        
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+        
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 5px;
+          text-align: center;
+          background-color: #0e011b;
+        }
 
+        img {
+            width: 20vw;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+        header {
+        font-size: 1.5rem;
+        text-align: center;
+	    color: #fff;
+	    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+	    font:'ChunkFiveRegular';
+        line-height: 1.2;
+        margin-top: 40px;
+        padding: 0;
+        flex-grow: 1;
+        z-index: 1
+      }
+
+      h3 {
+          color: whitesmoke;
+      }
+
+     
+        </style>
+</head>
+<body>
+    <header>
+        <h1>10T Universe</h1>
+    </header>
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Ava.png">
+                <h3>Ava's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Sidell.jpg" style="width:100%" alt="">
+                <h3>Sidell's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Willow.png" style="width:100%" alt="">
+                <h3>Willow's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Ursula.jpg" style="width:100%" alt="">
+                <h3>Ursula's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Elsie.png" style="width:100%" alt="">
+                <h3>Elsie's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Claire.jpg" style="width:100%" alt="">
+                <h3>Claire's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Isabel.jpg" style="width:100%" alt="">
+                <h3>Isabel's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Randinie.png" style="width:100%" alt="">
+                <h3>Randinie's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Siena.png" style="width:100%" alt="">
+                <h3>Siena's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Vongayi.jpg" style="width:100%" alt="">
+                <h3>Vongayi's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Esther.jpg" style="width:100%" alt="">
+                <h3>Esther's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Divinya.jpg" style="width:100%" alt="">
+                <h3>Divinya's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Katija.jpg" style="width:100%" alt="">
+                <h3>Katija's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Lily.jpg" style="width:100%" alt="">
+                <h3>Lily's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Olivia.png" style="width:100%" alt="">
+                <h3>Olivia's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Cami.jpg" style="width:100%" alt="">
+                <h3>Cami's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Kayleigh.jpg" style="width:100%" alt="">
+                <h3>Kayleigh's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Franziska.jpg" style="width:100%" alt="">
+                <h3>Franziska's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Shemaine.png" style="width:100%" alt="">
+                <h3>Shemaine's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Aaliyah.jpeg" style="width:100%" alt="">
+                <h3>Aaliyah's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Davianah.jpg" style="width:100%" alt="">
+                <h3>Davianah's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Eva.png" style="width:100%" alt="">
+                <h3>Eva's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Grace.jpg" style="width:100%" alt="">
+                <h3>Grace's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Virginia.jpg" style="width:100%" alt="">
+                <h3>Virginia's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Maia.jpg" style="width:100%" alt="">
+                <h3>Maia's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Iris.PNG" style="width:100%" alt="">
+                <h3>Iris's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="#" style="width:100%" alt="">
+                <h3>Genna's Planet</h3>
+            </div>
+        </a>
+    </div>
+  
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="Naomi.png" style="width:100%" alt="">
+                <h3>Naomi's Planet</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <a href="https://photos.app.goo.gl/xrQbSbQ2qoysTdUg6">
+            <div class="card">
+                <img src="1991TN.jpg" style="width:100%" alt="">
+                <h3>Jithu's Planet</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="column">
+        <a href="#">
+            <div class="card">
+                <img src="#" style="width:100%" alt="">
+                <h3>Aletia's Planet</h3>
+            </div>
+        </a>
+    </div>
+   
+
+    
+</body>
+</html>
