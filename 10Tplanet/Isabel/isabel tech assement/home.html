@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+    
+    <title>home</title>
+</head>
+<body>
+ 
+    
+     <header> 
+      
+       
+      <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     
+      <a href="home.html">home</a>
+      <a href="assement2.html"> population</a>
+      <a href="assement3.html"> environment</a>
+      <a href="assement4.html"> gallery</a>
+    </div>
+    
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu </span>
+   
+    <script>
+   
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    } 
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    
+   
+
+    
+function mygame()
+{var userchange = document.querySelector("#myinput")
+if ( userchange.value=="18" ){ 
+    alert( "congratulations you found them all")};
+    if (( userchange.value=="18" )) {
+      alert( "congratulations you found them all")
+    } else { alert("sorry look again")
+      
+    }
+
+ 
+}
+
+
+
+ 
+  
+    </script>  
+    <div id="audio">
+      <audio controls autoplay>
+       <source src="spa_sand_sand_pour_08.ogg" type="audio/ogg">
+       <source src="spa_sand_sand_pour_08.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    </div>
+    <h1> sunstorm   &#9728;</h1>   
+    <div id="div1"><h6> find all the hidden suns across all pages. (hint the ones in the headers count)</h6>
+     <input id="myinput"> 
+     <button onclick="mygame()"> enter</button></div>
+    
+     
+    </header>
+    
+ 
+     <article> <h2> On the planet known as Sunstorm, most people only see the great riches and skim over the great divide. Although the rich may live in the beautiful cities above the surface the poor and misfortunate live underground in the cracks made by the rich expanding their great estates. The people in these cracks are seen as dangerous to those who live above but in reality they are just trying to survive. Most of them mine for gold with the hope of one day finding a piece and getting out, even though this normally just puts them into more debt as they have to pay to use the mines. </h2></article>
+
+    
+   
+   
+
+<img src="tech planet done.jpg" width=" 861.941" height="472">
+<div class="sun1"> <h4> &#9728;</h4></div>
+<div class="sun2"> <h4> &#9728;</h4></div>
+<div class="sun3"> <h4> &#9728;</h4></div>
+
+  <img src="gold mines.jpg" height=" 300" width="30%" style="float:left;">
+<article class="article"> <h2> Sunstorm’s economy is very reliant on gold, as the planet is very rich in it. Although recently gold has become harder to find forcing more people to live in the cracks. The only people who seem to be surviving this economic crisis are those who own the mines as the miners still pay them to mine even though their odds of finding gold are becoming rarer by the day. The government’s response to this has been to cover it up using their own funds to stop other planets from finding out. Some might argue this money would be better spent helping their people.</h2></article>
+  
+  <style>
+#audio { float: right;
+color:rgb(117, 96, 70) ;
+background-color: bisque;}
+
+#div1 {text-align: left;
+background-color: bisque;
+  }
+   
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:bisque;
+  overflow-x: hidden;
+  transition: 0.5s;
+    padding-top: 60px;}
+ 
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:darkgoldenrod;
+  display: block;
+  transition: 0.3s;
+ }
+ 
+
+.sidenav a:hover {
+  color:rgb(199, 177, 120);
+  font-family:Georgia, 'Times New Roman', Times, serif;}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+
+
+
+article{  float: left;
+           padding: 20px;
+           width: 40%;
+           font-size: 18.83px;
+            ;
+           
+        background-color: rgb(155, 148, 57);}
+       
+       body{ background-color: rgb(168, 162, 68);
+        }
+       header{background-color: bisque;
+    padding: 5px;
+
+    font-size: 30px;
+color: darkgoldenrod;}
+
+h1{text-align: center;}
+h6{ position:absolute;
+  top: 150px;}
+
+.article{float: left;
+background-color: rgb(155, 148, 57);
+width: 67.3%;
+}
+h4{ color: rgb(80, 77, 77);}
+
+.sun1 {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.sun2 { position: absolute;
+  top: 500px;
+  left: 16px;
+}
+.sun3 { position: absolute;
+  top: 785px;
+  left: 75px;
+}
+
+    </style>
+      
+</body>
+</html>
