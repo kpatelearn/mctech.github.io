@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society</title>
+</head>
+<body>
+    <style>
+      body {font-family:Georgia, 'Times New Roman', Times, serif}
+        
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(36, 35, 35, 0.966);
+        overflow-x: hidden;
+        transition: 0.75s;
+        padding-top: 60px;
+      }
+        
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #8f8b8b;
+        display: block;
+        transition: 0.3s;
+      }
+        
+      .sidenav a:hover {
+        color: #896492;
+      }
+        
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      h1 {
+        text-align: center;
+        background-color: #b490c2b6;
+      }
+      body {background-color: #927faf;}
+      div {text-align: center;}
+      button {color: #896492;}
+      body {border-style: solid; border-color: #ba95c7; border-width: 10px;}
+      h2 {text-align: center; color: #332836;}
+      #Giraffe {float: left; filter: saturate(25%);}
+    </style>
+        
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Homepage.html">Go Back</a>
+      <a href="Introduction.html">Homepage</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Enviroment.html">The Enviroment</a>
+      <a href="Morals.html">Morals</a>
+      <a href="Credits.html">Credits</a>
+    </div>
+        
+    <h4> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; contents</span> </h4>
+        
+    <script>
+      function openNav() {document.getElementById("mySidenav").style.width = "275px";}   
+      function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+       
+      var i = 0; 
+      var text = 'He felt irrelephant'; 
+      var speed = 50;
+
+      function typeWriter1() {
+        if (i < text.length) {
+        document.getElementById("demo1").innerHTML += text.charAt(i);
+        i++; 
+        setTimeout(typeWriter1, speed);
+        }
+      }
+
+      var u = 0; 
+      var txt = 'A Geome-tree'; 
+      var speed = 50;
+
+      function typeWriter() {
+        if (u < txt.length) {
+        document.getElementById("demo2").innerHTML += txt.charAt(u);
+        u++; 
+        setTimeout(typeWriter, speed);
+        }
+      }
+
+      var a = 0; 
+      var txt1 = 'Because it had too many problems'; 
+      var speed = 50;
+
+      function typeWriter3() {
+        if (a < txt1.length) {
+        document.getElementById("demo3").innerHTML += txt1.charAt(a);
+        a++; 
+        setTimeout(typeWriter3, speed);
+        }
+      }
+
+      var o = 0; 
+      var txt2 = 'Lettuce Ketchup'; 
+      var speed = 50;
+
+      function typeWriter4() {
+        if (o < txt2.length) {
+        document.getElementById("demo4").innerHTML += txt2.charAt(o);
+        o++; 
+        setTimeout(typeWriter4, speed);
+        }
+      }
+
+      var e = 0; 
+      var txt3 = 'Nothing it just let out a little wine'; 
+      var speed = 50;
+
+      function typeWriter5() {
+        if (e < txt3.length) {
+        document.getElementById("demo5").innerHTML += txt3.charAt(e);
+        e++; 
+        setTimeout(typeWriter5, speed);
+        }
+      }
+
+      var r = 0; 
+      var txt4 = 'Wasabee!'; 
+      var speed = 50;
+
+      function typeWriter6() {
+        if (r < txt4.length) {
+        document.getElementById("demo6").innerHTML += txt4.charAt(r);
+        r++; 
+        setTimeout(typeWriter6, speed);
+        }
+      }
+
+      var p = 0; 
+      var txt5 = 'Because they had troubles with installing windows'; 
+      var speed = 50;
+
+      function typeWriter7() {
+        if (p < txt5.length) {
+        document.getElementById("demo7").innerHTML += txt5.charAt(p);
+        p++; 
+        setTimeout(typeWriter7, speed);
+        }
+      }
+    </script>
+    
+    
+    <h1> Society of Rotopia </h1>
+
+    <div id="Giraffe">
+        <img width="60" height="75" src="Giraffe-removebg-preview.png">
+    </div>
+
+    <h2> 
+      The society of Rotopia are a range of different people. Its diverse, everyone is unique and weird (in their own good ways). You don't ever have to hide your
+      identity because everyone is accepting and supportive. Its a very very big family. The society of Rotopia is a huge fan of puns. Its like a greeting and its even the national anthem. Whereever you may go you will see, feel, hear,
+      smell, touch puns. Some examples are listed below. If you can guess the puns before you check the answer you are entered to be the new pun minister of Rotopia. 
+      (Current one is Randinie)
+    </h2>
+    
+    
+    <div id="Dumbo">
+      <h3> Why was Dumbo sad? </h3>
+  
+      <button onclick="typeWriter1()">Answer</button>
+  
+      <p id="demo1"></p>  
+    </div> 
+    
+    <div id="Geometry"> 
+      <h3> What is a Math teacher's favourite tree? </h3>
+   
+      <button onclick="typeWriter()">Answer</button>
+
+      <p id="demo2"></p>
+    </div>
+
+    <div id="Math"> 
+      <h3> Why did the Math book cry? </h3>
+   
+      <button onclick="typeWriter3()">Answer</button>
+
+      <p id="demo3"></p>
+    </div>
+
+    <div id="Lettuce"> 
+      <h3> What did the tomato say after seeing bestie salad </h3>
+   
+      <button onclick="typeWriter4()">Answer</button>
+
+      <p id="demo4"></p>
+    </div>
+
+    <div id="Grape"> 
+      <h3> What did the Grape say after stubbing his toe? </h3>
+   
+      <button onclick="typeWriter5()">Answer</button>
+
+      <p id="demo5"></p>
+    </div>
+
+    <div id="Sushi"> 
+      <h3> What did the sushi say to the bee? </h3>
+   
+      <button onclick="typeWriter6()">Answer</button>
+
+      <p id="demo6"></p>
+
+      <div id="Apple"> 
+        <h3> Why did Apple struggle making an automatic car? </h3>
+     
+        <button onclick="typeWriter7()">Answer</button>
+  
+        <p id="demo7"></p>
+    </div>
+
+    <div>
+      <h2> Did you get more than two puns? </h2>
+      <a href="https://www.youtube.com/watch?v=fB6UU1p8NYs">YAS</a>
+      <a href="https://www.youtube.com/watch?v=zz_1mz_JrJ0&feature=emb_imp_woyt">NOOr</a> 
+    </div>
+
+    <h2>
+      The creatures that live on Rotopia are humans and doggos. There are roaming Giraffes as a sign of good luck. There are no deadly or poisonious animals
+      so every creature you see if friendly. There are also many parties and you betta your chicken that you'll be asked to bust a move. Everyone is 
+      welcoming. The clothing for Rotopia is mainly greys, purple, black, white, teal but you can wear little accents of other colours. 
+      Since Rotopia is a set as a creative planet. You can express your music, art, drama etc. There are talent shows which you can perform at. There also
+      is a thing called a pun talk. Which is basically a ted talk put puns instead. Every pun will be accepted even if its bad but if no one understands you
+      go to the punless corner for 10 minutes to watch a quick youtube video on how to make a pun. Equality is a big thing so Rotopia isn't really runned by the
+      prime minister but there is one elected so they are in charge of safety.
+    </h2>
+    
+</body>
+</html>
