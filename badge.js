@@ -14,15 +14,15 @@
         var score = 0;
 
         var questionsList = [
-            "Qn1: In which NZ city is the sky tower?", 
-            "Qn2: Which planet is closest to the sun?",
-            "Qn3: What is a baby goat called?"
+            "Are you confident in accessing your own timeable, as well as other staff and student timetables in Kamar?", 
+            "Are you confident in printing class lists as both photos and spreadsheets from Kamar?",
+            "Are you confident in accessing student academic information and students login information from Kamar?"
         ]
 
-        var aAnswerList = ["Dunedin", "Venus", "Tadpole"]
-        var bAnswerList = ["Christchurch", "Mercury", "Joey"]
-        var cAnswerList = ["Wellington", "Jupiter", "Kid"]
-        var dAnswerList = ["Auckland", "Earth", "Chick"]
+        var aAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
+        var bAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
+        var cAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
+        var dAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
         
         var qnChoice = "";
 
