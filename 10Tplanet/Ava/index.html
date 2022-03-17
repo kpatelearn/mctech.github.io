@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Thumbnail.icon.png"     >
+    <title>Veenbessen</title>
+</head>
+<body>
+  
+
+<nav><a class="link"  href="inhabitants.html"> Inhabitants</a> 
+    <a class="link" href="Tooka.html"> Tooka</a>
+    <a class="link" href="Boarwar.html"> Polictics</a>
+   
+</nav>
+  
+  
+    <h1>GUIDE TO</h1> 
+    <H1>VEENBESSEN</H1> 
+    <div id="button2"> 
+        <button style="background-color:#daa2bf; " onclick="myFun2()">What does Veenbessen mean?</button>
+    </div>  <div id="button"> 
+        <button style="background-color:#daa2bf; " onclick="myFun()">Whats the Surface like?</button>
+    </div>
+
+    <header> by Ava Crowe  </header>
+    <img width="500" src="Thumbnail2.png">     
+
+
+<h2>About: </h2>
+<p>The planet Veenbessen, as it’s called by most scientists, is a cheese planet in a fairly small solar system by the name of Skaito. Neighbouring planets are lynea, yod, bij and spre. 
+    A single day lasts around 17.75 hours, with years lasting 753 days. Veenbessen is made up of 6 continents, which make up 57% of the planet’s landmass. 1 moon orbits the planet and Veenbessen itself orbits an orange, face-shaped sun in a slightly elliptical orbit. </p>
+  
+<p class="test" >   The plant-like organisms consist of small seedpods called Beans, long red curved fruits named sweeties and tree-like structures called garlic bread. Colourful shrubs of flowers litter certain continents. And many large introduced fruits are what the locals call home.</p> 
+
+<p>This planet has a variety of animals, mostly mammals in land, sea and air. However, the most advanced species are Wild Boars some of which have become sentient. Their behaviour is remarkable and fascinating to study, most of them are unlike anything we’ve ever seen before. Whole communities of boar can be found throughout the planet, many of which have started to communicate with each other, other animals and even humans. To see more go to <a href="inhabitants.html"> Inhabitants</a></p> 
+
+<p>One of our favourite species on Veenbessen is a creature scientists have named the Wailing Tooka, with cat-like ears, raccoon tail and small chicken looking legs, this creature roams the most popular parts of the continents, usually gathering around other species. From observing the Tooka it appears as if they perform songs -or as scientists call them- Wails. On large rocks or mountains groups of Tooka perform these wails to other groups of animals i.e woc’s and boar. To hear recordings or these wails go to  <a href="Tooka.html"> Tooka</a></p>
+
+<p> The water on Veenbessen is unlike anything earthly. Purple and pink in colour, tangy in taste and slightly clumpy all animals seem to drink from large water bodies of the substance. Closely resembling Cranberry juice, earning the planet its name. Many organisms live in this “water” such as Meese and Aquatic Prairie Dogs. 
+</p>
+<h1> Gallery: </h1>
+<h3>Pear Bay </h3>
+<img width="1000" src="Pear Bay.jpg">
+<h3> Cran Estreè</h3>
+<img width="1000" src="Queensland.png"   > 
+<h3> Tooka Lane</h3>
+<img width="1000" src="Train Laine.jpg"   > 
+
+
+
+
+<h1> Would you like to fly to Veenbessen? </h1>
+<h2> Enter your name here to be in to win a ticket to Veensbessen </h2> 
+    <input id="username"> 
+    <button onclick="myfun()"> Enter</button> <br> <br>
+    <h2 id="response"></h2> <br> <br> <br>
+
+
+
+<style>
+body { text-align: center; background-image: url(starbackground.jpeg); }
+h1 { color: #bc578c; font-family: sans-serif;}
+#button {text-align: center; text-align: right; padding-right: 19%;}
+#button2 {float: left; padding-left: 16%;}
+h2 { color: #e9c7d9; padding-left: 5%; padding-right: 5%;}
+h3 {color: #daa2bf; text-align: left; padding-left: 15%;font-size: large;}
+p {color: #daa2bf;  text-align: left; padding-left: 15%; padding-right: 15%;}
+header {color: #cb7ca5;font-family: monospace;}
+a { color: #e9c7d9}
+nav {background-image: url(navbanner.png);  text-align: center; font-size: large; font-family: fantasy; }
+.link {padding: 5%;}
+img {padding-bottom: 2%;}
+
+</style>
+
+<script>
+    console.log ("ur mum");
+    function myFun() {
+        alert("The Surface of Veenbessen is actully Cheese! more specifically Wensleydale");
+    }
+    console.log ("ur mum");
+    function myFun2() {
+        alert("Veenbessen is actully the Dutch word for Cranberry. Scientist named it 'Veenbessen' after its Cranberry like waters");
+    }
+    var Name = document.querySelector("#username");
+    var response = document.querySelector("#response");
+
+    function myfun() {
+        response.innerHTML = "Hello " + Name.value + ", We've been trying to reach you concerning your vehicle's extended warranty. You should've received a notice in the mail about your car's extended warranty eligibility. Since we've not gotten a response, we're giving you a final courtesy call before we close out your file. Press 2 to be removed and placed on our do-not-call list. To speak to someone about possibly extending or reinstating your vehicle's warranty, press 1 to speak with a warranty specialist."
+    }
+</script>
+
+</body>
+</html>

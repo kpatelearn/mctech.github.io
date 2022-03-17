@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="waterr.jpg">
+    <title>Politics</title>
+</head>
+<body>
+   
+    <h1>Who are you voting for to be the next Profit? </h1>  
+    <a class="link" href="index.html"> Back To Home</a> 
+     <h3>'Mr Paterson' or 'The Queen'</h3>
+    <h4>Make sure you put the capitals! </h4>
+<input id="userpick"> </input> <br> <br>
+<button onclick="change()" > Enter </button> <br>
+<img width="600"  src="mrpatty.png" >
+<img width="600"  src="thequeen.png" > <br>
+
+
+
+
+
+
+<style>
+body {text-align: center; background-image: url(starbackground.jpeg);}
+h1 {color: #daa2bf; background-image: url(navbanner.png); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+h3 {color: #cb7ca5;}
+h4 {color: #c46999;}
+img {float: left; padding-left: 5%;}
+.link {color:#e9c7d9; text-align: left ; float: left;}
+
+
+</style>
+
+<script>
+    function change() {
+        var userpick = document.querySelector("#userpick")
+        if (userpick.value == "Mr Paterson" ) {
+            alert ("Good choice, I agree!");
+        }
+        if (userpick.value == "The Queen" ) {
+            alert ("bad choice what are you thinking- she's crazy!!");
+        }
+        document.body.style.backgroundColor= userpick.value
+    }
+</script>
+   
+</body>
+</html>
