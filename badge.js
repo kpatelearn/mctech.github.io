@@ -19,10 +19,10 @@
             "Are you confident in accessing student academic information and students login information from Kamar?"
         ]
 
-        var aAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
-        var bAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
-        var cAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
-        var dAnswerList = ["Yes", "No, but confident in upskilling independently", "No, need some further PLD on this"]
+        var aAnswer = "Yes"
+        var bAnswer = "No, but confident in upskilling independently"
+        var cAnswer = "No, need some further PLD on this"
+        
         
         var qnChoice = "";
 
@@ -33,14 +33,12 @@
 
         function reset() {
             question.innerHTML = questionsList[iterationNumber];
-            q1a.innerHTML = aAnswerList[iterationNumber];
-            q1b.innerHTML = bAnswerList[iterationNumber];
-            q1c.innerHTML = cAnswerList[iterationNumber];
-            q1d.innerHTML = dAnswerList[iterationNumber];
+            q1a.innerHTML = aAnswer;
+            q1b.innerHTML = bAnswer;
+            q1c.innerHTML = cAnswer;
             q1a.style.color = "floralwhite";
             q1b.style.color = "floralwhite";
-            q1c.style.color = "floralwhite";
-            q1d.style.color = "floralwhite";   
+            q1c.style.color = "floralwhite";  
         }
         
         
