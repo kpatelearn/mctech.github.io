@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity page</title>
+</head>
+<body>
+    <h1>ACTIVITIES</h1>
+    <p class="solid"></p>
+    <div id="div1">
+        <h2 id="title1"> Cool Zone </h2>
+        <img id="pic1" src="rollarcoaster.jpeg" height="400" width="600">
+        <img id="pic2" src="neon.jpeg" height="400" width="600">
+        <h2 id="text1"> Cool Zone is a themepark created 99 years ago on this planet. The rides are amazing and this is a very popular place where people hang out. These rides include, the flying canyon, the drop of death and the cranky teacups.</h2> 
+    </div>
+    <div id="prices1"> 
+    <button id="button1" onclick="myFunction()"> Click me to find out Prices for Cool Zone </button>
+    </div>
+  
+    <script>
+        console.log("Hello World");
+    
+        function myFunction() {
+    
+            alert ("Children aged 3-10 = $15 Adults = $25")
+    
+        }
+    
+    </script>
+    <p class="solid"></p>
+    <div id="div2">
+        <h2 id="title2">Splash Zone</h2>
+        <img id="pic3" src="waterpark.jpeg" height="400" width="600">
+        <img id="pic4" src="slide.jpg" height="400" width="600">
+        <h2 id="text2">Splash Zone is a highly rated waterpark in Titan. It has amazing slides and even a childrens area (under 10), where children can also have fun but be safe. For people older than 10, there are many different slides including the, drop of death, the aqua loop and the Tsunami Surge.</h2>
+    </div>
+    <div id="prices1"> 
+    <button id="button2"onclick="myFunction()"> Click me to find out Prices for Splash Zone </button>
+    </div>
+ 
+    <script>
+        console.log("Hello World");
+    
+        function myFunction() {
+    
+            alert ("1 Adult = $15 1 Child aged 3-10 = $10")
+    
+        }
+    
+    </script>
+    <br>
+    <p class="solid"></p>
+
+    <div id='div3'> 
+        <h2 id="title3"> Adeventure Zone </h2>
+        <img id="pic5" src="iceskatingrink1.jpeg" height="400" width="600">
+        <img id="pic6" src="bowlingalley.jpeg" height="400" width="600">
+        <h2 id="text3">Adventure Zone is a two part place, it has a bowling alley and a ice skating part. All ages are welcome! </h2>
+
+    </div>
+    <div id="prices1"> 
+    <button id="button3" onclick="myFunction()"> Click me to find out Prices for Adventure Zone </button>
+    </div>
+
+    <script>
+        console.log("Hello World");
+    
+        function myFunction() {
+    
+            alert ("1 Adult = $15 1 Child 3-15 = $$12")
+    
+        }
+    
+    </script>
+    <p class="solid"></p>
+
+        <style>
+            body {background-color: #141E27;}
+            h1 {color: #C65D7B; font-family: monospace; font-size: 400%; text-align: center;}
+            p.solid {border-style: solid;}
+            p {color: #A1B57D;}
+            #text1 {color: #F68989; font-family:'Courier New', Courier, monospace;}
+            #title1 {color: #F68989; text-align: center; font-size: 350%; font-family: monospace;}
+            #div1 {text-align: center; padding: 2%;}
+            #pic1 {padding-right: 2% ;}
+            #pic2 {padding-left: 2%;}
+            #title2 {color: #F68989; text-align: center; font-size: 350%; font-family: monospace;}
+            #pic3 {padding-right: 2% ;}
+            #pic4 {padding-left: 2%;}
+            #div2 {text-align: center;}
+            #title3 {color: #F68989; text-align: center; font-size: 350%; font-family: monospace;}
+            #div3 {text-align: center;}
+            #pic5 {padding-right: 2%;}
+            #pic6 {padding-left: 2%;}
+            #text2 {color: #F68989; font-family:'Courier New', Courier, monospace;}
+            #text3 {color: #F68989; font-family:'Courier New', Courier, monospace;}
+            #prices1 {text-align: center;}
+            #testbutton {text-align: center;}
+
+/* CSS */
+#button1 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+#button1:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;}
+#button1:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;}
+#button1:not(:disabled) {
+  background-color: #488FB1;}
+#button1:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;}
+#button1:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #73539e;}
+
+  /* CSS */
+#button2 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+#button2:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;}
+#button2:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;}
+#button2:not(:disabled) {
+  background-color: #488FB1;}
+#button2:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;}
+#button2:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #73539e;}
+  /* CSS */
+#button3 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+#button3:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;}
+#button3:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;}
+#button3:not(:disabled) {
+  background-color: #488FB1;}
+#button3:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;}
+#button3:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #73539e;}
+
+
+
+
+
+            
+
+        </style>
+
+
+    
+</body>
+</html>
