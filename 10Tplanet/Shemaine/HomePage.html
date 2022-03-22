@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Her</title>
+</head>
+
+<body>
+
+    <nav>
+        <a id="p1" class="link" href="Animals.html">Animals</a>
+        <a id="p2" class="link" href="Nature.html">Nature</a>
+        <a id="p3" class="link" href="Habitat.html">Habitat</a>
+        <a id="p4" class="link" href="Activities.html">Activities</a>
+    </nav>
+
+    <h1>ˈplanɪt hər:</h1> 
+    <p>Planet Her - A place for female aliens and creatures, feel free to explore the planet </p> 
+
+    <div id="button2">
+        <button style="background-color:#daa2bf; " onclick="myFun()">Secret</button>
+    </div> 
+  
+ 
+<div id="Planet1">
+    <img width="400" height="400" src="PLANET.1.jpeg">
+    <img width="600" height="400" src="galaxy.jpg">
+    <img width="400" height="400" src="SillyWilly.jpg">
+</div>
+
+<h2>Find the secret code and type it in to find out a fact!</h2> <br>
+<div id="worm"> <input id="userName">
+    <button onclick="myFunction()">Enter</button> <br>
+    <h2 id="response"></h2>
+</div>
+  
+
+
+    <style>
+    h1 {color: rgb(255, 255, 255);} 
+    body {background-color: rgb(243, 120, 188);} 
+    h1 {text-align: center;}
+    p {color: rgb(255, 255, 255);}
+    p {text-align: center;}
+    nav {background-color: rgb(255, 255, 255); text-align: center; font-size: x-large; padding: 1%}
+    nav {color: rgb(252, 251, 250);} 
+    h2 {color: rgb(255, 255, 255);}
+    h2 {text-align: center;}
+    #worm {text-align: center;}
+    </style>
+
+
+<script>
+    var UserName = document.querySelector("#userName");
+    var response = document.querySelector("#response");
+  
+    function myFunction() {
+        response.innerHTML = "CONGRATS! You found the secret code. Did you know once a year in the center sky of Planet Her a zodiac chart appears, it decides which zodiac group has the highest rank for the following year. The rankings determine your luxeries for this year" + UserName.value;
+    }
+    console.log ("worm2");
+
+    function myFun() {
+        alert("The secret code is .");
+    }
+   
+    var Name = document.querySelector("#username");
+    var response = document.querySelector("#response");
+ </script>
+ 
+ 
+</body>
+</html>
