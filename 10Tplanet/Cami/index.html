@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Tardonia</title>
+</head>
+<body>
+
+    <nav>
+        <a id="n1" class="link" href="index.html">Home</a> 
+        <a id="n2" class="link" href="species.html" > Species</a>
+        <a id="n3" class="link" href="environment.html" >Environment</a>
+    </nav>
+
+    <h1>Guide to the Planet of Tardonia</h1>
+
+    <h2>What is your name?</h2> <br>
+    <input id="userName">
+    <button onclick="myFunction()">Enter</button> <br>
+    <h2 id="response"></h2>
+
+    <img width="600" height="350" src="purpleplanet.jpg" > <br> <br>
+
+
+     <p> This purple planet is located in the 10T Universe, it is round, surrounded by a blue sky and stars. The planet is completely purple in color, 
+         including most things on its surface and is home to a wide variety of extra-terrestrial life, including species like butterflies, aliens and ants 
+         with big wings. Not so far away is a bright yellow moon that shines its light onto Tardonia.  You can find mountains, rivers, trees and windy 
+         weather on Tardonia. <p> <br>
+    
+        <h4>By Cami Tam</h4> <br> 
+
+    <style>
+         body{background-color: #9254C8;text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;}
+        nav {background-color: #56BBF1; text-align: center; font-size: x-large; padding: 1%;}
+        #n1 {padding: 3%;}
+        #n2 {padding: 3%;}
+        #n3 {padding: 3%;}
+        p {padding-left: 15%; padding-right: 15%; font-size: larger;}
+    </style>
+
+<script>
+    var UserName = document.querySelector("#userName");
+    var response = document.querySelector("#response");
+
+    function myFunction() {
+        response.innerHTML = "Welcome to Tardonia " + UserName.value;
+    }
+</script>
+
+</body>
+</html>

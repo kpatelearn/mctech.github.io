@@ -275,4 +275,17 @@ transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
 	}
 }
 
+/* Badge Styling */
+
+.badgeContainer{
+    position: absolute; /* or absolute */
+    top: 40%;
+    left: 35%;
+  }
+  .badgeQuestions{
+    margin: auto;
+    font-size: x-large;
+    text-align: center;
+  }
+
 
