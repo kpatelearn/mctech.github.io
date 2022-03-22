@@ -21,19 +21,61 @@
       
       <div style="margin-left:70px">
       <div class="w3-container">
-    <h1>About MEDORA 3D</h1>
-    <p>This Website was inspired by the book series 'The Medoran Chronicles'. This website contains 3D models of different places in the Medoran chronicles.</p>
+
+    <h1>Medoran Chronicles Series</h1>
+    <p>(Hover over the images)</p>
+    <p>My Planet was inspired by the book series 'The Medoran Chronicles' by Lynette Noni. The series contains 5 Books - Akarnae, Raelia, Draekora, Graevale and Vardesia - There is also an extra book called 'We three heroes'. The author has also written a Medoran Chronicles short story in 2 parts titled 'A VERY MEDORAN KALDORAS'.</p>
     
-    <div id="image">
-        <img src="akarnae academy.jpg">
+
+    <div class="gallery">
+        <div class="image-box">
+            <img src="Book1.png">
+        </div>
+        <div class="image-box">
+            <img src="Book2.png">
+        </div>
+        <div class="image-box">
+            <img src="Book3.jpg">
+        </div>
+        <div class="image-box">
+            <img src="Book4.jpg">
+        </div>
+        <div class="image-box">
+            <img src="Book5.jpg">
+        </div>
     </div>
 
 
     <style>
+        .w3-sidebar { color:whitesmoke; background-color: #374757;}
         h1 {color:#374757; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: 4px 4px #fac492;}
+        p {text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; font-style: italic;}
+        p {color:#374757; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;}
         body {background-color:bisque;}
         #image {text-align: center;}
-        .w3-sidebar { color:whitesmoke; background-color: #374757;}
+        .gallery {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            margin: 5% auto 0;
+            box-sizing: border-box;
+        }
+        .image-box {
+            margin: 0 1%;
+            flex-grow: 1;
+            flex-basis: 0;
+            transition: .5s;
+        }
+        .image-box img {
+            width: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .image-box:hover {
+            flex-basis: 10%;
+        }
+
+
     </style>
 
 </body>

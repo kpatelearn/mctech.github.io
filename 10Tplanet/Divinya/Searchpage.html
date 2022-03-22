@@ -45,18 +45,27 @@
     <script>
              
        function myfunction() { 
-           var userchoice = document.querySelector ("#myinput")
+           var userchoice = document.querySelector ("#myinput");
            if (userchoice.value == "Akarnae academy"){
             window.location.href = "Akarnaeacademy.html";
            }
-           if (userchoice.value == "Med-ward"){
+           else if (userchoice.value == "Med-ward"){
             window.location.href = "Medward.html";
            }
-           if (userchoice.value == "Dormitory"){
+           else if (userchoice.value == "Dormitory"){
             window.location.href = "Dormroom.html";
            }
-           if (userchoice.value == "Visual reality station"){
+           else if (userchoice.value == "Virtual reality station"){
             window.location.href = "VRstation.html";
+           }
+           else if (userchoice.value == "Dining hall"){
+            window.location.href = "Dininghall.html";
+           }
+           else if (userchoice.value == "Library"){
+            window.location.href = "Library.html";
+           }
+           else {
+               alert ("Place not found!")
            }
         }
 
