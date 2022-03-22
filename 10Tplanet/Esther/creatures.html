@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures</title>
+</head>
+<body>
+    <nav>
+        <a href="Index.html">home</a>
+        <a href="housing.html">housing</a>
+        <a href="activities.html">activities</a>
+        <a href="transport.html">transport</a>
+    </nav>
+    <h1>Creatures in Acuatica</h1>
+    <img width="800" height="650" src="walkingonwater.jpg">
+    <img width="800" height="650" src="breathingunderwater.jpg">
+
+    <h2>type your name and become a citizen of Acuatica</h2> <br>
+    <input id="userName"> <br> <br>
+    <button onclick="myFunction()">submit</button> <br>
+    <h2 id="response"></h2>
+
+    <style>
+        h1 {color: aqua;}
+        body {background-color: black; text-align: center;}
+        nav {text-align: center;}
+        h2 {color: aqua;}
+    </style>
+
+<script>
+    var UserName = document.querySelector("#userName");
+    var response = document.querySelector("#response");
+
+    function myFunction() {
+        response.innerHTML = "welcome to Acuatica, " + UserName.value;
+    }
+
+</script>
+
+</body>
+</html>
