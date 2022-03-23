@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="planet icon.png">
+    <title>Waderham 2052 </title>
+</head>
+<body>
+    <nav>
+        <a id="a1" class="link" href="index.html"> BACK TO HOME</a> 
+    </nav>
+<div>
+    <h1>Come to Waderham!</h1>
+<h3>In 2052, we are sending 50 lucky humans to Waderham.<br>Click the button below to find out if you will be one of the lucky visitors!</h3>
+<button type="button" onclick="myFunction()">Click here!</button>
+
+<style>
+div {text-align: center;}
+    body {background-color:  rgba(26,43,85,255); color: rgb(227, 234, 240); font-family: Cantarell;}
+    #a1 {color:  rgb(227, 234, 240);}
+    button {background-color: violet; color: black;}
+
+ 
+</style>
+    <script>
+        function myFunction()
+            {  
+
+var things = ['Sadly you have not been chosen 😢, Feel free to try again!!','Sadly you have not been chosen 😢, Feel free to try again!!','🎉 You have been chosen to join us in Waderham! 🎉 Please check watch your mail box daily for the next 2 - 7 days for more information!'];
+var thing = things[Math.floor(Math.random()*things.length)];
+alert(thing);
+
+            }
+        </script>
+</body>
+</html>
