@@ -21,23 +21,24 @@
     <button onclick="myFunction()">Enter</button> <br>
     <h2 id="response"></h2>
 
-    <img width="600" height="350" src="purpleplanet.jpg" > <br> <br>
+    <img width="600" height="350" src="purpleplanet.jpg"> <br> <br>
 
 
      <p> This purple planet is located in the 10T Universe, it is round, surrounded by a blue sky and stars. The planet is completely purple in color, 
-         including most things on its surface and is home to a wide variety of extra-terrestrial life, including species like butterflies, aliens and ants 
-         with big wings. Not so far away is a bright yellow moon that shines its light onto Tardonia.  You can find mountains, rivers, trees and windy 
-         weather on Tardonia. <p> <br>
+         including most things on its surface and is home to 3 varietys of extra-terrestrial life, including species like butterflies, aliens and ants 
+         with big wings. Not so far away is a bright yellow moon that shines its light onto Tardonia. This planet is very small but it is welcome to all! 
+         To learn more about the species or environment on this planet, you can click on the tabs above. <p> <br>
     
         <h4>By Cami Tam</h4> <br> 
 
     <style>
-         body{background-color: #9254C8;text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;}
-        nav {background-color: #56BBF1; text-align: center; font-size: x-large; padding: 1%;}
+         body{background-image: url(bluesky2.png);text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;}
+        nav {background-color: #56BBF1 ; text-align: center; font-size: x-large; padding: 1%;}
         #n1 {padding: 3%;}
         #n2 {padding: 3%;}
         #n3 {padding: 3%;}
-        p {padding-left: 15%; padding-right: 15%; font-size: larger;}
+        p {padding-left: 15%; padding-right: 15%; font-size: large;}
+        a {color: darkslateblue;}
     </style>
 
 <script>
@@ -45,7 +46,7 @@
     var response = document.querySelector("#response");
 
     function myFunction() {
-        response.innerHTML = "Welcome to Tardonia " + UserName.value;
+        response.innerHTML = "Hello " + UserName.value + ", Welcome to Tardonia!";
     }
 </script>
 
