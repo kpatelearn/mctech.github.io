@@ -278,9 +278,11 @@ transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
 /* Badge Styling */
 
 .badgeContainer{
-    position: absolute; /* or absolute */
-    top: 40%;
-    left: 35%;
+    position: absolute;
+    top: 33.33%;
+    left: 33.33%;
+    right: 33.33;
+    bottom: 33.33;
   }
   .badgeQuestions{
     margin: auto;
