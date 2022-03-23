@@ -15,15 +15,21 @@
     </nav>
     <h1>Creatures in Acuatica</h1>
     <img width="800" height="650" src="walkingonwater.jpg">
+    <h2>The first thing you're taught when you come to Acuatica is how to walk on water. <br>
+        It's really important you know how to, because it's the most common way of getting around.
+    </h2>
     <img width="800" height="650" src="breathingunderwater.jpg">
+    <h2>The creatures on Acuatica had to adapt to the world being mostly water, so they're able to breathe underwater. <br>
+        It seems hard, but once you're taught how to, its actually very easy.   
+    </h2>
 
-    <h2>type your name and become a citizen of Acuatica</h2> <br>
+    <h1>Type your name and become a citizen of Acuatica</h1>
     <input id="userName"> <br> <br>
     <button onclick="myFunction()">submit</button> <br>
     <h2 id="response"></h2>
 
     <style>
-        h1 {color: aqua;}
+        h1 {color: white;}
         body {background-color: black; text-align: center;}
         nav {text-align: center;}
         h2 {color: aqua;}
@@ -34,7 +40,7 @@
     var response = document.querySelector("#response");
 
     function myFunction() {
-        response.innerHTML = "welcome to Acuatica, " + UserName.value;
+        response.innerHTML = "Welcome to Acuatica, " + UserName.value;
     }
 
 </script>
