@@ -1,107 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Points</title>
-    <script type="text/javascript" src="./web3.min.js"></script>
-    <link rel = "icon" href = "images/dtLogo.png" type = "image/x-icon">
-    <script type="text/javascript" src="./human_standard_token_abi.js"></script>
-</head>
-<body>
-    <div id="showPoints">
-        <button id ="home" class="buttonStyle" onclick="window.location.href='index.html';">Home</button>
-        <button id ="showPointsButton" class="buttonStyle" onclick="getH();">Show Points</button>
-        <button id ="details" class="buttonStyle" onclick="window.location.href='housedetails.html';">Points details</button>
-    </div>
-    <table>
-        <tr>
-          <td id="h"></td>
-          <td id="g"></td>
-        </tr>
-        <tr>
-          <td id="s"></td>
-          <td id="r"></td>
-        </tr>
-      </table>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MC Tech</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js"></script>
+        <link rel = "icon" href = "images/dtLogo.png" type = "image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="kpstyle.css">
+    </head>
+    <body>
+        <div class="pageContainer">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="juniors.html">Juniors</a>
+                <a href="seniors.html">Seniors</a>
+                <a href="live.html">Live Streams</a>
+                <a href="house.html" class="active">House Points</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
 
-    <style>
-        #showPoints {
-            height:7%;
-            text-align: center;
-            vertical-align: middle;
-            background-color:black;
-        }
+            <div id="row1">
+                <div class="Colin">
+                    <br><h1>Colin</h1> 
+                    <h1>350 points</h1>
 
-        .buttonStyle {
-            box-shadow: 0px 1px 0px 0px #1c1b18;
-            background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
-            background-color:#eae0c2;
-            border-radius:15px;
-            border:2px solid #333029;
-            display:inline-block;
-            cursor:pointer;
-            color:#505739;
-            font-family:Arial;
-            font-size:14px;
-            font-weight:bold;
-            padding:12px 16px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #ffffff;
-        }
-        
-        table {
-            margin-left:auto; 
-            margin-right:auto;
-            height: 90%;
-            width: 95%;
-        }
-        html {
-            height: 100%;
-        }
-        body {
-            height: 100%;
-            background-color: black;
-        }
-        #h {
-            color: white;
-            font-size: x-large;
-            text-align: center;
-            vertical-align: middle;
-            width: 50%;
-            height: 46%;
-            background-color: rgb(26,71,42);
-        }
-        #s {
-            color: white;
-            font-size: x-large;
-            text-align: center;
-            vertical-align: middle;
-            width: 50%;
-            height: 46%;
-            background-color: rgb(116,0,1);
-        }
-        #g {
-            color: white;
-            font-size: x-large;
-            text-align: center;
-            vertical-align: middle;
-            width: 50%;
-            height: 46%;
-            background-color: rgb(14,26,64);
-        }
-        #r {
-            color: white;
-            font-size: x-large;
-            text-align: center;
-            vertical-align: middle;
-            width: 50%;
-            height: 46%;
-            background-color: rgb(236,185,57);
-        }
-    </style>
+                </div>
+    
+                <div class="Champagnat"> 
+                    <br><h1>Champagnat</h1> 
+                    <h1>300 points</h1>
+                </div>
+            </div>
 
-<script type="text/javascript" src="house.js"></script>
+            <div id="row2">
+                <div class="Chavoin"> 
+                    <br><h1>Chavoin</h1> 
+                    <h1>375 points</h1> 
+                </div>
+                
+                <div class="Chanel">  
+                    <br><h1>Chanel</h1> 
+                    <h1>250 points</h1>
+                </div>
+            </div>
 
-</body>
+            <div id="row3">
+                        <a href="housedetails.html">
+                            <h2>Details</h2>
+                        </a>
+            </div>
+
+        </div>
+
+        <style>
+            #row1 {
+                display: flex;
+                flex-grow: 5;
+                font-size: 3vh;
+                text-shadow: 2px 2px #121311;
+            }
+
+            #row2 {
+                display: flex;
+                flex-grow: 5;
+                font-size: 3vh;
+                text-shadow: 2px 2px #121311;
+            }
+
+            #row3 {
+                flex-grow: 2;
+                background-color: #003366;
+                margin-top: 0.75%;
+                margin-bottom: 1%;
+                margin-left: 33.33%;
+                margin-right: 33.33%;
+                text-align: center;
+            }
+
+            #details {
+                font-size: 3vh;
+                text-shadow: 2px 2px #121311;
+                text-align: center;
+            }
+
+           #row3:hover {
+               background-color: #fff2cc;
+               color: #003366;
+           }
+
+            #row3 a:visited {
+                color: #aba1b3;
+                text-shadow: 2px 2px #121311;
+            }
+
+
+
+            .Colin {
+                background-color: rgb(77, 155, 104); 
+                border-style: solid; 
+                border-color: black;
+                width: 50%;
+                margin: 1%;
+                text-align: center;
+            }
+            
+            .Champagnat {
+                background-color: #003366; 
+                border-style: solid; 
+                border-color: black;
+                width: 50%;
+                margin: 1%;
+                text-align: center;
+            }
+
+            .Chavoin {
+                background-color: rgb(223, 104, 106); 
+                border-style: solid; 
+                border-color: black;
+                width: 50%;
+                margin: 1%;
+                text-align: center;
+            }
+            
+            .Chanel {
+                background-color: #f5d882; 
+                border-style: solid; 
+                border-color: black;
+                width: 50%;
+                margin: 1%;
+                text-align: center;
+            }
+        </style>
+
+    </body>
 </html>
