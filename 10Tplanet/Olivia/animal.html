@@ -2,16 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>animals</title>
 <style>
 body {
-  font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
   background-image: url("help.png");
 }
 
-.sidenav a:hover {color: purple;}
-
 .sidenav {
-  height: 70%;
+  
+  z-index: 1;
+  height: 80%;
   width: 25%;
   position: fixed;
   z-index: 1;
@@ -22,15 +23,24 @@ body {
   padding-top: 20px;
 }
 
-.sidenav a {
+.sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color:black;
+  font-size: 20px;
+  color: black;
   display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
- 
+.sidenav a:hover, .dropdown-btn:hover {
+  color: purple;
+}
+
 .header {
   padding: 60px;
   text-align: center;
@@ -47,37 +57,81 @@ body {
   padding: 0px 10px;
   background-color: white;
   color: black;
+  text-align: center;
+}
+
+.active {
+  background-color: purple;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: lightgrey;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
 }
 
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <img src="animal.png" width="330px" height="330px"> <br>
-  <a href="home.html">Home</a> <br>
-  <a href="people.html">The People</a> <br>
+  <img src="feather.png" width="300px" height="330px"> <br>
 
+ <a href="home.html">Home</a> <br>
+  <button class="dropdown-btn">The People
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="overview.html">Overview</a>
+    <a href="culture.html">Culture</a>
+    <a href="activities.html">Activities</a>
+
+    <br>
+  </div>
+  <br>
   <a href="environment.html">The Environment</a> <br>
-</div>
+  <a href="gallery.html"> Gallery</a> <br>
 
+  
+</div>
 <div class="header">
-  <h1>The Animals</h1>
+  <h1>The Animals </h1>
 </div>
 <div class="main">
-  <p> Like many other things on Steorra, the animals are relativley close to Earth's own, a part from the odd traits and shiny particles around them. They also sometimes have more than two eyes, and odd, bright fur patterns. 
-  </p>
+  
+  <p> 
+    <br> The animalas of Steorra are just as beautiful as everything else - with bright colours and fairy-dust surrounding them. One of these animals, called a weebil, are considered the rarest and most sacred animal in Steorra. The almost mouse-like creature is said to turn into a fearsome monster when protecting the things they love, whether it be their home or the things they love.
 
-
+   <br> 
+   </p>
 </div>
 
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
-
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<br> <br> <br> <br>
+<audio controls autoplay>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html> 

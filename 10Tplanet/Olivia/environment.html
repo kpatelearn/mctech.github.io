@@ -2,16 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>environment</title>
 <style>
 body {
-  font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
   background-image: url("help.png");
 }
 
-.sidenav a:hover {color: purple;}
-
 .sidenav {
-  height: 70%;
+  
+  z-index: 1;
+  height: 80%;
   width: 25%;
   position: fixed;
   z-index: 1;
@@ -22,15 +23,24 @@ body {
   padding-top: 20px;
 }
 
-.sidenav a {
+.sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color:black;
+  font-size: 20px;
+  color: black;
   display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
- 
+.sidenav a:hover, .dropdown-btn:hover {
+  color: purple;
+}
+
 .header {
   padding: 60px;
   text-align: center;
@@ -47,37 +57,82 @@ body {
   padding: 0px 10px;
   background-color: white;
   color: black;
+  text-align: center;
+}
+
+.active {
+  background-color: purple;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: lightgrey;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
 }
 
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <img src="environment.jpg" width="350px" height="330px">
+  <img src="feather.png" width="300px" height="330px"> <br>
   <a href="home.html">Home</a> <br>
-  <a href="people.html">The People</a> <br>
 
-  <a href="animal.html">The Animals</a> <br>
+ 
+  <button class="dropdown-btn">The People
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="overview.html">Overview</a>
+    <a href="culture.html">Culture</a>
+    <a href="activities.html">Activities</a>
+
+    <br>
+  </div>
+  <br>
+  <a href="animal.html"> The Animals</a> <br>
+  <a href="gallery.html"> Gallery</a> <br>
+
+  
 </div>
-
 <div class="header">
-  <h1>The Enivronment</h1>
+  <h1>The Environment</h1>
 </div>
 <div class="main">
-  <p>Steorra is beautiful, filled to the brim with unique and beautiful plants. The environment closley resembles Earth's a part from the odd colours and floating sparkles. Vast amounts of of purple ocean stretch across the planet, with little huddles of forest filled earth. The purple-yellow sky is a vibrant background to the many trees on the planet.   </p>
-
-
-
+  
+  <p> 
+<br> Steorra is a beautifu planet, filled with many unique plants and animals. ALthough most of the planet is purple ocean, the small bits of land are beautiful, with towering blue trees, pink leaves and flowers with fairy-dust like particles around them. The almost overgrown forests are easy to get lost in - with all the vines and bushes everywhere. The sky is just as magical - purple with a bit of yellow during day, and fully yellow clouds during night. <br> <br> The climate is different from Earth's own - it is often always raining, except on two or three days of their year. 
+   <br> 
+   </p>
 </div>
 
 
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<br> <br> <br> <br>
+<audio controls autoplay>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html> 

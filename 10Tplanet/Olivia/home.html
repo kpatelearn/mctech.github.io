@@ -1,58 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-  font-family:Arial, Helvetica, sans-serif;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>home</title>
+<style>
+body {
+    font-family:Arial, Helvetica, sans-serif;
   background-image: url("help.png");
-  text-align: center;
-  cursor: url('steorra.png'), auto;
 }
-    .header {
+
+.sidenav {
+  
+  z-index: 1;
+  height: 80%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: purple;
+}
+
+.header {
   padding: 60px;
   text-align: center;
   background-color: white;
   color: black;
   font-size: 30px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 30%;
+  margin-right: 5%;
 }
 .main {
-  margin-left: 15%; 
-  margin-right: 15%;
+  margin-left: 30%; 
+  margin-right: 5%;
   font-size: 28px; 
   padding: 0px 10px;
   background-color: white;
   color: black;
-  display: block;
+  text-align: center;
 }
 
-.main:hover {color: purple;}
+.active {
+  background-color: purple;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: lightgrey;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
 
 
-  </style>
+</style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Welcome to Steorra</h1>
-  <p>What would you like to learn about first?</p> 
-</div>
-<br>
-<br>
-  <div class="main">
-    <br>   
-    <br>
-    <img src="transparent.png"> <br>
-    <a href="people.html">The People</a> <br> <br>
-    <a href="#animal.html">The Animals</a> <br> <br>
-    <a href="environment.html">The Environment</a>
-    <br>
+<div class="sidenav">
+  <img src="feather.png" width="300px" height="330px"> <br>
+
+ 
+  <button class="dropdown-btn">The People
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="overview.html">Overview</a>
+    <a href="culture.html">Culture</a>
+    <a href="activities.html">Activities</a>
+
     <br>
   </div>
+  <br>
+  <a href="animal.html"> The Animals</a> <br>
+  <a href="environment.html">The Environment</a> <br>
+  <a href="gallery.html"> Gallery</a> <br>
+
+  
+</div>
+<div class="header">
+  <h1>Home</h1>
+</div>
+<div class="main">
+  
+  <h3> <br>What's your name?</h3> <br>
+    <input id="username">
+    <button onclick="myfunction()"> Submit </button>
+    <p id="response"></p>
+
+    <script>
+        var Username = document.querySelector("#username");
+        var response = document.querySelector("#response");
+        function myfunction() {response.innerHTML = "Well, " + Username.value + " welcome to the most comphrehensive collection of knowledge about Steorra! Feel free to delve deeper into the website by using the side naviagtion right.... there <---. You can also use this as a formal invitation to Steorra! Unfortunatley, you'll have to cover the flight costs yourself ;)";}
+       </script>
+<br> 
+</div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<br> <br> <br> <br> <br> 
+<audio controls autoplay>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 </body>
-</html>
+</html> 
