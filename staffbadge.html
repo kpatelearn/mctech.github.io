@@ -37,9 +37,32 @@
             
         
                 <div class="secondMiddle">
-                    <h1>Enter your school email address</h1>
-                    <input id="staffEmail">
-                    <button onclick="emailCheck()">Submit</button>
+                    <div id="flowEmail">
+                        <h1>Enter your school email address</h1>
+                        <input size="45" id="staffEmail"> <br><br>
+                        <button onclick="emailCheck()">Submit</button>
+                    </div>
+
+                    <div id="flowPassword">
+                        <h1>Enter the staff password for this badge.</h1>
+                        <input size="10" id="staffPassword"> <br><br>
+                        <button onclick="passwordCheck()">Submit</button>
+                    </div>
+
+                    <div id="flowQuestions">
+                        <h1 id="questionSpace"></h1>
+                        <button onclick="Yes()">Yes, I'm confident</button>
+                        <button onclick="Self()">Not confident, but can self-learn</button>
+                        <button onclick="Help()">Need PLD on this</button>
+                    </div>
+
+                    
+                    <div id="flowEnd">
+                        <h1>You made it!</h1>
+                    </div>
+
+
+                    
                 </div> 
 
                 <div class="secondRight">
@@ -50,6 +73,73 @@
             </div>
 
         </div>
+
+        <script>
+            const staffEmail = document.querySelector("#staffEmail");
+            const flowEmail = document.querySelector("#flowEmail");
+            const flowPassword = document.querySelector("#flowPassword");
+            const flowQuestions = document.querySelector("#flowQuestions");
+            const questionSpace = document.querySelector("#questionSpace");
+            const flowEnd = document.querySelector("#flowEnd");
+
+            var questions = ["Kamar", "Cloud", "Pedagogy", "Manners"];
+
+            flowPassword.style.display = "none";
+            flowQuestions.style.display = "none";
+            flowEnd.style.display = "none";
+
+            function emailCheck() {
+                if (staffEmail.value.includes("m")) {
+                    flowEmail.style.display = "none";
+                    flowPassword.style.display = "block";
+                    
+                } else {
+                    alert("Please use your Marist College email address.")
+                }
+            }
+
+            function passwordCheck() {
+                if (staffPassword.value == "t") {
+                    flowPassword.style.display = "none";
+                    flowQuestions.style.display = "block";
+                    questionTime()
+                } else {
+                    alert("Wrong password!");
+                }
+            }
+
+            let num = 0
+
+            function questionTime() {
+                questionSpace.innerHTML = questions[num]; 
+            }
+
+            
+            function Yes() {
+                if (num > (questions.length - 2)) {
+                    flowQuestions.style.display = "none";
+                    flowEnd.style.display = "block";
+                } else {
+                num += 1 
+                }
+                questionSpace.innerHTML = questions[num];
+            }
+
+            function Help() {
+                alert("Help with " + questions[num])
+                num += 1
+                questionSpace.innerHTML = questions[num]; 
+            }
+
+            function End() {
+                alert("You made it!");
+
+            }
+
+
+
+          
+        </script>
 
     </body>
 </html>
