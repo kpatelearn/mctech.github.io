@@ -27,24 +27,24 @@
 
             <div id="row1">
                 <div class="Colin">
-                    <br><h1>Colin</h1> 
+                    <h1>Colin</h1>
                     <h1>350 points</h1>
                 </div>
     
                 <div class="Champagnat"> 
-                    <br><h1>Champagnat</h1> 
+                    <h1>Champagnat</h1> 
                     <h1>300 points</h1>
                 </div>
             </div>
 
             <div id="row2">
                 <div class="Chavoin"> 
-                    <br><h1>Chavoin</h1> 
+                    <h1>Chavoin</h1> 
                     <h1>375 points</h1> 
                 </div>
                 
                 <div class="Chanel">  
-                    <br><h1>Chanel</h1> 
+                    <h1>Chanel</h1> 
                     <h1>250 points</h1>
                 </div>
             </div>
@@ -59,20 +59,22 @@
             #row1 {
                 display: flex;
                 flex-grow: 5;
-                font-size: 2vh;
+                font-size: 1.5vh;
                 text-shadow: 2px 2px #121311;
+                justify-content: center;
             }
 
             #row2 {
                 display: flex;
                 flex-grow: 5;
-                font-size: 2vh;
+                font-size: 1.5vh;
                 text-shadow: 2px 2px #121311;
+                justify-content: center;
             }
 
             #row3 {
                 flex-grow: 2;
-                font-size: 2vh;
+                font-size: 1.5vh;
                 margin-top: 0.75%;
                 margin-bottom: 0;
                 margin-left: 33.33%;
@@ -81,55 +83,67 @@
             }
 
             .Colin {
+                display: flex;
+                flex-direction: column;
                 background-color: rgb(77, 155, 104); 
                 border-style: solid; 
                 border-color: black;
-                max-width: 48%;
-                min-width: 48%;
+                max-width: 40%;
+                min-width: 40%;
                 margin-top: 1%;
                 margin-bottom: 0.5%;
                 margin-left: 1%;
                 margin-right: 0.5%;
-                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
             
             .Champagnat {
+                display: flex;
+                flex-direction: column;
                 background-color: #003366; 
                 border-style: solid; 
                 border-color: black;
-                max-width: 48%;
-                min-width: 48%;
+                max-width: 40%;
+                min-width: 40%;
                 margin-top: 1%;
                 margin-bottom: 0.5%;
                 margin-left: 0.5%;
                 margin-right: 1%;
-                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
 
             .Chavoin {
+                display: flex;
+                flex-direction: column;
                 background-color: rgb(223, 104, 106); 
                 border-style: solid; 
                 border-color: black;
-                max-width: 48%;
-                min-width: 48%;
+                max-width: 40%;
+                min-width: 40%;
                 margin-top: 0.5%;
                 margin-bottom: 1%;
                 margin-left: 1%;
                 margin-right: 0.5%;
-                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
             
             .Chanel {
+                display: flex;
+                flex-direction: column;
                 background-color: #f5d882; 
                 border-style: solid; 
                 border-color: black;
-                max-width: 48%;
-                min-width: 48%;
+                max-width: 40%;
+                min-width: 40%;
                 margin-top: 0.5%;
                 margin-bottom: 1%;
                 margin-left: 0.5%;
                 margin-right: 1%;
-                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
         </style>
 
