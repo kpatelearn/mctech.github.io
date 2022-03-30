@@ -51,10 +51,11 @@
 
                     <div id="flowQuestions">
                         <h1 id="questionSpace"></h1>
-                        <button onclick="Yes()">Yes, I'm confident</button>
-                        <button onclick="Self()">Not confident, but can self-learn</button>
-                        <button onclick="Help()">Need PLD on this</button> <br><br>
-                        <button>Resources for this skill</button>
+                        <button  class="button-71 staffButton" onclick="Yes()">Yes, I'm confident</button>
+                        <button class="button-71 staffButton" onclick="Self()">Not confident, but can self-learn</button>
+                        <button class="button-71 staffButton" onclick="Help()">Need PLD on this</button> <br><br><br>
+                        <button class="button-72" onclick="window.open(resourcePages[num], '_blank');">Show me resources</button>
+    
                     </div>
 
                     
@@ -82,13 +83,19 @@
             const flowQuestions = document.querySelector("#flowQuestions");
             const questionSpace = document.querySelector("#questionSpace");
             const flowEnd = document.querySelector("#flowEnd");
-
+    
             var questions = ["Kamar", "Cloud", "Pedagogy", "Manners"];
-
+            var resourcePages = ["pld/kamar.html", "pld/cloud.html", "pld/pedagogy.html", "pld/manners.html"]
+    
             flowPassword.style.display = "none";
             flowQuestions.style.display = "none";
             flowEnd.style.display = "none";
-
+    
+            function Test() {
+                console.log("Testing")
+            }
+    
+    
             function emailCheck() {
                 if (staffEmail.value.includes("m")) {
                     flowEmail.style.display = "none";
@@ -98,7 +105,7 @@
                     alert("Please use your Marist College email address.")
                 }
             }
-
+    
             function passwordCheck() {
                 if (staffPassword.value == "t") {
                     flowPassword.style.display = "none";
@@ -108,13 +115,13 @@
                     alert("Wrong password!");
                 }
             }
-
+    
             let num = 0
-
+    
             function questionTime() {
                 questionSpace.innerHTML = questions[num]; 
             }
-
+    
             
             function Yes() {
                 if (num > (questions.length - 2)) {
@@ -125,22 +132,28 @@
                 }
                 questionSpace.innerHTML = questions[num];
             }
-
+    
             function Help() {
                 alert("Help with " + questions[num])
                 num += 1
                 questionSpace.innerHTML = questions[num]; 
             }
-
+    
+            function load() {
+                window.location.href = "kamar.html"
+            }
+    
             function End() {
                 alert("You made it!");
-
+    
             }
-
-
-
           
         </script>
 
+        <style>
+            .staffButton {margin-top: 0.75%; margin-left: 0.75%; margin-right: 0.75%;}
+        </style>
+
+        
     </body>
 </html>
