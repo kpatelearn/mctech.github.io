@@ -85,12 +85,24 @@ sanitary equipment for you to stay fit and healthy, while indulging in a holiday
 <h3> Find a place to relax in our club room. Perfect for meeting family or friends. <br> 
     A snack bar is inside with complementary snacks and drinks for hotel guests. <br> 
     Our club room has a warm homely feeling with amazing views of the 10S neighbourhood.
-</h3>
+</h3> <br> 
 
 
+<h2> What would you like to see in our hotel? Submit your ideas here! <br>
+<input id="userInput"> <br> <br> 
+<button onclick="Decision()">Submit</button> </h2>
 
+<script> 
+ var user = document.querySelector ("#userInput"); 
 
-
+function Decision() {
+    if (user.value == "Nothing") { 
+        alert("That's great to hear! We'll keep doing what were doing :)");
+    } else {
+        alert("Thanks for the feedback! We will be sure to take it into consideration");
+    }
+} 
+</script>
 
            
 
