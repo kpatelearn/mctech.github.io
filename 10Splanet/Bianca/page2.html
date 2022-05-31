@@ -19,6 +19,7 @@
             <a href= "index.html" > Home </a>
             <a href= "page2.html" > Information </a>
             <a href ="page4.html" > Attractions </a> 
+            <a href= "page3.html" > Bookings </a>
       </div>
             </head>
             <body>
@@ -94,8 +95,19 @@
               </html> 
               
           </div>
-            
-      
+            <h1> RATES </h1>
+
+            <table id="customers"> <tr> <tr>
+              <th></th>
+              <th>Day-Pass</th>
+              <th>Month-Pass</th>
+              <th>Year-Pass</th>
+         
+               </tr> <tr> <td> Children (3-12) </td> <td> $19.99 per person</td> <td> $190.93 per person </td> <td> $310.55 per person </td> 
+               </tr> <tr> <td> Adults (13+) </td> <td> $22.97 per person</td> <td> $196.93 per person </td> <td> $315.55 per person </td> 
+               </tr> <tr> <td> Family Pass </td> <td> $100.97 </td> <td> $290.93  </td> <td> $510  </td>
+            </h1>
+
     <style>
    * {box-sizing: border-box;}
             
@@ -160,6 +172,15 @@
             from {opacity: .4} 
             to {opacity: 1}
           }
+          table, td, th { border: 1px solid black; } 
+           table, td, th { border: 1px solid #ddd; text-align: left; } 
+           table { border-collapse: collapse; width: 100%; } 
+           th, td { padding: 15px; } 
+          #customers {  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-collapse: collapse; width: 100%; color: #ffffff;  font-size: 110%;} 
+          #customers td, #customers th { background-color:  dodgerblue; ; padding: 8px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #ffffff; font-size: 110%; }
+          #customers tr:nth-child(even){background-color:  dodgerblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #ffffff; font-size: 110%;}
+          #customers tr:hover {background-color:#fb2c6d76 ;} 
+          #customers th { padding-top: 12px; padding-bottom: 12px; text-align: left; background-color:#8337eb ; color: white; }
 
         
           </style>
