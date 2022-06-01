@@ -26,14 +26,21 @@
             </h1>   
         </div>
 
+        <div class="container">
+            <img src="Entry.png" alt="Testing" style="width: 1150px; height: 605px;">
+            <div class="content">
+              <h5>Entrance</h5>
+            </div>
+        </div>
+
         <div>
             <h2>
                 <br> Photos of the hotel <br> <br> 
             <p>
-                <img width="610" height="355" src="Entrance1.png">
-                <img width="610" height="355" src="Entrance2.png"> <br>
-                <img width="610" height="355" src="testing.jpg"> 
-                <img width="610" height="355" src="testing.jpg"> <br> <br>
+                <img width="625" height="355" src="Entrance1.png">
+                <img width="625" height="355" src="Entrance3.png"> <br>
+                <img width="625" height="355" src="Entrance2.png"> 
+                <img width="625" height="355" src="Pond.png"> <br> <br>
             </p>
         </div>
         
@@ -73,8 +80,22 @@
         h2 {text-align: center; font-size:xx-large; font-family: Macondo; background-color: white;}
         h3 {text-align: center; font-size:larger; font-family: Macondo; background-color: white;}
         h4 {text-align: center; font-size:larger; font-family: Macondo; background-color: #883b3b;}
+        h5 {text-align: center; font-size:xx-large; font-family: Macondo;}
         p {text-align: center; font-size:x-large; font-family: Macondo; background-color: white;}
         img {padding-bottom: 5px; padding-top: 5px ; padding-left: 3px; padding-right: 3px;}
+
+        .container {
+            position: relative;
+            max-width: 1150px; /* Maximum width */
+            margin: 0 auto; /* Center it */
+          }
+          
+          .container .content {
+            position: absolute; /* Position the background text */
+            bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+            color: #000000; /* Grey text */
+            width: 1150px; /* Full width */
+          }
     </style>
 
     <script>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+   
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+<a  href="index.html"><i class="fa fa-home"> </i> Home</a>
+<a class="active" href="front.html"><i class="fa fa-desktop"> </i> Contact Us</a>
+<a  href="indoor.html"><i class="fa fa-tint"> </i> Pools</a>
+<a  href="outdoor.html"><i class="fa fa-book"> </i> Register</a>
+<a href="facilities.html"><i class="fa fa-coffee" ></i> Facilities</a>
+
+  
+</div>
+
+<BR>
+<img src="BOOKINGS.png" height="200px" width="100%">
+
+
+<style>
+  a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+</style>
+
+
+<style> 
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #8ab8ac; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */ 
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 1/5 width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 32px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color:#4d7f94 ; /* Add a hover color */
+}
+
+.active {
+  background-color: #9eb7bb; /* Add an active/current color */
+}
+
+</style>
+
+<div class="container">
+  <form action="thankyou.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname"> Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="E.g Kate Danaher..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email or Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="E.g katedanaher@gmail.com..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="event">Event Type</label>
+      </div>
+      <div class="col-75">
+        <select id="event" name="event">
+          <option value="party">Birthday or Event</option>
+          <option value="sport">Sport or Team Hire</option>
+          <option value="general">General Hire</option>
+          <option value="other">Other, and specify in box below</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Specifications or Any Neccesary Info</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="E.g Information about Sports Team.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+     <input type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
+
+<style> /* Style inputs, select elements and textareas */
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: gainsboro;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    width: 40;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 90% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  </style>
+
+<img src="questions.png" height="200px" width="100%">
+
+<div class="container">
+  <form action="thankyou.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="E.g Kate Danaher..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email or Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="E.g katedanaher@gmail.com..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="event">What is your query regarding? </label>
+      </div>
+      <div class="col-75">
+        <select id="event" name="event">
+          <option value="party">Cafe</option>
+          <option value="sport">Job Opportunities</option>
+          <option value="general">General Info</option>
+          <option value="other">Other, and specify in box below</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject"> Your Query </label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="E.g I am intirested in.., I was wondering about.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value= "Submit" >
+    </div>
+  </form>
+</div>
+
+<style>
+
+h1 {text-align: center; color: #b6b7a5;}
+body {background-color: white}
+
+</style>
+
+
+</body>
+</html>
