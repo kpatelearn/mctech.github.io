@@ -17,6 +17,7 @@
   <a href="orders.html"><i class="fa fa-credit-card" aria-hidden="true"></i>
   <a href="about.html"><i class="fa fa-question" aria-hidden="true"></i></a>
 </div>
+
 <div class="row">
 <div class="col-75">
 <div class="container">
@@ -26,7 +27,7 @@
 <div class="col-50">
 <h3>Billing Address</h3>
 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-<input type="text" id="fname" name="firstname" placeholder="Isabell Holley">
+<input type="text" id="fname" name="firstname" placeholder="Isabella Holley">
 <label for="email"><i class="fa fa-envelope"></i> Email</label>
 <input type="text" id="email" name="email" placeholder="Isabellaholley@gmail.com">
 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
@@ -78,7 +79,7 @@
 <label>
 <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
 </label>
-<input type="submit" value="Continue to checkout" class="btn">
+<input onclick="Thanks()" value="Continue to checkout" class="btn">
 </form>
 </div>
 </div>
@@ -199,6 +200,7 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -206,16 +208,16 @@ label {
 }
 
 a {
-  color: #B9BBBE;
+  color: #DCB4A5;
 }
 
 hr {
-  border: 1px solid #B9BBBE;
+  border: 1px solid #DCB4A5;
 }
 
 span.price {
   float: right;
-  color:#B9BBBE;
+  color:#DCB4A5;
 }
 
 
@@ -229,6 +231,10 @@ span.price {
 }
 </style>
 
-</style>
+<script>
+  function Thanks() {
+  alert("Thank you for purchasing");
+  }
+</script>
 </body>
 </html>
