@@ -1,20 +1,31 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<nav>  
-    <a href="WebsiteDraft.html"> Home</a>
-    <a href="destination.html"> Destination</a>
-    <a href="arrival.html"> Arrival</a> 
-    <a href="departures.html">Departures</a>
-    <a href="airline.html"> Choose your Airlines</a>
-</nav>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+x
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a class="active" href="WebsiteDraft.html">Home</a></li>
+        <li><a href="arrival.html">arrival</a><div id="arrival" class="html"></div></li>
+        <li><a href="departures.html">departures</a><div id="departure" class="html"></div></li>
+        <li><a href="destination.html">destiantions</a><div id="destination" class="html"></div></li>
+        <li><a href="checkout.html">Checkout</a><div id="checkout" class="html"></div></li>
+        <li><a href="airline.html">Airlines</a><div id="airline" class="html"></div></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
 <style>
 table {
   font-family: arial, sans-serif;
@@ -38,7 +49,7 @@ body{background-color: #eae0d5;}
 
 <table>
   <tr>
-    <th>Logo</th>
+    <th>Select A Flight</th>
     <th>Airline</th>
     <th>Hours of Travel</th>
   </tr>
@@ -46,14 +57,9 @@ body{background-color: #eae0d5;}
     <td> <img width="400" height="150" src="warehouse.png"></td>
     <td>AirWarehouse  Where Everyone Gets a Bargain</td>
     <td>16h 45m
-     <br>
-     <button onclick="myFunction()">Select</button>
-
-     <script>
-     function myFunction() {
-       location.replace("airline.html")
-     }
-     </script>
+       <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
+      
       </td>
     </tr>
     
@@ -62,86 +68,54 @@ body{background-color: #eae0d5;}
     <td> <img src="paknsave.jpg"> </td>
     <td> NZ's Lowest Flight Prices</td>
     <td> 18h 23m
-      <br>
-      <button onclick="myFunction()">Seleect</button>
- 
-      <script>
-      function myFunction() {
-        location.replace("airline.html")
-      }
-      </script>
+      <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
     </td>
   </tr>
   <tr>
     <td> <img height="150" width="300"src="countdown.jpg"> </td>
     <td>Shop Smarter</td>
     <td>23h 50m
-      <br>
-      <button onclick="myFunction()">Select</button>
- 
-      <script>
-      function myFunction() {
-        location.replace("airline.html")
-      }
-      </script>
+      <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
     </td>
   </tr>
   <tr>
     <td><img src="gucci plane.jpg"></td>
     <td> GUCCI ride</td>
     <td> 15h 47m
-      <br>
-      <button onclick="myFunction()">Select</button>
- 
-      <script>
-      function myFunction() {
-        location.replace("airline.html")
-      }
-      </script>
+      <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
+    
     </td>
   </tr>
   <tr>
     <td><img src="louis vuitton.JPG"></td>
     <td>Ride Fine</td>
     <td>21h 48m
-      <br>
-      <button onclick="myFunction()">Select</button>
- 
-      <script>
-      function myFunction() {
-        location.replace("airline.html")
-      }
-      </script>
+      <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
+   
     </td>
   </tr>
   <tr>
     <td> <img  height="150" width="300"src="supreme.jpg"></td>
     <td>Supreme Ride</td>
     <td>10h 51m
-      <br>
-      <button onclick="myFunction()"> Select </button>
- 
-      <script>
-      function myFunction() {
-        location.replace("airline.html")
-      }
-      </script>
+      <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
+    
     </td>
   </tr>
   <tr>
     <td> <img heihgt="150" width="300"src="chanel.JPG"></td>
     <td> Ride of Chanel</td>
     <td>13h 52m
-      <br>
-      <button onclick="myFunction()">Select</button>
- 
-      <script>
-      function myFunction() {
-        location.replace("airline.html")
-      }
-      </script>
+      <class="container">
+        <a href="checkout.html" class="btn btn-warning">Select</button></a> 
     </td>
   </tr>
+
 
 </table>
 
