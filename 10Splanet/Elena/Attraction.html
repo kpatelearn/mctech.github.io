@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions</title>
+</head>
+<body>
+
+    <title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+
+ <!-- Header -->
+ <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Attractions</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Check out our cool new attractions</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+   <!-- Photo grid (modal) -->
+   <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="pool4.jpg" width="600" height="400" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="volcano.jpg" width="400" height="600" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="GetImage.png" width="600" height="400" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="R.jpg" width="400" height="600" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Attractions</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Check out our cool new attractions!</p>
+    <p>Make sure to check out our cool attractions. This includes random statues of Jack Sparrow lying around (#JusticeforJohnnyDepp), also our cool new volcano that you can slide down from, and much more and exciting attractions to come. Don't forget about our Jack Sparrow merch. Can't forget about our fun inflatables for kids <br> 5-16 years old. If you're interested in coming please book now and secure those tickets with your family.
+    </p>
+  </div>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/E9xobAxHg0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
