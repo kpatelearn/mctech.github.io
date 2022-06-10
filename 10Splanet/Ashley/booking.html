@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Booking</h1>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+
+    <div class="icon-bar">
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <a href="animal.html"><i class="fa fa-paw" aria-hidden="true"></i></a>
+      <a class="active" href="food.html"><i class="fa fa-cutlery" aria-hidden="true"></i></i></a>
+      <a href="booking.html"><i class="fa fa-file-text" aria-hidden="true"></i></i></i></a>
+      <a href="shop.html"><i class="fa fa-gift" aria-hidden="true"></i></i></i></a>
+    </div>
+     <br>
+
+      
+
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="dday" name="date" placeholder="The day you would like to go..">
+
+          <label for="country">Time/Date</label>
+          <select id="country" name="country">
+            <option value="time">10:00</option>
+            <option value="time">11:00</option>
+            <option value="time">12:00</option>
+            <option value="time">1:00</option>
+            <option value="time">2:00</option>
+            <option value="time">3:00</option>
+          </select>
+      
+          <label for="subject">People</label>
+          <textarea id="ppeople" name="people" placeholder="The number of people going.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>   
+
+      <style>
+
+body {text-align: center; background-color: #736F3D; color: antiquewhite; font-family;}
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #736F3D;
+  padding: 20px;
+}
+
+      </style>
+
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Giftshop</h1>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+    <a href="index.html"><i class="fa fa-home"></i></a>
+    <a href="animal.html"><i class="fa fa-paw" aria-hidden="true"></i></a>
+    <a href="food.html"><i class="fa fa-cutlery" aria-hidden="true"></i></i></a>
+    <a href="booking.html"><i class="fa fa-file-text" aria-hidden="true"></i></i></i></a>
+    <a class="active" href="shop.html"><i class="fa fa-gift" aria-hidden="true"></i></i></i></a>
+  </div>
+   <br>
+
+   <h1>Toys: Small-$5, Medium-$7 Big-$10, Lucky Dip-$2</h1>
+   <h1>Jewelry: Earrings-$20, Necklaces-$25, Bracelets-$15, Rings-$10</h1>
+
+<img src="giftshop.1.jpg">
+
+<input id="userInput"> <br> 
+<button onclick="Secret()" >yay</button>
+
+<style>
+
+body {text-align: center; background-color: #736F3D; color: antiquewhite;}
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+
+
+
+</style>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+var modal = document.getElementById("myModal");
+
+
+var user = document.querySelector("#userInput");
+
+function Secret() {
+       if (user.value == "Crab") {
+        alert("Congrats, your delivery will come to your house soon!")
+       } else {
+        alert("Sorry, try harder next time!");
+       }  
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
