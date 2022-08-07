@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="sun.png">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+    #heading{
+        margin-top: 100px;
+        text-align: center;
+        color: #6e9ca6;
+        font-size: 28px;
+    }
+
+    #intro {
+      text-align: center;
+      font-family: Comic Sans MS, Comic Sans, cursive	;
+      font-size: 18px;
+      color: #6e9ca6;
+    }
+
+   p{
+      text-align: center;
+        color: #6e9ca6;
+        font-size: 28px;
+   }
+   .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#vote {
+  text-align: center;
+  color: #6e9ca6;
+  font-size: 20px;
+}
+
+#button{
+  cursor: pointer;
+}
+
+
+
+</style>
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593
+    Top</button>
+  
+    <div class="topnav" >
+      <div id="logo">
+        <img class="logo"
+        src="navbar logo.png" height="65" width="320">
+      </div>
+
+        <div class="nav-right">
+          <span class="right">
+            <a  class="active" href="home.html" >&#127968;
+              Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">&#127905;
+                Attractions
+                <span>&#8628;</span>
+              </button>
+              <div class="dropdown-content" id="attractDrop">
+                <a href="beaches.html">Beaches</a>
+                <a href="carnivals.html"> Carnivals</a>
+                <a href="theStatue.html"> The Statue </a>
+              </div>
+              </div>
+            <div class="dropdown">
+              <button class="dropbtn">&#129473;
+
+                Dining 
+                <span>&#8628;</span>
+              </button>
+              <div class="dropdown-content" id="foodDrop">
+                <a  href="barbieliciousCafe.html">Barbielicious</a>
+                <a href="rosasHotdogs.html"> Rosa's Hotdogs </a>
+                <a href="erinsEscape.html">Erins Escape</a>
+              </div>
+              </div>
+            <a href="accomidations.html">&#127976;
+              Accommodation</a>
+            <a href="community.html"> &#127774;
+              Community</a>          
+
+
+          </span>
+
+      </div>
+      <br>
+      </div>
+      <div id="heading">
+      <h1> <img src="sun.png" width="50" height="50"> Welcome to Sunny Sun City <img src="sun.png"  width="50" height="50"> </h1>
+      </div>
+      <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+      <div id="intro">
+        <p1>Welcome to Sunny Sun City, the sunniest city in Tenarvia! It is a gorgeous city in the Northwest that borders Madiegascar. It is full of beaches, theme parks, lovely people and so many more things. There is lots to do and explore so start looking now!!
+        </p1> 
+        
+      </div>
+      <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+
+      <br>
+    <div id="firstImage">
+
+      <img src="beach resort.jpg" class="center">
+
+    </div> <br>
+    <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <br>
+
+      
+    <div id="vote">
+      <h2>We are having a vote on what to name our statue!
+      </h2>
+      <h3>'Amby the Weeper' or 'The great amby the III'</h3>
+      <input id="userInput">
+      <button id="button"onclick="voteFunction()">Click Me</button>
+     
+
+    </div> <br>
+    <div id="statue">
+      <img src="ambers statue.jpg" class="center">
+    </div>
+
+
+      <script>
+
+         function voteFunction() {
+          if (userInput.value == "Amby the Weeper"){
+            alert("Thank you for voting! Your vote for Amby the Weeper has been counted!!")
+          } else if (userInput.value == "The great amby the III") {
+            alert("Thank you for voting! Your vote for The great amby the III has been counted!!")
+          } else {
+            alert("Sorry! This name is not eligible to vote for! Check you have used capitals and spelt the name correctly!!")
+          }
+        }
+
+
+  var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+      </script>
+</body>
+</html>

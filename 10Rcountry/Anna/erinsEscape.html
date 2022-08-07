@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="sun.png">
+<link rel="javasheet" href="java.js">
+
+<meta charset="UTF-8">
+    <title>Erins Escape</title>
+    <style>
+
+#leftImage  {
+    float: left;
+    width: 30%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 20%;
+    text-align: center;
+
+  }
+  #rightText {
+  color: #6e9ca6;
+  font-size: 18px;
+  font-style: italic;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  float: right;
+  width: 65% ;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#imageRow {
+      padding-left: 20%;
+
+       float: left;
+       width: 20%;
+    }
+
+    #message{
+      color: #6e9ca6;
+      text-align: center;
+      
+    }
+    </style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593
+    Top</button>
+  <div class="topnav" id="myTopnav">
+    <div id="logo">
+      <img src="navbar logo.png" height="65" width="320">
+    </div>
+      <div id="nav-right">
+        <span class="right">
+          <a href="home.html" >&#127968;
+            Home</a>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-fw fa-ferris wheel"></i>&#127905;
+              Attractions
+              <span>&#8628;</span>
+            </button>
+            <div class="dropdown-content"id="attractDrop">
+              <a href="beaches.html">Beaches</a>
+              <a href="carnivals.html"> Carnivals</a>
+              <a href="theStatue.html"> The Statue </a>
+            </div>
+            </div>
+          
+          <div class="dropdown">
+            <button class="dropbtn">&#129473;
+
+              Dining 
+              <span>&#8628;</span>
+            </button>
+            <div class="dropdown-content" id="foodDrop">
+              <a  href="barbieliciousCafe.html">Barbielicious</a>
+              <a href="rosasHotdogs.html"> Rosa's Hotdogs </a>
+              <a class="active" href="erinsEscape.html">Erins Escape</a>
+            </div>
+            </div>
+          <a href="accomidations.html">&#127976;
+            Accommodation</a>
+          <a href="community.html"> &#127774;
+            Community</a>          
+
+
+        </span>
+
+    </div>
+  </div>
+  
+  <div id="heading">
+    <h1>Erins Escape</h1>
+  </div>      <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+  <div id="intro">
+    <p1>
+      Run by top rated chef Erin, this 5-star rated visiting this resturant is a must!
+    </p1> 
+  </div>
+  <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+
+  <br>
+  <div id="imageRow">
+    <img src="restaurants2.jpg" width="300px" height="250px">
+  </div>     
+  <div id="imageRow">
+    <img src="restaurants1.jpg" width="300px" height="250px">
+  </div>    
+   <div id="imageRow">
+    <img src="restaurants3.jpg" width="300px" height="250px">
+  </div>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <h2 id="message">
+      Message from chef Erin
+    </h2>
+  <div id="rightText">
+
+    <p1>
+      "Over the last 10 years of my life, I have dedicated my time to creating top quality dishes. Creating these dishes that leave customers wanting to come back for more is simply my passion. At Erin's Escape, I can assure you that you will experience the best of the best. From the cozy seating areas to the high quality food served, Erin's Escape will allow you to quite literally escape the responsiblities of cooking - this allows you to spend time connecting with those around you instead of being busy in the kitchen! You will be guaranteed the best service in town! "
+    </p1>
+  </div>
+
+  <div id="leftImage">
+    <img src="chef erin.jpg" height="200" width="150">
+  </div>
+  
+</body>
+</body>
+<script>
+  var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+</html>

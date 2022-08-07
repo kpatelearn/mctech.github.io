@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="sun.png">
+<link rel="javasheet" href="java.js">
+
+<meta charset="UTF-8">
+    <title>Barbielicious Cafe</title>
+<style>
+
+p.dotted {
+    border-style: solid;
+    border-color: #6e9ca6;
+    margin-left: 10%;
+    margin-right: 10%;
+  
+}
+ .dotted{
+  text-align: center;
+  color: #6e9ca6;
+  font-family: Comic Sans MS, Comic Sans, cursive	;
+  font-size: 23px;
+  display: block;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0%;
+  margin-inline-end: 0%;
+}
+
+
+    p.solid {
+    border-style: solid;
+    border-color: #6e9ca6;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#imageRow {
+    padding-left: 20%;
+    float: left;
+    width: 20%;
+}
+* {
+    box-sizing: border-box;
+}
+#vid{
+  color: #6e9ca6;
+text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593
+    Top</button>
+  <div class="topnav" id="myTopnav">
+    <div id="logo">
+      <img src="navbar logo.png" height="65" width="320">
+    </div>
+      <div id="nav-right">
+        <span class="right">
+          <a href="home.html" >&#127968;
+            Home</a>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-fw fa-ferris wheel"></i>&#127905;
+              Attractions
+              <span>&#8628;</span>
+            </button>
+            <div class="dropdown-content"id="attractDrop">
+              <a href="beaches.html">Beaches</a>
+              <a href="carnivals.html"> Carnivals</a>
+              <a href="theStatue.html"> The Statue </a>
+            </div>
+            </div>
+          <div class="dropdown">
+            <button class="dropbtn">&#129473;
+
+              Dining 
+              <span>&#8628;</span>
+            </button>
+            <div class="dropdown-content" id="foodDrop">
+              <a class="active" href="barbieliciousCafe.html">Barbielicious</a>
+              <a  href="rosasHotdogs.html"> Rosa's Hotdogs </a>
+              <a href="erinsEscape.html">Erins Escape</a>
+            </div>
+            </div>
+          <a href="accomidations.html">&#127976;
+            Accommodation</a>
+          <a href="community.html"> &#127774;
+            Community</a>          
+
+
+        </span>
+
+    </div>
+  </div>
+    <div id="heading">
+      <h1> Barbielicious Cafe </h1>
+    </div>  
+
+
+    <p class="dotted" >
+      The best cafe im all of tenarvia!! 
+      From the silky coffee, to the <br> fresh strawberries and creme, you will always find something you love in here!
+      <br> It is located right next to the beach so it is the perfect place to pick up a coffee,<br> or even stay in for lunch while sitting 
+      in the outside seating and looking at the veiw. Even when your sitting inside you can admire the<br> beautifuly decorated room. 
+      It really does feel like heaven in there!
+    </p>
+    
+    <div id="imageRow">
+      <img src="barbs cafe.jpg" width="300px" height="250px">
+    </div>     
+    <div id="imageRow">
+      <img src="cafe outside.jpg" width="300px" height="250px">
+    </div>    
+     <div id="imageRow">
+      <img src="inside cafe.jpg" width="300px" height="250px">
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+      <p class="dotted">
+         message form owner:<br>
+         "I am so grateful to have this cafe. This Cafe has been one of the best dessicons of my life. 
+         I am so so grateful for everyone for sticking by me and supporting me through out this. 
+         I could never be more thankful. I especially thank my hardworkers, without them this dream of mine would've stayed a dream.
+         I thank all customers who come in. 
+         Without all of you we would not be able to be her right now.
+         I love you all so much and hope you can pop into the cafe sometime!" - barbara 
+      </p>
+<br><br>
+<div id="vid">
+<h2 >A look inside the Cafe</h2>
+<iframe src="barbielicious cafe video.mp4" width="900" height="500"  title="YouTube video player"
+ frameborder="0" allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</body>
+<script>
+  var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+</html>
