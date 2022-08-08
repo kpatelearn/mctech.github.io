@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+<body>
+    <h1>What color should this page be?</h1> 
+    <input id="userInput">
+    <button onclick="myFunction()" >Submit color</button>
+    <button onclick="hello()" >Submit name</button>
+
+    <script>
+        var userInput = document.querySelector("#userInput")
+
+        function hello() {
+            if (userInput.value == "Mitski")  {
+                alert("Mitski my love!") 
+            } else {
+                
+            }
+            alert("Hey there " +userInput.value)
+        }
+
+
+        function myFunction() {
+            if (userInput.value == "Rainbow")  {
+                alert("Happy pride!")
+            } else {
+                document.body.style.backgroundColor = userInput.value
+            }
+
+            
+        }
+
+    </script>
+</body>
+</html>
