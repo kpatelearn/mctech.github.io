@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Brew Crew City</title>
+  <link rel="icon" type="image/x-icon" href="WebsiteName.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 10;
+  font-family: 'Fraunces', serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0A3373;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  background-color: #FF4A9E;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #0A3373;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="Accessories.html">Accessories</a>
+  <a href="EverythingInBetween.html">Everything in between</a>
+  <a href="History.hmtl">History</a>
+  <a href="Checkout.html">Checkout</a>
+</div>
+
+<style>
+  #ImageDiv {text-align: center; }
+</style>
+
+<div id="ImageDiv">
+<img src="header-banner.png">
+</div>
+
+<style>
+  #BreakDiv {text-align: center; }
+</style>
+
+<div id="BreakDiv">
+  <img src="pagebreak.png" width="100%" height="50px">
+</div>
+
+<style>
+  #BreakDiv {
+    padding-bottom: 20px;
+  }
+</style>
+
+<style>
+  #IntroductionDiv {text-align: center; }
+</style>
+<div id="IntroductionDiv">
+  <img src="welcome-banner.png" width="900" height="450">
+</div>
+
+<style>
+  #BreakDiv {text-align: center; }
+</style>
+
+<div id="BreakDiv">
+  <img src="pagebreak.png" width="100%" height="50px">
+</div>
+
+
+<style>
+
+* {box-sizing: border-box}
+body {font-family: 'Fraunces', serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #45a049;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Matchabanner.png" style="width:100%">
+  <div class="text">Find in Coffee cans</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="scooper-banner.png" style="width:100%">
+  <div class="text">Find in Accessories</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="giftcard-banner.png" style="width:100%">
+  <div class="text">Find in Accessories</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="matcha-conga.png" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<style>
+  #VideoDiv {text-align: center;}
+</style>
+<div id="VideoDiv">
+<video width="1000" height="600" controls>
+  <source src="Video (1).mp4" type="video/mp4">
+</video>
+</body>
+
+
+
+</body>
+</html>
