@@ -52,7 +52,42 @@ p.dotted {
   color: #6e9ca6;
 text-align: center;
 }
+#myDIV {
+    margin: auto;
+    border-radius: 25px;
+    border: 5px solid #6e9ca6;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding: 50px;
+    padding-top: 20px;
+    width: 50%;
+    height: 230px;
+}
+#comp {
+  text-align: center;
+  color: #6e9ca6;
+}
 
+.button  {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #6e9ca6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #374244;
+}
+
+.button:hover {background-color: #628992}
+
+.button:active {
+  background-color:#6e9ca6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
     </style>
 </head>
 <body>
@@ -134,14 +169,23 @@ text-align: center;
 
 
       <p class="dotted">
-         message form owner:<br>
-         "I am so grateful to have this cafe. This Cafe has been one of the best dessicons of my life. 
-         I am so so grateful for everyone for sticking by me and supporting me through out this. 
-         I could never be more thankful. I especially thank my hardworkers, without them this dream of mine would've stayed a dream.
-         I thank all customers who come in. 
-         Without all of you we would not be able to be her right now.
-         I love you all so much and hope you can pop into the cafe sometime!" - barbara 
+        Message from owner:<br>
+        "I am so grateful to have this cafe. This Cafe has been one of the best decisions of my life.
+        I am so so grateful for everyone for sticking by me and supporting me throughout this.
+        I could never be more thankful. I especially thank my hard workers, without them this dream of mine would've stayed a dream.
+        I thank all customers who come in
+        without all of you we would not be able to be her right now.
+        I love you all so much and hope you can pop into the cafe sometime!" - Barbara
+
       </p>
+<br>
+<h1 id="comp">Art competion</h1>
+      <p><button class="button" onclick="myFunction()">Click for more info</button></p>
+      <div id="myDIV" style="display: none; text-align: center;">
+        Barbielicious is holding a art competiton. Firstly to begin, you must come and pick a colouring sheet from our cafe.The colouring sheet chosen for this contest is of a beach! Get as creative as you want, we love to see it! Bring back your artwork before the closing date next Tuesday. All the art will be desplayed on our walls, so come have a look. The winner wins free food at the cafe for a year + a cash prize of $500!! Be sure to enter!"
+      </div>
+
+
 <br><br>
 <div id="vid">
 <h2 >A look inside the Cafe</h2>
@@ -169,5 +213,24 @@ function topFunction() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
+
+
+
+
+function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    
+
+
+
+
+
 </script>
 </html>

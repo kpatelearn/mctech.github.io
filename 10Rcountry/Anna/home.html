@@ -43,12 +43,81 @@
   color: #6e9ca6;
   font-size: 20px;
 }
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #6e9ca6;
+}
 
-#button{
+.button:hover {
+  background-color: #6e9ca6;
+  color: white;
+}
+.button {
+  border-color: #6e9ca6;
+  color: gray;
+  border-radius: 8px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
+input[type=text] {
+  border: 4px solid #6e9ca6;
+  border-radius: 8px;
+  padding: 5px 10px;
 
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
 </style>
 
@@ -111,13 +180,34 @@
         
       </div>
       <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<br>
+      <div class="slideshow-container">
 
-      <br>
-    <div id="firstImage">
-
-      <img src="beach resort.jpg" class="center">
-
-    </div> <br>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="beach resort.jpg" width="900px" height="500px">
+  
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="rosa hotdog truck.jpg" width="900px" height="500px">
+  
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="beach 2.jpg" width="900px" height="500px">
+  
+        </div>
+        
+        </div> <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+  
     <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
     <br>
 
@@ -126,13 +216,13 @@
       <h2>We are having a vote on what to name our statue!
       </h2>
       <h3>'Amby the Weeper' or 'The great amby the III'</h3>
-      <input id="userInput">
-      <button id="button"onclick="voteFunction()">Click Me</button>
+      <input type="text" id="userInput" placeholder="Vote here...">
+      <button id="voteBtn"class="button"  onclick="voteFunction()">Enter</button>
      
 
     </div> <br>
     <div id="statue">
-      <img src="ambers statue.jpg" class="center">
+      <img src="ambers statue 2.jpg" width="1000" class="center">
     </div>
 
 
@@ -147,7 +237,13 @@
             alert("Sorry! This name is not eligible to vote for! Check you have used capitals and spelt the name correctly!!")
           }
         }
-
+var input = document.getElementById("userInput");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("voteBtn").click();
+  }
+});
 
   var mybutton = document.getElementById("myBtn");
 
@@ -168,7 +264,25 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
+let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); 
+                }
       </script>
 </body>
 </html>

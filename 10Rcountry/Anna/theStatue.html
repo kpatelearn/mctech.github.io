@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Statue</title>
     <link rel="stylesheet" href="style.css">
 <link rel="icon" href="sun.png">
-<link rel="javasheet" href="java.js">
 <meta charset="UTF-8">
 <style>
 
@@ -16,15 +15,42 @@
   font-family:Comic Sans MS, Comic Sans, cursive	;
   color: #6e9ca6;
   font-size: large;
-  padding-left: 1%;
-  padding-right: 1%;
-  width: 50%;
+  padding: 1%;
   float: left;
   text-align: center;
+  margin: auto;
+    border-radius: 25px;
+    border: 5px solid #6e9ca6;
+    width: 50%;
+    height: 80%;
 }
 #img1 {
   width: 25%;
   float: left;
+  padding-top: 5%;
+}
+#img2 {
+  width: 25%;
+  float: left;
+  text-align: right;
+  padding-top: 5%;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 </head>
@@ -101,6 +127,7 @@
             Turns out, when she was walking through the woods, she saw a cat and thought it was a good idea to follow it! 
             She ended up getting lost and didn't know how to get back. 
             She had never bothered to learn how to navigate using the sun or stars so she was left alone wondering the woods until she eventually found her way back!
+            <br> We are currently haviving a vote on what to name the statue. Visit <a href="home.html">Here</a> to vote
           </p1>
 
         </div>
@@ -111,7 +138,17 @@
         <br>
 
 
-
+<div class="row">
+  <div class="column">
+    <img src="photo with statue.jpg"  style="width:100%" height="300px">
+  </div>
+  <div class="column">
+    <img src="ambers statue 2.jpg"  style="width:100%" height="300px">
+  </div>
+  <div class="column">
+    <img src="statue3.jpg"  style="width:100%" height="300px" >
+  </div>
+</div>
 </body>
 <script>
     var mybutton = document.getElementById("myBtn");

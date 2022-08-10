@@ -7,12 +7,89 @@
     <title>Accomidations</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="sun.png">
-    <link rel="javasheet" href="java.js">
 
     <style>
 
-    
-    </style>
+    #name{
+      color: #6e9ca6;
+    text-align: center;
+    }
+  
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.column {
+  float: left;
+  width: 23%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+  align-items: center;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5%;
+  right: 21%;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+#expandedImg{
+  margin-left: 20%;
+  margin-right: 20%;
+  display: block;
+}
+#hotelInfo {
+    margin: auto;
+    border-radius: 25px;
+    border: 5px solid #6e9ca6;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding: 50px;
+    padding-top: 20px;
+    width: 50%;
+
+    color: #6e9ca6;
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display: block;
+}
+#review{
+  font-style: italic;
+  }  
+  .checked{
+    color: orange;
+  }
+  </style>
 </head>
 <body>  
   <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593
@@ -58,8 +135,71 @@
         </span>
 
     </div>
+  </div>
+  <div id="heading">
+    <h1>Accommodation</h1>
+  </div>      <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+  <div id="intro">
+    <p1>
+The best Accommodation in Sunny Sun city; El bay Resort
+    </p1> 
+  </div>
+  <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<div id="name">
+  <h2>
+    El Bay Resort
+  </h2>
+</div><br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="photo1.jpg" alt="Outside room" height="200" width="200" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="photo2.jpg" alt="Pools" height="200" width="200" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="photo3.jpg" alt="Night Time" height="200" width="200"style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="photo4.jpg" alt="Beach Store" height="200" width="200"style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:60%" >
+  <div id="imgtext"></div>
+</div>
+<br><br>
+
+<div id="hotelInfo">
+<p1>
+  This resort is one of a kind. Beautiful Sunsets and sunrises flood the sky making it look like a 
+  real life painting. The ocean, perfect temprature for swimming. 
+  A pool if you don't feel like leaving the resort aswell as a store by the bach side which has everything you could ever need. 
+
+</p1>
+<div>
+
+<br>
+<p1 id="review">"Truely was the best resort I have ever been to. 
+As a frequent traveler, I have had my fair share of bad experiances, but this has been the first time I have zero complaints.
+Water was perfect temperature, didn't even have to go out to other stores because of the stor they have there. 1000/10 would reccomend everyone to go. 
+" - Bart swesd
+</p1>
+</div>
+</div>
+
+
 </body>
 <script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
   var mybutton = document.getElementById("myBtn");
 
 
