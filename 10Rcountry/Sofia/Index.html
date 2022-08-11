@@ -6,30 +6,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+
 <style>
 body,h1,h2,h3,h4,h5 {font-family: 'Grandstander', cursive;}
+
 </style>
 </head>
-<body class="w3-light-grey">
+<body class="w3-pale-blue">
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
+
 <div class="w3-content" style="max-width:1400px">
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>KIDTROPOLIS</b></h1>
-  <p>Welcome to the city of Kidtropolis! 
-</header>
 
+<header class="w3-container w3-center w3-padding-32"> 
+  <img src="title.png" width="1230"
+</header>
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(75, 174, 255);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:rgba(29, 202, 255, 0.533)
+}
+
+.active {
+  background-color: rgb(72, 111, 252);
+}
+</style>
+</head>
+<body>
+  <ul>
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="History.html">History</a></li>
+    <li><a href="accomodation.html">Accommodation</a></li>
+    <li><a href="lifestlye.html">Lifestyle</a></li>
+    
+    <li style="float:right"><a class="active" href="flights.html">Book a flight!</a></li>
+  </ul>
+
+
+</style>
 <!-- Grid -->
 <div class="w3-row">
 
-<!-- Blog entries -->
+
 <div class="w3-col l8 s12">
-  <!-- Blog entry -->
+
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="collage.png" alt="Nature" style="width:100%">
+   <br>
+    <center>  <iframe width="560" height="315" src="https://www.youtube.com/embed/HGLpMhdYIq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
     <div class="w3-container">
       <h3><b>Hewo!</b></h3>
       <h5> About Kidtropolis</h5> <span class="w3-opacity"></span></h5>
@@ -51,9 +93,9 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
   <hr>
 
-  <!-- Blog entry -->
+  
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="news.png" alt="Norway" style="width:100%">
+  <img src="news.png" alt="News" style="width:100%">
     <div class="w3-container">
       <h3><b>🔔Notices & News🔔</b></h3>
       <h5>Important reminders for Kiddies 
@@ -76,22 +118,22 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
   </div>
-<!-- END BLOG ENTRIES -->
+
 </div>
 
-<!-- Introduction menu -->
+
 <div class="w3-col l4">
-  <!-- About Card -->
+ 
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="reviews3.png" style="width:100%">
+  <img src="reviews4.png" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>⭐Reviews⭐</b></h4>
       <p>These reviews are only some of our reviews, soooo be sure to write a review when in Kidtropolis!</p>
     </div>
   </div><hr>
   
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
+
+  <div class=" w3-blue w3-card w3-margin">
     <div class="w3-container w3-padding">
       <h4>Deals</h4>
     </div>
@@ -119,32 +161,30 @@ and is wrapped around the whole page content, except for the footer in this exam
     </ul>
   </div>
   <hr> 
- 
-  <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>What's in this website?</h4>
-    </div>
-    <div class="w3-container w3-white">
-    <p> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accomodation!</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">See the first bouncy castle in Kidtropolis!</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HISTORY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">History of Kidtropolis!</span> 
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Book a flight to Kidtropolis</span> 
-      
-    </p>
-    </div>
-  </div>
+  <body
   
-<!-- END Introduction Menu -->
-</div>
+  <h2> Guess the secret Kidtropolis greeting!</h2>
+  <input type="text" id="userInput" placeholder="Enter greeting here">
+  <button class="button" onclick="wordFunction()">Click me</button>
+  <br>
 
-<!-- END GRID -->
-</div><br>
+  <script> 
+  function wordFunction() {if (userInput.value == "Goo goo ga ga"){
+    alert("Congrats, your kidtropolis language is on fleek!")}
+  else alert("Sorry, you need to go on to googoolingo and revise!")
 
-<!-- END w3-content -->
-</div>
+  }
+  
+  </script>
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+
+
+   
+       
+      
+
+
+<footer class="w3-container w3-pale-blue w3-padding-32 w3-margin-top">
  
   
 </footer>

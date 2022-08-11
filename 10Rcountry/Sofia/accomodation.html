@@ -12,11 +12,12 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
 .mySlides {display: none}
+
 </style>
 </head>
 <body class="w3-content w3-border-left w3-border-right">
 
-<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+<nav class="w3-sidebar w3-pale-blue w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
     <h3>Rental</h3>
@@ -32,7 +33,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
       <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">              
       <p><label><i class="fa fa-child"></i> Kids</label></p>
       <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
-      <p><button class="w3-button w3-block w3-pink w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
+      <p><button class="w3-button w3-block w3-blue w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
+      <p> Of course there is availability! We always can find room for you!</p>
     </form>
   </div>
   <div class="w3-bar-block">
@@ -58,63 +60,98 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
 
 
   <div class="w3-container" id="apartment">
-    <h2 class="w3-text-pink">Kidtropolis Accomodation</h2>
-    <div class="w3-display-container mySlides">
-    <img src="playroom.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Playroom!</p>
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-    <img src="bedroom.png" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Lounge</p>
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-    <img src="bath.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Pool</p>
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-    <img src="sleepover.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Sleepover room!</p>
-      </div>
-    </div>
+    
+    <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(53, 121, 231);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(169, 207, 239);
+}
+
+.active {
+  background-color: #9cc5d9;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="Accomodation.html">Accommodation</a></li>
+  <li><a href="History.html">History</a></li>
+  <li><a href="Lifestyle.html">Lifestyle</a></li>
+  <li><a href="Index.html">Return to home</a></li>
+  <li style="float:right"><a class="active" href="flights.html">Book a flight!</a></li>
+</ul>
+    
+ 
+    <h2 class="w3-text-blue">Kidtropolis Accomodation!</h2>  
+
+ 
+  </style>
+  </head>
+  
+  <body>
+  
+  
+  
+  <div class="w3-content w3-section" style="max-width:1000px">
+    <img class="mySlides" src="loungeee.jpg" style="width:100%">
+    <img class="mySlides" src="bedroomupdated.jpg" style="width:100%">
+    <img class="mySlides" src="playroom.jpg" style="width:100%">
+    <img class="mySlides" src="bath.jpg" style="width:100%">
   </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="playground.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="bedroom.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="bath.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="sleepover.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
-    </div>
-  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+  }
+  </script
 
   <div class="w3-container">
     <h4><strong>The space</strong></h4>
     <div class="w3-row w3-large">
       <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-male"></i> Max people: As many as you want!</p>
-        <p><i class="fa fa-fw fa-bath"></i> Bathrooms: The pool has a supercalafragalistic bathroom!</p>
+        <p><i class="fa fa-fw fa-male"></i> Max people: As many as you want, of course!</p>
+        <p><i class="fa fa-fw fa-bath"></i> Pool: The pool is your dream pool, it includes a luxury bathroom too!</p>
         <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1 and the sleepover room obvi!</p>
       </div>
       <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-clock-o"></i> Check In: After 3PM</p>
-        <p><i class="fa fa-fw fa-clock-o"></i> Check Out: 12PM</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Check In: Whenever</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Check Out: Whenever!</p>
       </div>
     </div>
     <hr>
     
-    <h4><strong>Amenities</strong></h4>
+    <h4><strong>Fancy things, our houses also have!</strong></h4>
     <div class="w3-row w3-large">
       <div class="w3-col s6">
         <p><i class="fa fa-fw fa-shower"></i> Shower</p>
@@ -124,7 +161,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
       <div class="w3-col s6">
         <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
         <p><i class="fa fa-fw fa-thermometer"></i> Heating</p>
-        <p><i class="fa fa-fw fa-wheelchair"></i> Accessible</p>
+        <p><i class="fa fa-fw fa-child"></i> This house is Kiddie-approved!</p>
       </div>
     </div>
     <hr>
@@ -136,7 +173,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
     
     <h4><strong>Extra info!</strong></h4>
     <p>Kidtropolis houses are filled with FUN FUN AND FUN. If your an introvert like some Kiddies are, then the house above is perfect for you!</p>
-    <p>Keep an eye out for more super duper houses</p>
+    <p>Keep an eye out for more super duper houses. REMINDER: This house is just one house in Kidtropolis. There are many to stay at but this is our most popular one. Although it may seem weird that our houses are not as bright and fun as other things in Kidtropolis, we prefer our houses to be calm and less full on to the world around us!</p>
     
   </div>
   <hr>
@@ -158,51 +195,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
       <h2 class="w3-wide">JOIN KIDTROPOLIS ACCOMODATION </h2>
       <p>Join Kidtropolis accomodation, in case you need somewhere to stay, duh!</p>
       <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-green w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+      <button type="button" class="w3-button w3-padding-large w3-purple w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
     </div>
   </div>
 </div>
-
 <script>
 
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script>
-
-</body>
-</html>
+  
