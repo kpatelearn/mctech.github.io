@@ -17,27 +17,28 @@
   margin-right: auto;
   width: 50%;    }
 
-  p.dotted {
-    border-style: solid;
-    border-color: #6e9ca6;
-    margin-left: 10%;
-    margin-right: 10%;
-  
+  #info {
+
+      font-size: 18px;
+      border-radius: 25px;
+    border: 4px solid #6e9ca6;
+
+    padding: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
- .dotted{
+#rosa{
+  color: #6e9ca6;
+  text-align: center;
+      font-family: Comic Sans MS, Comic Sans, cursive	;
+}
+#menu{
   text-align: center;
   color: #6e9ca6;
-  font-family: Comic Sans MS, Comic Sans, cursive	;
-  font-size: 23px;
-  display: block;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0%;
-  margin-inline-end: 0%;
 }
-
+#menuImg{
+  border: 20px solid #ffbc2c;
+}
     </style>
 </head>
 <body>
@@ -101,13 +102,13 @@
     <img src="rosas hot dog truck.jpg" width="650" height="400">
   </div>
 
-  <div id="info">
-    <h2>Where to find?</h2>
-    <p class="dotted">
+  <div id="rosa">
+    <h2>How it all started</h2>
+    <p id="info">
       Going from one singular van and worker, to many vans spread out all across Sunny Sun City.
-      Rosa's hotdog truck has been a favorite amoungst the locals.
+      Rosa's hotdog truck has been a favourite amoungst the locals.
       It all started off with one person with a dream. Rosa started up her business and sat by Dusty Bay all day serving her customers.
-      Soon, word spread of her delicous hotdogs and people came travilling just to get one.
+      Soon, word spread of her delicous hotdogs and people came traveling just to get one.
       Due to the overwelming support, Rosa was able to hire more workers and vans to help accommodate the demand.
       However, this success & fame has not stopped her from doing what she loves.
       You can still find her in her original truck down by dusty bay serving customers.
@@ -115,7 +116,11 @@
       There are lots of trucks spread out by the other beaches, Carnivals and anywhere you can go.
     </p>
   </div>
-</body>
+<br>
+  <div id="menu">
+    <h2> Rosa's Menu</h2>
+    <img id="menuImg" src="menu.png" width="70%">
+  </div>
 </body>
 <script>
   var mybutton = document.getElementById("myBtn");
