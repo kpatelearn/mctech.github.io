@@ -4,11 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyle.css">
     <title> page5 </title>
 </head>
 <body>
+
+    <style>
+#yes {display: none;}
+#no {display: none;}
+
+    </style>
+
+    <div id="nav">
+        <a href="page1.html">Home & Information Center</a>
+        </div>
     
-<h1> Skye's sanctuary </h1>
+        <div id="div1">
+            <h1> Skye's Space </h1>
+        </div>
+
+        <h2> WELCOME TO SKYES SPACE </h2>
+        Here, you will find tragic events and shocking secrets!!
+
+<h3>Skye's backstory: </h3> 
+
+When Skye was born, she was the most beautiful and perfect baby that anyone had seen. But, she had a secret. <br>
+Skye was evil! She has big red eyes and her powers were extremely strong as a child. Her parents never told anyone, <br>
+they wanted everyone to think that they had the perfect child. But secretly, they were raising a devil. <br>
+When Skye turned 11, her parents abandoned her because she was too difficult to raise. When Skye woke up the next <br>
+day and found out her parents had left her, she became furious. <br>
+She searched for her parents for 3 weeks untill she finally found them living in a secret hut underground. <br>
+While they were asleep, she killed them. Skye grew up the rest of her life alone and convinced everyone she was the <br>
+sweetest girl in Superhero city, but it was all a lie. Skye was Superhero city's secret villan.
+
+<br> <br>
+
+<img width="570"  height="360" src="evil.jpg">
+
+<h4> Skye has been planning her attack against Superhero city for 5 years!  </h4>
+
+<img width="600"  height="390" src="battle plans.jpg"> <br> <br>
+
+<h4> Do you want to save Superhero city? </h4>
+Type 'yes' or 'no'  <br> <br>
+
+<input id="userInput" >
+<button onclick="myFunction()" > click me </button>
+
+<div id="yes">
+    <a> CONGRATULATIONS!! You have just saved Superhero city from Skye's obliteration wepon. <br>
+    The city is now saved and Skye has been banned from Superhero city and was sent to prison in Antarctica. <br> <br>
+    <img  width="600"  height="390" src="jail.jpg">
+    
+    </a>
+    </div>
+   
+
+    <div id="no">
+        <a> oh well ok then. Skye attacked the city with her obliteration wepon and everyone was killed. <br>
+        Skye took over the area with no one to stop her. <br> <br>
+        <img width="660"  height="390" src="burning.jpg">
+
+        </a>
+        </div>
+
+ <script>
+
+function myFunction() {
+
+var prize = document.querySelector("#yes");
+if (userInput.value == "yes") {
+    alert("yay! you go girl 😘🤞👍" )
+    prize.style.display = "block";
+
+} 
+var prize = document.querySelector("#no");
+if (userInput.value == "no") {
+    alert("oh whoops 🧍‍♂️" )
+    prize.style.display = "block"; }
+
+
+}
+
+
+ </script>
+
+<div id="div2">
+    <footer> 
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"> <i class="fa fa-arrow-up w3-margin-right"> </i> TO THE TOP ☝</a>
+    </footer>
+</div>
 
 </body>
 </html>

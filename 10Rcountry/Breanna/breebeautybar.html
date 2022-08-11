@@ -9,20 +9,332 @@
 <style>
     h1 {color: white;font-size: 50px; ;text-align: center;}
     body {background-color: rgb(224, 186, 192);}
-    p { text-align: center; color: white;font-size: 30px;font-style: italic; background-color: rgb(201, 166, 172);}
+
     a {color: white;font-size: 30px;}
     #beauty {text-align: center ;font-style: italic; background-color: rgb(191, 157, 163); }
     a { padding: 5%;}
     #skincareimg { text-align: center;}
     #secret {  color: white; text-align: center ; background-color: pink;}
-        </style>
+    
+
+  
+.beautybar {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  padding-bottom: 3%;
+}
+
+
+.overlay {
+  position:absolute;
+  bottom: 70%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0); 
+  color: #ffffff00;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 200%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-style:initial;}
+
+
+
+
+
+
+.navbar {
+      overflow: hidden;
+      background-color: rgb(217, 160, 160);
+      font-family: Arial;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; 
+      margin: 0; 
+    }
+    
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(255, 201, 220);
+    }
+    
+ 
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px wrgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: rgb(223, 180, 180);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+ 
+    .dropdown-content a:hover {
+      background-color: rgb(255, 207, 207);
+    }
+    
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+         
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+
+.container {
+  padding: 0 16px;
+  background-color: rgb(244, 196, 196);
+  color: white;
+}
+
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(255, 250, 250);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(186, 186, 186);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(255, 223, 223);
+}
+       
+       
+       </style>
 <body>
-    <h1>💆🏽‍♀️ 𝙱𝚛𝚎𝚎'𝚜 𝙱𝚎𝚊𝚞𝚝𝚢 𝙱𝚊𝚛 💆🏽‍♀️</h1>
-<div id="beauty">
-<a href="skincare.html">Skincare</a>
-<a href="makeup.html">Makeup</a>
-</div>
-<p> Here at Bree's Beauty Bar we offer a range of products from skincare to makeup suited for every skin type!</p>
+
+    <div class="navbar">
+        <a  class="active" href="HomePage.html">❀ Home ❀</a>
+        <a href=""> </a>
+        <div class="dropdown">
+          <button class="dropbtn">❀ Bree's Beauty Bar ❀
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="skincare.html">skincare</a>
+            <a href="makeup.html">salon</a>
+          </div>
+        </div>
+        <a href="sinksanddrinks.html">❀ Sinks and drinks ❀</a>
+      </div>
+
+
+      
+      <div id=".beautybar">
+        <img src="beautybarimg.jpeg" alt="Avatar" class="image">
+    <div class="overlay">💆🏽‍♀️ 𝔅𝔯𝔢𝔢'𝔰 𝔅𝔢𝔞𝔲𝔱𝒚 𝔅𝔞𝔯 💆🏽‍♀️</div>
+    
+
+    
+<style>
+    * {box-sizing: border-box;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+    
+    
+    
+    
+    /* The dots/bullets/indicators */
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    
+    
+    
+    /* Fading animation */
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+    }
+    </style>
+    
+    
+    
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="salon10.jpeg" style="width:100%">
+        <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="salon11.jpeg" style="width:100%">
+        <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="salon13.jpeg" style="width:100%">
+        <div class="text"></div>
+
+        
+        
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        } 
+        slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 4000);
+}
+</script>
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        
+        <div class="container">
+          <h2>𝕄𝕒𝕣𝕚𝕒</h2>
+          <p class="title">Bree's beauty bar worker</p>
+          <p>maria@breesbeautybar.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>𝕊𝕒𝕤𝕙𝕒</h2>
+          <p class="title">Bree's beauty bar worker</p>
+          <p>sasha@breesbeautybar.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>ℂ𝕙𝕖𝕝𝕤𝕖𝕒</h2>
+          <p class="title">Bree's beauty bar worker</p>
+          <p>chelsea@breesbeautybar.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div id="secret"> Secret word: BBB</div>
 

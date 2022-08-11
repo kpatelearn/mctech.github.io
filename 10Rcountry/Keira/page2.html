@@ -9,24 +9,28 @@
 </head>
 <body>
 
+    <div id="nav">
+        <a href="page1.html">Home & Information Center</a>
+        </div>
+
     <div id="div1">
         <h1> Liams art gallery </h1>
     </div>
 
    <style>
 
+    #prize {display: none;}
 
 
-h1 {color: 	#2e1915;}
+
+h1 {color:#005073}
 
    </style>
 
-<div id="nav">
-<a href="page1.html">Home & Information Center</a>
-</div>
 
 
-    <h2> Info </h2>
+
+    <h2> Information </h2>
 
 <p> Welcome to Liams art gallery, Liam is a very well trained super hero who works with his friend Robert. <br> 
     Liams powers include: flying, controlling minds and shape shifting. His superhero name is Liamster. <br>
@@ -71,7 +75,7 @@ This art peice is called "The cool kidz are saved", It represents liams first ti
 
 <br> <br> 
 
-<h3> This is the most historic peice of artwork in Tenarvia. <br>
+<h3> This is the most historic piece of artwork in Tenarvia. <br>
 This artwork is where is all began:
 </h3>
 
@@ -95,17 +99,24 @@ This artwork is where is all began:
 
 
     function myFunction() {
+
+        var prize = document.querySelector("#prize");
         if (userInput.value == "plant") {
             alert("congrats! click the link at the bottom of the page to see your prize 🚘🧍‍♂️" )
+            prize.style.display = "block";
 
         } 
         
-        if (userInput.value == "pot") {
-            alert("congrats! click the link at the bottom of the page to see your prize 🚘🧍‍♂️")
+        else if (userInput.value == "pot") {
+            alert("congrats! click the link at the bottom of the page to see your prize 🚘🧍‍♂️" )
+            prize.style.display = "block";
+
 
         }
-        if (userInput.value == "corner") {
+
+        else if (userInput.value == "corner") {
             alert("congrats! click the link at the bottom of the page to see your prize 🚘🧍‍♂️")
+            prize.style.display = "block";
 
         }
     
@@ -122,11 +133,15 @@ This artwork is where is all began:
 
 <br>
 
-<div id="nav">
+<div id="prize">
     <a href="page6.html">CHECK OUT YOUR PRIZE</a>
     </div>
 
-    
+    <div id="div2">
+        <footer> 
+            <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"> <i class="fa fa-arrow-up w3-margin-right"> </i> TO THE TOP ☝</a>
+        </footer>
+    </div>
 
 
 <br> 

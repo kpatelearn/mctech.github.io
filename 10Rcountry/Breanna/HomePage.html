@@ -19,23 +19,88 @@
        #pool {padding-bottom: 2%;}
        #hottub {padding-top: 2%;}
  
+.topnav {
+  background-color: rgb(168, 139, 119);
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  padding: 13px;
+}
+
+
+.topnav a:hover {
+  background-color: rgba(200, 179, 169, 0.804);
+  color: rgb(255, 255, 255);
+}
+
+
+.topnav a.active {
+  background-color: #dac8ae;
+  color: white;
+}
+
+
+
+.sand {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+.image {
+  display: block;
+  width: 101%;
+  height: 300px;
+  padding-bottom: 3%;
+}
+
+
+.overlay {
+  position:absolute;
+  bottom: 75%;
+  background: rgb(198, 170, 149);
+  background: rgba(0, 0, 0, 0); 
+  color: #ffffff00;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 200%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-style:initial;}
+  
+ 
      
  
         
         </style>
 </head> 
+<div class="topnav">
+    <a class="active" href="HomePage.html">❀ Home ❀</a>
+    <a href="breebeautybar.html">❀ Bree's beauty bar ❀</a>
+    <a href="sinksanddrinks.html">❀ Sinks and Drinks ❀</a>
+  </div>
+  
 
-<h1>🌊 𝕆𝕒𝕤𝕚𝕤 ℂ𝕚𝕥𝕪 🌊</h1>
-<h2> </h2>
+<div id=".sand">
+    <img src="sand.jpeg" alt="Avatar" class="image">
+<div class="overlay">🏝 𝕆𝕒𝕤𝕚𝕤 ℂ𝕚𝕥𝕪 🏝</div>
 
 <body>
     
-<div id="nav">
-    <a href="breebeautybar.html" >❀ Bree's Beauty Bar ❀</a> 
-    <a href="sinksanddrinks.html">❀ Sinks and Drinks ❀</a>
-</div>
+
 <p>❀ Welcome to Oasis city here we make sure that you have a relaxing time and that you feel luxurious, this city is famous for its skincare and beauty range of products and the spa's and pool's which we are sure that it will make you never want to leave❀</p>
- <h3>FIND THE WORD!!!!</h3>
+
+<h3>FIND THE WORD!!!!</h3>
  <input id="userInput">
  <button onclick="myFunction()">submit</button>
  <script>
