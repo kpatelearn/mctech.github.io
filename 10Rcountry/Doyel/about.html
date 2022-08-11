@@ -5,43 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="fairylogo.png"> 
-    <title></title>
+    <title>About    </title>
 </head>
 <body>
-    <br> <img src="aboutlogo.png" alt="logo" class="center"> <br> 
+  
+  <img src="bannerheader.jpg" id="background" width="100%" height="200"> 
 
-    <div class="navbar">
-      <a href="home.html">Home</a>
-      <a href="placestogo.html">Places to go</a>
-      <div class="dropdown">
-        <button class="dropbtn">Food and Drink 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="bakeries.html">bakeries</a>
-          <a href="awardwinning.html">award-winning restaurants</a>
-          <a href="cuisine.html">local cuisine</a>
-        </div>
-      </div> 
-      <a href="about.html"> About</a>
-    </div>
-
-    <div class="fairylogo"> 
-      <img src="fairylogo.png" alt="logo2" width="65" height="65">
+  <div class="navbar">
+    <img src="fairyheading.png" width="240" height="65" id="heading">
+    <img src="fairylogo.png" width="68" height="65" id="heading">
+    <img src="aboutheading.png" width="240" height="65" id="heading">
+    <a href="home.html">Home</a>
+    <a href="placestogo.html">Places to go</a>
+    <div class="dropdown">
+      <button class="dropbtn">Food and Drink 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bakeries.html">Bakeries</a>
+        <a href="awardwinning.html">Award-winning restaurants</a>
       </div>
+    </div> 
+  
+    <div class="dropdown">
+      <button class="dropbtn">Merch
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="apparel.html">Apparel</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="gifts.html">Gifts & Foodstuffs </a>
+      </div>
+    </div> 
+  
+    <a href="about.html" class="active"> About</a>
+  </div>
+          <br><h2><i> Learn more about Faerieland and explore the culture with these many fun facts! <br> </i></h2>
+       <br>   <hr width="100%" color="#a71b45" size="2">
 
-      <div class="textlogo"> 
-        <img src="textlogo.png" alt="logo3" width="260" height="67">
-        </div>
+       <img src="aboutcollage.png" width="100%">
 
-        <div class="fairylogo2"> 
-          <img src="fairylogo.png" alt="logo4" width="65" height="65">
-          </div>
 
-          <h2><i> learn more about faerieland's history and greatest sceneries! </i></h2>
+<br><br><br><h2 id="description"><i> Faerieland is a north western region in Tenarvia and is known for many things such as 
+  pink tulips, their top class <a href="beachhotel.html" id="text1"> Crystal Beach Hotel </a> , sweet <a href="bakeries.html" id="text1"> bakeries</a>, <a href="awardwinning.html" id="text1">restaurants</a>, and the famous <a href="crystalbeach.html" id="text1">Crystal Beach.</a> <br> </i></h2>
+
+ <br> <hr width="60%" color="#a71b45" size="2"><br>
+
+<br><h2 id="description"><i> The national flower of Faerieland is the <a href="tulipgarden.html" id="text1"> Tulip.</a> Believed to bring peace and prosperity to the land, they are planted in various areas around Faerieland. 
+  Sanctuaries and gardens have been built throughout the lands and are home to the most best and pinkest tulips. <br> </i></h2>
+
+  <br> <hr width="60%" color="#a71b45" size="2"><br>
+
+  <br><h2 id="description"><i> In the far far past, around when Faerieland was not discovered yet, rumours have been spoken that real faries were roaming the lands
+    long before the dawn of humans. They were tiny little creatures with small wings and fluttered around the region. But when catastrophe struck and 
+  a deadly volcano erupted, all the faries vanished. All that is rumoured to be left of them are ashes within the currently constructing <a href="museum.html" id="text1"> Faerieland Museum.</a>
+Some believe that their ancestors were of fae descent! But most Faerielandians think this is a silly little legend.</i></h2>
+
+<br> <hr width="60%" color="#a71b45" size="2"><br>
+
+<br><h2 id="description"><i> The notorious <a href="amethystcaves.html" id="text1"> Amethyst caves </a> were formed by the devastating volcano eruption in the past. 
+There is no logical explanation for this rare occurence, but caves of real and pure violet amethyst were molded into the grounds and mountains. 
+Nowadays, only one of the several caves are open to the public in fear of skin oils contaminating the authentic crystals. </i></h2>
+
+
+<br><br><bR><br><img src="abt.jpeg" width="100%" height="600" id="abt">
+
+
+
 
 
  <style>
+  #text1 {color: #a71b45; text-decoration: underline;}
+  #description {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+  #abt {
+    object-fit: cover;
+  }
+  #heading {float: right;}
+  #background {
+object-fit: cover;
+  }
 .navbar {
   overflow: hidden;
   background-color:  #d9b394;
@@ -87,6 +135,7 @@
   background-color: #e8c9b0;
   border: #a71b45;
   border-style: solid;
+  border-radius: 18px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -103,6 +152,7 @@
 
 .dropdown-content a:hover {
   background-color: #d9b394;
+  border-radius: 18px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,37 +161,20 @@
 
 
     body {background-color: #e1bcb7;}
-    h2 {color: #a71b45; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;}
+    h2 {color: #b06431; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;}
     #navbar {border:#a71b45; border-style: solid; font-size: 27.7px; font-family: cursive; text-align: center;}
-    .topnav {
-  background-color: #d9b394;
-overflow: hidden
-}
-    .topnav a {
-  float: left;
-  color:  #a71b45;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 25px;
-}
-.topnav a:hover {
+
+.navbar a.active {
   background-color:  #e8c9b0;
   color: #a71b45;
 }
-.topnav a.active {
-  background-color:  #e8c9b0;
-  color: #a71b45;
-}
-div.fairylogo { top: 128px; left: 480px; right: 205px; bottom: 0px; position: absolute; }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 18%;
 }
-div.textlogo { top: 125px; left: 560px; right: 205px; bottom: 0px; position: absolute; }
-div.fairylogo2 { top: 128px; left: 827px; right: 205px; bottom: 0px; position: absolute; }
     a:link {color:#a71b45 ; text-decoration: none;}
     a:active {color:#a71b45; text-decoration: none;}
     a:visited {color: #a71b45;}

@@ -4,33 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="fairylogo.png"> 
+    <title>Bakeries</title>
 </head>
 <body>
 
-  <img src="bakerytext.png" alt="logo" class="center">
-
-    <div id="navbar" class="topnav">
-        <a href="home.html"> Home </a>
+  <img src="bannerheader.jpg" id="background" width="100%" height="200"> 
+  <div class="navbar">
+    <img src="fairyheading.png" width="240" height="65" id="heading">
+    <img src="fairylogo.png" width="68" height="65" id="heading">
+    <img src="bakerytext.png" width="240" height="65" id="heading">
+    <a href="home.html" class="active">Home</a>
+    <a href="placestogo.html">Places to go</a>
+    <div class="dropdown">
+      <button class="dropbtn">Food and Drink 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bakeries.html">Bakeries</a>
+        <a href="awardwinning.html">Award-winning restaurants</a>
       </div>
+    </div> 
+  
+    <div class="dropdown">
+      <button class="dropbtn">Merch
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="apparel.html">Apparel</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="gifts.html">Gifts & Foodstuffs </a>
+      </div>
+    </div> 
+  
+    <a href="about.html"> About</a>
+  </div>
     
-      <div class="fairylogo"> 
-        <img src="fairylogo.png" alt="logo2" width="71" height="71">
-        </div>
+<h3> <I> Bakeries </I></h3>
+<hr width="100%" color="#a71b45" size="2">
 
-        <div class="textlogo"> 
-          <img src="textlogo.png" alt="logo3" width="257" height="73">
-          </div>
+      <p><I> Top four most best bakeries in Faerieland</I> </p>
+      <h1><i> With each bakehouse being unique in their own ways, here is a list of the top four most greatest bakeries in all of Faerieland. </i></h1>
 
-          <div class="fairylogo2"> 
-            <img src="fairylogo.png" alt="logo4" width="71" height="71">
-            </div>
+      <br><br><hr width="80%" color="#a71b45" size="2">
+
+      <h6 id="description1"><i> 1. Pink Rose Bakery </i></h6> 
+      <img src="rose1.jpeg" width="550" height="500" class="right1">
+      <h5 id="description"><I> Coming in at number one and covered in beautiful pink roses from head to toe, this bakery has it all. 
+        The appealing decoration and romantic aura of the bakery invites many citizens of Faerieland everyday. Known for their 
+        spectacular candied rose petals covered in sugar and in many colours, the Pink Rose Bakery has recieved notable nominations for the best and most unique pastries. 
+      </I></h5> 
+
+      <h6 id="description1"><i> 2. The Marineside Bakery </i></h6> 
+      <img src="bluebakery.jpeg" width="550" height="500" class="right1">
+      <h5 id="description"><I> At second place is the Marineside Bakery, a gorgeous baby blue building which is branched off of the award-winning Oceanside Restaurant and the Seaside Restaurant at Crystal Beach. 
+        This bakery includes pastries of all kind like their exceptional golden croissants or very popular blue moon macarons. 
+      </I></h5> 
+'
+      <h6 id="description1"><i> 3. Honey's Bakery </i></h6> 
+      <img src="honeybakery.jpeg" width="550" height="500" class="right1">
+      <h5 id="description"><I> Serving classic pastries and desserts, Honey's Bakery is perfect for having a breakfast with family or a hangout with friends. With their large selection of savoury foods, 
+        their homemade sourdough bread is known to be the best whether it's sprinkled with herbs or just laquered with a nice layer of butter.
+      </I></h5> 
+
+      <h6 id="description1"><i> 4. Bon Bon Bakery </i></h6> 
+      <img src="pinkbakery.jpeg" width="550" height="500" class="right1">
+      <h5 id="description"><I> Aside from its very interesting name, this bakery is the most pinkest place in all of Faerieland. Bon Bon Bakery includes the amazing Angelina pudding in their menu, 
+        an exclusive food item found commonly in Capyparlasen, a Tenarvian region. 
+      </I></h5> 
+
+      <br><br><br>  <br><br><br><hr width="100%" color="#a71b45" size="2">
+      <br> <img src="photologo.png" alt="logo" class="center"> <br>
+   <hr width="100%" color="#a71b45" size="2"><br>
+
+   <p><i> Pictures from Pink Rose Bakery </i></p>
+<img src="rosebakery.png" width="90%" class="center2">
+
+<p><i> Pictures from the Marineside Bakery </i></p>
+<img src="marinebakery.png" width="90%" class="center2">
+
+<p><i> Pictures from Honey's Bakery </i></p>
+<img src="honeybakery.png" width="90%" class="center2">
+
+<p><i> Pictures from Bon Bon Bakery </i></p>
+<img src="bonbakery.png" width="90%" class="center2">
+
+
+
 
 
     <style>
-div.fairylogo { top: 143px; left: 480px; right: 205px; bottom: 0px; position: absolute; }
-div.textlogo { top: 141px; left: 560px; right: 205px; bottom: 0px; position: absolute; }
-div.fairylogo2 { top: 143px; left: 827px; right: 205px; bottom: 0px; position: absolute; }
+      #background {
+  object-fit: cover;
+}
+      .navbar {
+  overflow: hidden;
+  background-color:  #d9b394;
+  border: #a71b45;
+  border-style: solid;
+}
+
+.navbar a {
+  float: left;
+  font-size: 22px;
+  font-family: cursive;
+  color: #a71b45;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.dropdown .dropbtn {
+  font-size: 22px;  
+  font-family: cursive;
+  border: none;
+  outline: none;
+  color: #a71b45;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #e8c9b0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #e8c9b0;
+  border: #a71b45;
+  border-style: solid;
+  border-radius: 18px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #a71b45;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #d9b394;
+  border-radius: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+      p {color: #6a3c1e; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 35px;}
+      h1 {color: #b06431; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;}
+      h6 {color: #6a3c1e; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 30px; }
+      h5 {color: #b06431; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;}
+
+      #description1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid #a71b45;
+  padding: 18px;
+  width: 22%;
+  height: 40%;
+}
+
+      #description {
+  width: 37%; 
+  float: right;
+  padding-right: 6%;
+  
+}
+      .right1 {
+  width: 45%;
+  object-fit: cover;
+  padding-left: 6%;
+  
+}
+      h3 {color: #a71b45; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 40px;}
+      #heading {
+    float: right;
+  }
 body {background-color: #e1bcb7;}
 #navbar {border:#a71b45; border-style: solid; font-size: 27.7px; font-family: cursive; text-align: center;}
 .center {
@@ -38,6 +204,12 @@ body {background-color: #e1bcb7;}
   margin-left: auto;
   margin-right: auto;
   width: 35%;
+}
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 .topnav {
   background-color: #d9b394;
@@ -49,7 +221,7 @@ overflow: hidden
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
 }
 .topnav a:hover {
   background-color:  #e8c9b0;
@@ -61,5 +233,8 @@ overflow: hidden
 }
     </style>
     
+  
+
+
 </body>
 </html>

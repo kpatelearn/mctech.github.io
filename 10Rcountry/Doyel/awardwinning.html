@@ -4,44 +4,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="fairylogo.png"> 
+    <title>Award-Winning Restaurants</title>
 </head>
 <body>
-   
-    <img src="awardtext.png" alt="logo" class="center"><br>
+  <img src="bannerheader.jpg" id="background" width="100%" height="200"> 
 
-
-    <div id="navbar" class="topnav">
-        <a href="home.html"> Home </a>
+  <div class="navbar">
+    <img src="fairyheading.png" width="240" height="65" id="heading">
+    <img src="fairylogo.png" width="68" height="65" id="heading">
+    <img src="awardtext.png" width="280" height="65" id="heading">
+    <a href="home.html" class="active">Home</a>
+    <a href="placestogo.html">Places to go</a>
+    <div class="dropdown">
+      <button class="dropbtn">Food and Drink 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bakeries.html">Bakeries</a>
+        <a href="awardwinning.html">Award-winning restaurants</a>
       </div>
-    
-      <div class="fairylogo"> 
-        <img src="fairylogo.png" alt="logo2" width="71" height="71">
-        </div>
+    </div> 
+  
+    <div class="dropdown">
+      <button class="dropbtn">Merch
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="apparel.html">Apparel</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="gifts.html">Gifts & Foodstuffs </a>
+      </div>
+    </div> 
+  
+    <a href="about.html"> About</a>
+  </div>
+    <h5><i> Award-winning Restaurants </i></h5>
+    <hr width="100%" color="#a71b45" size="2">
 
-        <div class="textlogo"> 
-          <img src="textlogo.png" alt="logo3" width="257" height="73">
-          </div>
+<br><h1 id="description2"> <i> Get a taste of Faerieland's special restaurants that have recieved many awards and positive customer feedback. 
+  With unforgettable luxury dining experiences and fun restaurants of neon lights and verdant life, explore what they offer and look like.</i></h1>
 
-          <div class="fairylogo2"> 
-            <img src="fairylogo.png" alt="logo4" width="71" height="71">
-            </div>
+<br><hr width="80%" color="#a71b45" size="2">
 
+<h3> The Royalla </h3>
+<img src="royalrestaurant.jpeg" width="550" height="500" class="center2" id="royal">
+<h2 id="description1"> Located in the luxury side of the city center beside the tulip gardens and near the angel's grove, 
+  The Royalla is an award-winning restaurant of classical food and regal dining. 
+  This restaurant has recieved numerous nominations and certificates of excellence throughout its long time in Faerieland, 
+  especially for The Royalla's exquisite menu which includes its most popular dessert dish: red velvet cake laquered with soft cream cheese icing.</h2>
 
+<h3> Oceanside </h3>
+<img src="seaside.jpeg" width="550" height="500" class="center2" id="seaside">
+<h2 id="description1"> Surrounded by the sparkling teal oceans and the warm coral reefs of Faerieland, 
+  Oceanside offers flavourful seafood cuisine and colourful cocktails that are loved by everyone. 
+  They are known for their famous golden fish and chips that is served with juicy lemon, fresh parsely and an exclusive fish named the Clayfish which is only available within Faerieland waters.</h2>
+
+  <h3> Green Ivy Restaurant </h3>
+  <img src="plantrestaurant.jpeg" width="550" height="500" class="center2" id="plant">
+  <h2 id="description1"> This lush restaurant full of verdant life and abudant plants, the Green Ivy Restaurant is a vegetarian-friendly place and includes the best vegan food. 
+    On the menu, they're known for their fantastic chopped salads and very favourited sweet potato tacos full of vibrant veggies.</h2>
+
+<h3>The Lights Lounge </h3>
+<img src="neonbar.jpeg" width="550" height="500" class="center2" id="neon">
+<h2 id="description1"> Bursting with life during the night in Faerieland, The Lights Lounge is a restaurant of fun, wildness and bright neon lights. 
+  The variating menu includes notoriously acclaimed mocktails served with sweet fruit and granules of snow white sugar coated on the rim of their glass cups.</h2>
+   
+  <h3>Faerieland Ice-Cream Shop</h3>
+  <img src="icecreamshop.jpeg" width="550" height="500" class="center2" id="ice">
+  <h2 id="description1"> Want to experience Faerieland's best ice-creams? This place has it all with their flamboyant flavours of 
+    ice-cream obtainable in many different flavours. Loved by all citizens and food critics, they're known for blue moon, 
+    a luxurious ice-cream tinted a perfect teal blue and mixed with several flavours including fresh vanilla and blue raspberry. </h2>
 
 
 
 <style> 
-div.fairylogo { top: 136px; left: 480px; right: 205px; bottom: 0px; position: absolute; }
-div.textlogo { top: 135px; left: 560px; right: 205px; bottom: 0px; position: absolute; }
-div.fairylogo2 { top: 136px; left: 827px; right: 205px; bottom: 0px; position: absolute; }
+ h5 {color: #a71b45; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 40px;}
+   #background {
+  object-fit: cover;
+}
+      .navbar {
+  overflow: hidden;
+  background-color:  #d9b394;
+  border: #a71b45;
+  border-style: solid;
+}
+
+.navbar a {
+  float: left;
+  font-size: 22px;
+  font-family: cursive;
+  color: #a71b45;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.dropdown .dropbtn {
+  font-size: 22px;  
+  font-family: cursive;
+  border: none;
+  outline: none;
+  color: #a71b45;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #e8c9b0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #e8c9b0;
+  border: #a71b45;
+  border-style: solid;
+  border-radius: 18px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #a71b45;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #d9b394;
+  border-radius: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#heading {float: right;}
+h1 {color: #b06431; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;}
+h3 {color: #a71b45; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 35px;}
+h2 {color: #6a3c1e; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;}
+h4 {color: #bc8179; text-align: right; font-family: 'Times New Roman', Times, serif;}
 body {background-color: #e1bcb7;}
 #navbar {border:#a71b45; border-style: solid; font-size: 27.7px; font-family: cursive; text-align: center;}
+
+#description1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid #b06431;
+  padding: 20px;
+  width: 55%;
+  height: 40%;
+}
+#description2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+#ice {
+  object-fit: cover;
+}
+#neon {
+  object-fit: fill;
+}
+
+#royal {
+  object-fit: cover;
+}
+#seaside {
+  object-fit: cover;
+}
+#plant {
+  object-fit: cover;
+}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 35%;
+  
+}
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  border: white; border-style: solid; border-width: 2px; border-radius: 20px;
 }
 .topnav {
   background-color: #d9b394;
@@ -53,7 +215,7 @@ overflow: hidden
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
 }
 .topnav a:hover {
   background-color:  #e8c9b0;
@@ -63,7 +225,33 @@ overflow: hidden
   background-color:  #e8c9b0;
   color: #a71b45;
 }
+#royal2 {
+  float: left;
+}
+#clayfish {
+  float: right;
+}
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
+
+
+<br><br> <hr width="100%" color="#a71b45" size="2">
+
+<br><img src="awardsheading.png" class="center3"><br>
+
+<hr width="100%" color="#a71b45" size="2">
+
+<br><br><br><img src="royalaward.png" width="45%" height="400" class="center3"><br><br><br><br>
+<img src="fishaward.png" width="45%" height="400" class="center3"><br><br><br><br>
+<img src="greenaward.png" width="45%" height="400" class="center3"><br><br><br><br>
+<img src="lightaward.png" width="45%" height="400" class="center3"><br><br><br><br>
+<img src="iceaward.png" width="45%" height="400" class="center3"><br><br><br><br>
+
+<h4> <i>The secret word is "fairy"! </i> </h4>
 
 
 </body>
