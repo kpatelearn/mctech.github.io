@@ -1,4 +1,5 @@
 #Booking{padding-left: 10%; padding-right: 10%; padding-top: 5%; text-align: center;}
+#form{font-size: 45px;}
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -29,9 +30,9 @@
   }
   
   .container {
-    background-color: #e8f4f8;
+    background-color: #90b1cc;
     padding: 5px 20px 15px 20px;
-    border: 1px solid #d4ebf2;
+    border: 1px solid #6185a3;
     border-radius: 3px;
   }
   
