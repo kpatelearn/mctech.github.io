@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="techasessment.html"><img src="Teneria3.png" width="70px"></a>
+    <a href="techasessment.html">Home</a>  
+    <a href="travel.html">Travel</a>
+    <div class="dropdown">
+        <button class="dropbtn">Places
+            <i class="fa fa-caret-down"></i>
+        </button>    
+        <div class="dropdown-content">
+            <a href="island1.html"> Hokuma </a>
+            <a href="island2.html"> Kava </a>
+            <a href="island3.html">Nofuatu</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Things to do
+            <i class="fa fa-caret-down"></i>
+        </button>    
+        <div class="dropdown-content"> 
+            <a href="water.html"> Water </a>
+            <a href="Adventure.html"> Adventure </a>
+        </div>
+    </div>
+    <a href="accomodation.html">Accomodation </a>
+</div>
+</div>  
+
+<br><br><br><br>
+
+<p>EXPLORE ADVENTURE SERENE ISLES HAS TO OFFER</p>
+
+<br><br>
+
+<section class='image-box'>
+<div class='image-wrapper'>
+<img src='hiking.avif' width= "400px" height="250px" alt=''>
+<div class='overlay'>
+  <div class="text">BACKPACKING
+    <br> 
+  </div>
+</div>
+</div>
+<div class='image-wrapper'>
+<img src='caving.jpg' width= "400px" height="250px"alt=''>
+<div class='overlay'>
+  <div class="text">CAVING <br> 
+  </div>
+</div>
+</div>
+<div class='image-wrapper'>
+<img src='caveboattour.jpg' width= "400px" height="250px" alt=''>
+<div class='overlay'>
+  <div class="text">CAVE BOAT TOUR</div>
+</div>
+</div>
+<div class='image-wrapper'>
+<img src='riverrafting.jpg' width= "400px" height="250px"alt=''>
+<div class='overlay'>
+  <div class="text">RIVER RAFTING</div>
+</div>
+</div>
+<div class='image-wrapper'>
+  <img src='divingsharks.jpg' width= "400px" height="250px" alt=''>
+  <div class='overlay'>
+    <div class="text">SHARK DIVING</div>
+  </div>
+</div>
+<div class='image-wrapper'>
+<img src='zip lining.jpg' width= "400px" height="250px" alt=''>
+<div class='overlay'>
+  <div class="text">ZIP LINING</div>
+</div>
+</div>
+</section>  
+</article>
+
+
+
+
+<style>
+
+    p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #285b9e ;
+    font-size: 40px;
+    }
+
+
+
+
+    .image-box{
+    place-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    width: 400px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:#a1caff;
+    }
+    .image-wrapper {
+    position: relative;
+    }
+    .image-wrapper:hover .overlay {
+    opacity: 1;
+    }
+    .text {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+
+
+
+    body {background-color: #ffffff;
+    max-width: 100%;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 5%;
+    }
+    .menu   {
+    width:100%;
+    float:left;
+    display: block;
+    }
+    .navbar {
+    overflow: hidden; 
+    color: #73675c ; 
+    text-align: right;  
+    font-size: 30px;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 0px; 
+    right: 0%; 
+    display: block; 
+    float: left;
+    }
+    .navbar a {
+    float: left;
+    font-size: 18px;
+    color: #afa092;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+    .dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: #afa092;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+    .dropbtn:hover, a:hover {
+        color:#ffffff
+    }
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #a1caff;
+    }
+     .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#76797e ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    .dropdown-content a {
+    float: none;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+    .dropdown-content a:hover {
+    background-color:#a1caff;
+    }
+     .dropdown:hover .dropdown-content {
+    display: block;}
+</body>
+</html>
