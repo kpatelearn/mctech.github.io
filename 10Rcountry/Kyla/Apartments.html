@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Aquacity Icon1.png">
     <title>Apartments</title>
 </head>
 <body>
@@ -15,6 +16,9 @@
         <a href="Bookings.html">Bookings </a>
     </div>
     <button onclick="history.back()">Go Back</button>
+
+
+    
     <h1>Apartments</h1>
     <h3>We have 3 streets in which the apartments are on. Apartment buildings are on the western side of the city.
         There is "Ocean Alley", "Cloudstry", and "Underwater Villa". 
@@ -26,9 +30,15 @@
             on the seabed as well as the marine life! 
         </p>
     </h3>
-    <a href="#OceanAlley">Ocean Alley</a>
-    <a href="#Cloudstry">Cloudstry</a>
-    <a href="#UnderwaterVilla">Underwater Villa</a>
+
+    <div id="ApartmentButtons">
+        <a href="#OceanAlley">Ocean Alley</a>
+        <a href="#Cloudstry">Cloudstry</a>
+        <a href="#UnderwaterVilla">Underwater Villa</a>
+        <a href="#Activity2">Activity</a>
+   
+    </div>
+    
     <div id="OceanAlley">
         <img width="400" height="290" src="Ocean Valley apartment buildings.png"> 
         <a href="Ocean Alley.html">Ocean Alley</a>
@@ -53,10 +63,36 @@
     <div id="UnderwaterVilla">
         <img width="400" height="290" src="Underwater Villa.jpg"> 
         <a href="Underwater Villa.html">Underwater Villa</a>
-        <h3>Underwater Villa is the name of the apartment buildings underwater. These buildings are ocated below
+        <h3>Underwater Villa is the name of the apartment buildings underwater. These buildings are located below
             the surface of the water. These apartments have a great view underwater of the protected marine life.
         </h3>
 
+    </div>
+
+    <div id="Activity2">
+        <h2>  Name a... </h2>
+        <h3>Name the celebrity that is on this page.</h3>
+       
+        <input id="userInput"> 
+        <button onclick="myFunction()"> Submit </button>
+       
+        <script>
+            var userInput = document.querySelector("#userInput")
+    
+        
+    
+            function myFunction() {
+                if (userInput.value == "Stormi Webster") {
+                    alert(" CONGRATS! You can now have a $10 off voucher if you buy an apartment over $3,800. ")
+                } else {
+                    alert("Sorry, try again.")
+                }
+             
+            }
+        
+            
+        </script>
+      
     </div>
 
     <h2> </h2>

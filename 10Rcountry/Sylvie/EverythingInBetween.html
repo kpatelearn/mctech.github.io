@@ -12,6 +12,7 @@
     body {
       margin: 20;
       font-family: 'Fraunces', serif;
+      background-color: #93D2EB;
     }
     .topnav {
       overflow: hidden;
@@ -46,6 +47,7 @@
       <a class="active" href="Accessories.html">Accessories</a>
       <a href="EverythingInBetween.html">Everything in between</a>
       <a href="History.html">History</a>
+      <a href="transport.html">Transport</a>
       <a href="Checkout.html">Checkout</a>
     </div>
 
@@ -130,27 +132,63 @@
     </div>
     
     <div class="topnav">
-      <a class="active" href="Bundles.html">Bundles</a>
+      <a class="active" href="EverythingInBetween.html">Bundles</a>
       <a href="LatteArt.html">Latte Art</a>
       <a href="Subscription.html">Coffee Subscription</a>
-      <a href="MYO.html">Make your own</a>
+      <a href="MakeYourOwn.html">Make your own</a>
+      <a href="Bean Roasting.html">Bean Roasting</a>
     </div>
     
-    <div class="row" text-align="center">
-      <div class="column">
-        <img src="OGBundle.png" width="400" height="650">
-        <button type="button" onclick="alert('Added to cart!')">Add to cart</button>
-      </div>
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+      }
       
-      <div class="column">
-        <img src="MATCHABundle.png" width="400" height="650">
-        <button type="button" onclick="alert('Added to cart!')">Add to cart</button>
-      </div>
+      .container img {
+        width: 100%;
+        height: auto;
+      }
       
-      <div class="column">
-        <img src="EVERYTHINGBundle.png" width="400" height="650">
-        <button type="button" onclick="alert('Added to cart!')">Add to cart</button>
-      </div>
+      .container .btn {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+      }
+      
+      .container .btn:hover {
+        background-color: black;
+      }
+      </style>
+      </head>
+      <body>
+
+            
+       <div class="column">
+          <img src="OGBundle.png" width="400" height="650">
+          <button type="button" onclick="alert('Added to cart!')">Add to cart</button>
+        </div>
+
+        <div class="column">
+          <img src="MATCHABundle.png" width="400" height="650">
+          <button type="button" onclick="alert('Added to cart!')">Add to cart</button>
+        </div>
+
+       <div class="column">
+         <img src="EVERYTHINGBundle.png" width="400" height="650">
+         <button type="button" onclick="alert('Added to cart!')">Add to cart</button>
+       </div>
 
 </body>
 </html>

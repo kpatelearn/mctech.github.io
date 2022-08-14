@@ -1,28 +1,40 @@
-h1{color:	#2a4d69;text-align: center; font-size: 50px; padding: 0px;}
+h1{color:	#2a4d69;text-align: center; font-size: 62px; padding: 0px;}
 h2{color: #e7eff6;text-align: center; font-size: 40px;}
-h3{color: #000000; font-size: 18px; padding-right: 10%; padding-left: 10%;}
+h3{color: #000000; font-size: 25px; padding-right: 10%; padding-left: 10% ; text-align:center ;}
 h4{color: #000000; font-size: 16px;}
 h5{color: #000000; font-size: 35px; }
 body {background-color: #adcbe3;}
+#logo{ text-align: center;}
+
 #navigator{background-color: #2a4d69; text-align: center; font-size: 35px; padding: 10px;}
+#AttractionsButtons{text-align: center;}
+#ApartmentButtons{text-align: center;}
 #OceanAlley{background-color: #7a9fbe; text-align: center; padding: 5%;}
 #Cloudstry{background-color: #497192; text-align: center;  padding: 5%;}
 #UnderwaterVilla{background-color: #244763; text-align: center;  padding: 5%;}
+#Activity2{background-color: #15344d; text-align: center;  padding: 5%;}
 #Cloudharvestingprogram{background-color: #7a9fbe; text-align: center; padding: 5%;}
 #AquariumObservatory{background-color: #497192; text-align: center; padding: 5%;}
 #SurfingLessons{background-color: #244763; text-align: center;  padding: 5%;}
 #Cleaning{background-color: #15344d; text-align: center;  padding: 5%;}
 #Activity{background-color: #7a9fbe; text-align: center;  padding: 5%;}
-#AquariumObservatory{background-color: #497192; text-align: center; padding: 5%;}
+#UnderwaterTravel{background-color: #497192; text-align: center; padding: 5%;}
+#SwimmingLessons{background-color: #244763; text-align: center;  padding: 5%;}
 #OceanAlleyGallery{text-align: center ;}
+#CloudstryGallery{text-align: center ;}
+#UnderwaterVillaGallery{text-align: center ;}
+#WelcomeGIF{text-align: center;}
 #Submit{background-color: #2a4d69; text-align: center; margin-right: 25%; margin-left: 25%; margin-top: 5%;}
 a{padding-left: 5%; padding-right: 5%;}
  
-.header img {
-  float: left;
-  width: 250px;
-  height: 250px;
-  padding-top: 52px;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  #2a4d69;
+  color: #e7eff6;
+  text-align:center;
 }
 
 
@@ -43,6 +55,10 @@ a:link, a:visited {
   html {
     scroll-behavior: smooth;
    }
+  
+  
+
+
 
   
 
