@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> what color should this page be ?</h1>
+  <style> h1 {color: #c8eabc;}</style>
+  <style> h1 {color: #d9d2e9;</style>
+    <input id="userInput"> 
+    <button onclick="myFunction()" >Click me</button> 
+    <button onclick="hello()">Hey there </button>
+
+    <script> 
+        var userInput = document.querySelector("#userInput") 
+
+        function hello() {
+        alert("hey there" + userInput.value)
+}
+
+         function myFunction() {
+            if (userInput.value == "vecna") {
+                alert("congratulations, you won a ticket to harry styles!!")
+            } else {
+               document.body.style.backgroundColor = userInput.value
+            }
+           
+         }
+
+    </script>
+</body>
+</html>
