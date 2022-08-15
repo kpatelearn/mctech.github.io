@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="home.html"> Home</a>
+        <a href="staff.html"> Staff</a>
+        <a href="About.html"> About</a>
+    
+    </div>
+    <div id="goback">
+      <button onclick="history.back()">Go Back</button>
+    </div>
+    <h1>Contact Form</h1>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="lastname" placeholder="@exarmple.com">
+    
+        <label for="country">Enroll</label>
+        <select id="country" name="country">
+          <option value="Student">Student</option>
+          <option value="Cleaner">Cleaner</option>
+          <option value="Staff">Staff</option>
+        </select>
+    
+        <label for="subject">Comments</label>
+        <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px"></textarea>
+
+        
+    </body>
+</form>
+<button onclick="myFunction()">Submit</button>
+
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "An email will be sent to you with all the nessasary information.";
+        }
+        </script>
+
+</html>

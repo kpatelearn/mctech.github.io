@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rules</title>
+</head>
+<body>
+    <div id="nav">
+        <a href="home.html"> Home</a>
+        <a href="staff.html"> Staff</a>
+        <a href="About.html"> About</a>
+    
+    </div>
+    <div id="goback">
+        <button onclick="history.back()">Go Back</button>
+      </div>
+    <h1> School rules:</h1>
+    <button onclick="typeWriter()">About</button>
+    <h2>
+    <p id="demo"></p>
+    
+    <script>
+    var i = 0;
+    var txt = ' We perfer to not have too many rules at schoolcity but we do have a few we encourage strongly on students';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script><h2>
+    <h1>No sleeping</h1>
+    <img src="tech sleeping photo.PNG" width="400" height="200">
+<h3>
+    We strongly encourage students to not sleep during class because they will have time to sleep during our main curriculum sleeping lions
+       
+</h3>
+    <h1>NO FEET.</h1>
+    <img src="rulesfoottech.png" width="400" height="200">
+  
+<h3>
+    No feet must NOT be seen during school hours. The dawgs must be neatly tucked away out of sight at all times. We provide clean and well cared for socks and shoes to provide protection of people not want to see the pups
+       
+</h3>
+    <h1> No bullying permitted</h1>
+    <img src="bullyingtech.jpg" width="400" height="200">
+    
+<h3>
+    No bullying is permitted. The school will deal with any bullying imediatly especialy if it includes revealing dawgs to students who dont want to see your feet.
+</h3>
+    <h1>Haircuts</h1>
+    <img src="rulesbowlcut.jpg" width="400" height="200">
+
+<h3>
+    We belive that you can have your hair however you like it beacause it dosnt effect your learning however we encourage very strongly that you make wise decisions about your cut
+</h3>
+        
+   
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleabout.css">
+    <title>About♡</title>
+</head>
+<body>
+    <div id="nav">
+        <a href="home.html"> Home</a>
+        <a href="staff.html"> Staff</a>
+        <a href="About.html"> About</a>
+    
+    </div>
+    <div id="goback">
+      <button onclick="history.back()">Go Back</button>
+    </div>
+    <h1> All about school city!</h1>
+
+</div>
+<h2>
+  Images of the school:
+</h2>
+    <h3>Image of the front of the school</h3>
+    <img src="school city -Tech.png" width="400" height="300">
+    <h3> Birds eye view of the school</h3>
+    <img src="photo tech1.png" width="400" height="300">
+    <h3>School bathrooms</h3>
+    <img src="bathroom tech.png" width="400" height="300">
+    <h3> School hallways</h3>
+    <img src="halways.png" width="400" height="300">
+    <h3>School classrooms</h3>
+    <img src="school tech class.PNG" width="400" height="300">
+  
+    <h1>
+        <a href="tech rules.html" target="_self">School rules</a>
+
+    
+
+<button onclick="typeWriter()">Information</button>
+<h3>
+  <p id="demo"></p>
+
+  <script>
+  var i = 0;
+  var txt = 'Here at school city we provide a wide curriculum focusing on gaining sleep. Sleeping lions is a practice we partake in and our main focus for our students to exel in. Sleeping lions is a very important subject which takes up a fair amount of our students day due to its importance.';
+  var speed = 50;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  </script>
+</h3>
+
+        <div class="row">
+          <div class="column" style="background-color:rgb(46, 49, 41);">
+            <h2>School sports</h2>
+            <p> <h3>Quiditch is one of our main sports which we focus on majorly. He belive that the benifits on playing quiditch effects out students possitivly and encourage everyone to try it out</h3>
+              <img src="quiditchtech.png" width="400" height="300"></p>
+          </div>
+          <div class="column" style="background-color:rgb(46, 49, 41);">
+            <h2>School curriculum</h2>
+            <p><h3>Here is an live image of students partaking in sleeping lions being supervised by the head princible.</h3>
+              <img src="sleepinglionstech.jpg" width="400" height="300"></p>
+          </div>
+    
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
