@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id= "kpTitle"> what is your name? </h1>
+    <input id="userinput" > <br> <br>
+    <button onclick="response()" >submit</button>
+    
+    <button onclick="hello()" >Click me</button>
+    <button onclick="color()" >color</button>
+    <button onclick="secret()" >secret</button>
+    <h1 id="message">   </h1>
+
+    <script>
+        
+        function response() {
+            var userInput = document.querySelector("#userInput")
+         messageSpace.innerHTML = "hello and welcome" + userInput.value
+       
+        }  
+        <script>
+        
+        function hello() {
+            alert("You clicked me")
+        }
+
+        function color() {
+            document.body.style.backgroundColor = "orange"
+        }
+    </script>
+</body>
+</html>
