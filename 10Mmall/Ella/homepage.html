@@ -18,11 +18,45 @@
   width: 600px;
   font-size: 110%;
    margin: auto;
-     
-     
-      
-  
+   
 }
+table, th, td {
+  border:1px solid #d3b997;
+  color: #d3b997;
+  width: 1400px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    
+}
+td, th {
+    background-color: #5c4e3c;
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    font-size: 110%;
+    color: #d3b997;
+}
+
+ th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #453a2c;
+    color: white;
+    color: #d3b997;
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+
   
 .text
 {font-family: Courier,monospace;}
@@ -195,6 +229,13 @@ img {vertical-align: middle;}
        <span class="dot"></span> 
        <span class="dot"></span> 
      </div>
+     <br>
+     <audio controls>
+      
+      <source src="tech music.mp3" type="audio/mpeg">
+  
+    </audio>
+    <br>
 <img src="visit sign.png" width="643" height="97" >
 <h2> we are located at 41 High Street in Hampton Hill dont forget to make a <a href="reservation.html">reservation</a> </h2>
 <br>
@@ -213,20 +254,34 @@ img {vertical-align: middle;}
   below is a list of our pricing for our differnt Experience if you have any questions please email pawsandcoffee@gmail.com
 </h2>
 <br>
-<div class="price">
-  <br>
-  <b> basic entry 10+</b> 
-<p>$20 </p>
+
 <br>
-<b>adoption room 5+</b>
-<p>$10</p>
-<br>
-<b>viewing/supervising</b>
-<p>$5</p>
+  <table>
+    <tr>
+      <th>entry type</th>
+      <th>age</th>
+      <th>price</th>
+    </tr>
+    <tr>
+      <td>general entry</td>
+      <td>10+</td>
+      <td>$20.00</td>
+    </tr>
+    <tr>
+      <td>adoption room</td>
+      <td>5+</td>
+      <td>$10.00</td>
+    </tr>
+    <tr>
+      <td> spectaker/viewer</td>
+      <td>0+</td>
+      <td>$5.00</td>
+    </tr>
+  </table>
 
-</div>
-
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593
+  Top</button>
+ 
 
 
 </body>
@@ -250,6 +305,25 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
 }
 
 

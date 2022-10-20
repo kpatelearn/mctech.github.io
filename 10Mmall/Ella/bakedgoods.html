@@ -8,9 +8,79 @@
 </head>
 <style>
 body {background-color: rgb(137, 118, 102); text-align: center;}
-   
+h1 {color: #423627; text-align: center;} 
+p {color: #423627; text-align: center;} 
+#vote {
+    text-align: center;
+    color: #423627;
+    font-size: 20px;
+    display: block;
+}
+
+.button {
+    border-color: #6e9ca6;
+    color: gray;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #d3b997;
+}
+
+input[type=text] {
+    border: 4px solid #d3b997;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
   
-  
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: rgb(179, 161, 147);
+}
+
+.price {
+  color: #d3b997;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #d3b997;
+  background-color: #423627;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.grid {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+}
+.card {
+  flex: 33.33%;
+  padding: 5px;
+}
+
 
 </style>
 
@@ -65,7 +135,78 @@ body {background-color: rgb(137, 118, 102); text-align: center;}
     
     </div>
     
+    <img src="baking sign.png" width="632" height="98">
     
+<br>
+<div class="grid">
+<div class="card">
+  <img src="baking box1.jpeg" alt="Denim Jeans" style="width:300px" style="height:300px" >
+  <h1>mystery baking box</h1>
+  <p class="price">$40.00</p>
+  <p>our mystery boxes come with a range of baked goods from out store, it is a great way to try new ones you havent tryed before or if you cant deside what to order</p>
+  <p><button onclick="location.href='checkout2.html'">buy now</button></p>
+</div>
+
+<div class="card">
+  <img src="baking box3.png" alt="Denim Jeans" style="width:300px" style="height:300px">
+  <h1>christmas mystery box</h1>
+  <p class="price">$40.00</p>
+  <p>our christmas mystery boxes come with a range of christmas themed baked goods from out store. this box makes a great christmas gift for your friends or yourself</p>
+  <p><button onclick="location.href='checkout2.html'">buy now</button></p>
+</div>
+
+
+
+<div class="card">
+  <img src="baking box5.jpeg" alt="Denim Jeans" style="width:100%">
+  <h1>brownie box</h1>
+  <p class="price">$20.00</p>
+  <p>our brownie boxs are a custermer faviote. whe you open the box you will see 6 differnt flavors of brownie all with differnt topping sauses etc its a great way to try new things and to get to eat more brownies cause why not</p>
+  <p><button onclick="location.href='checkout2.html'">buy now</button></p>
+</div>
+</div>
+
+<br>
+
+    </div>
+    <div id="vote">
+      <div id="news">
+        <h3>
+       WIN A FREE BOX
+        </h2>
+      </div>
+      <h2> to win a free box vote on your favourite below
+      </h2>
     
+      <input type="text" id="userInput" placeholder="Vote here...">
+      <button id="voteBtn" class="button" onclick="voteFunction()">Enter</button>
+     
+
+    </div>
+
 </body>
 </html>
+
+<script>
+
+  function voteFunction() {
+   if (userInput.value == "christmas mystery box"){
+     alert("your vote has been counted for christmas mystery box thank you")
+   } else if (userInput.value == "mystery baking box") {
+     alert("your vote has been counted for christmas mystery box thank you")
+    } else if (userInput.value == "brownie box") {
+     alert("your vote has been counted for brownie box thank you")
+   } else {
+     alert("Sorry you can not vote for that box  Check you have no capitals and spelt the name correctly")
+   }
+ }
+var input = document.getElementById("userInput");
+input.addEventListener("keypress", function(event) {
+if (event.key === "Enter") {
+event.preventDefault();
+document.getElementById("voteBtn").click();
+}
+});
+
+
+</script>
