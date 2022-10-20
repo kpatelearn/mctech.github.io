@@ -1,0 +1,147 @@
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,#b0dae5, #cbcc81);
+
+}
+ 
+  .header {
+    background-color:#cbcc81;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Amatic SC', serif;
+    font-size: 28px;
+    border-radius: 12px;
+    color: rgb(248, 248, 217);
+  }
+  
+  .flex-container{
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: left;
+    gap: 400px;
+    list-style: none;
+  }
+  .flex-item{
+    padding: 5px;
+    flex-basis: auto;
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 12px;
+  font-family: Shadows Into Light;
+  }
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(248, 248, 217);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 12px;
+    width: 20%;
+  }
+.topnav a:hover {
+  background-color:#cbcc81;
+    color: black;
+  }
+.middle {
+text-align: center;
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+ 
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    font-family: Bebas Neue;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  #whitefont{
+    color: #f2f2f2;
+  }
+
+
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+  a{
+    font-size: 150%;
+  }

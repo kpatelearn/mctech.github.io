@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family:cursive;">Welcome</h1>
+
+
+    <h2>Fill in the form below.</p>
+
+
+    <h3 id="meTitle">Write your name</h3>
+    <input id="response">
+    <button onclick="Welcome()" >Submit</button> 
+    
+    <button onclick="color()" >Color</button>
+    <button onclick="secret()">Secret</button>
+    <h3 id="message">  </h3>
+
+    <script>
+        function secret() {
+            var messageSpace = document.querySelector("#message")
+            messageSpace.innerHTML = "You are amazing"
+        }
+
+        function hello() {
+            alert("Hello")
+        } 
+
+        function color() {
+            document.body.style.backgroundColor = "lightblue"
+        }
+        
+        function Welcome() {
+            var response = document.querySelector("#response")
+            var messageSpace = document.querySelector("#message")
+            messageSpace.innerHTML = "Welcome " + response.value
+
+        }
+
+     </script>
+
+
+</body>
+</html>
