@@ -83,7 +83,7 @@ input[type=submit]:hover {
 <h1>Reviews Form</h1>
 <h3>Please rate your rockets trip throught our restaurant and we hope to see you soon!!</h3>
 <div class="container">
-  <form action="/action_page.php">
+  <form>
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -107,7 +107,13 @@ input[type=submit]:hover {
     <label for="subject">Your Review</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <button onclick="response()">Submit</button>
+    <script>
+       function response() { 
+  alert("Thank you for your review!!")
+} 
+</script>
+
   </form>
 </div>
 </body>
