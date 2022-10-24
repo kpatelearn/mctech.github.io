@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe De joy / Home</title>
+    <style>
+      body {text-align: center; background-color: #96613d;}
+        
+      nav {
+        list-style-type: none;
+        margin: 0
+        padding 0px;
+        overflow: hidden;
+        background-color: #432818
+      }
+     
+      nav {
+        float: right;
+      }
+     
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+     
+      nav a:hover:not(.active) {
+        background-color: #99582A;
+      }
+      
+      #about {text-align: center; color: black;background-color:burlywood;}
+      #survey {text-align: center; color: black;background-color:peru}
+    </style>
+    </head>
+</head>
+<body>
+  <nav>
+    <a href="menu.html">🥐Menu🥐</a>
+    <a href="lattedesigns.html">☕Latte Designs☕</a>
+    <a href="home.html">🏠Home🏠</a>
+    <a href="contact.html">📱Contact📞</a>
+    <a href="about.html">💬About💬</a>
+</nav>
+    
+    <H2>Welcome to.....</H2>
+    <h1>'CAFE DE JOY'</h1>
+    
+  <div id="about">
+    <h1>ABOUT ME!</h1>
+    <p>We are a small mini café that has foods/cuisines such as Egg Benedicts, Omelets, Hot Cocoa and more breakfast items. What is special and cool about this particular café which attracts many tourists is the self-order Kiosks where you can also order a latte with options of a simple to difficult design on top which mostly determines your price. It will mostly include a simple color e.g different shades of Brown or have several different colors that are pastel. The coffee tables are floating and have multiple plug sockets/outlets to plug your Phone Chargers or Laptop charges when doing work also with USBs if people don’t have Adapters for their phone chargers and such. Also have a logo and poster for advertisements, and you can also customize cups branded from there to fit your aesthetic. </p>
+  </div>
+
+    <div id="intro">
+      <h1>Cafe Photos</h1>
+      <img width="1100px" height="700" src="cafeentrance.jpg"> <br>
+      <img width="500px" height="310" src="cafeselfkiosks.jpg">
+      <img width="500px" height="310" src="cafe.webp">
+      <img width="400px" height="310" src="cafe2.jfif">
+  </div>
+
+    <h1>ADVERTISEMENTS</h1>
+    <h2>Poster & Business Card</h2>
+    <img width="900px" height="1100" src="cafedejoyposter.jpg"> <br>
+    <img width="1000px" height="600" src="cafedejoybusinesscard.jpg">
+    <h2>~ Contact & Opening times and more are/can be found in the 'Contact' Page ~</h2>
+
+<h1>INTERACTION BUTTONS</h1>
+
+
+
+<div id="survey">
+  <h1>Your Favourite Drink</h1>
+
+<h1 id="kpTitle" >What is your fav drink from which shop?</h1>
+    <input id="userInput" >    <br><br>
+    <button onclick="response()">Submit</button>
+
+
+    <br><br><br>
+    <p>Put down below your favourite drink from other stores so down below write down both the shop and chosen drink of yours and we will take this into consideration as a suggestion to put this into the menu</p>
+    <button onclick="hello()" >Click Me</button>
+    <button onclick="color()" >color</button>
+    <h1 id="message">  </h1>
+
+
+<script>
+console.log("Hello dear Customer or visitor from all around the world in Cafe De Joy");
+
+
+function hello() {
+    alert("Congratulations and a big thumbs for reading through the whole page and visiting our website")
+}
+
+
+function color() {
+    document.body.style.backgroundColor = "#d2a56d"
+}
+
+function response() {
+    var userInput = document.querySelector("#userInput");
+    var  messageSpace = document.querySelector("#message");
+
+
+    messageSpace.innerHTML = "Love your choice and drink including the store, would love to see more " + userInput.value
+}
+
+
+</script>
+</div>
+
+
+</body>
+</html>
