@@ -111,6 +111,11 @@
     flex-grow: 1;
 }
 
+.archive {
+    flex-grow: 1;
+    margin-top: 4%;
+}
+
 
 
 /*Button CSS */

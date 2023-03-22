@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="kpstyle.css">
-    <link rel = "icon" href = "images/dtLogo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="/kpstyle.css">
+    <link rel = "icon" href = "/images/dtLogo.png" type = "image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
     
     <title>Juniors</title>
 </head>
 <body>
     <div class="pageContainer">
         <div class="topnav" id="myTopnav">
-            <a href=index.html><span><i class="material-icons">home</i><span class="icon-text">&nbsp;&nbsp;Home</span></a>
-            <a href=juniors.html class="active"><span><i class="material-icons">people</i><span class="icon-text">&nbsp;&nbsp;Juniors</span></a>
-            <a href=seniors.html><span><i class="material-icons">school</i><span class="icon-text">&nbsp;&nbsp;Seniors</span></a>
-            <a href=house.html><span><i class="material-icons">sports_score</i><span class="icon-text">&nbsp;&nbsp;House Points</span></a>
+            <a href="/index.html"><span><i class="material-icons">home</i><span class="icon-text">&nbsp;&nbsp;Home</span></a>
+            <a href="/juniors.html" class="active"><span><i class="material-icons">people</i><span class="icon-text">&nbsp;&nbsp;Juniors</span></a>
+            <a href="/seniors.html" class="material-icons">school</i><span class="icon-text">&nbsp;&nbsp;Seniors</span></a>
+            <a href="/house.html"><span><i class="material-icons">sports_score</i><span class="icon-text">&nbsp;&nbsp;House Points</span></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -29,16 +29,15 @@
 
         <div class="second"> 
             <div class="secondLeft" id="year9">
-                <a href="year9.html" style="display:block; width:100%; height:100%;">
+                <a href="/archive/year9.html" style="display:block; width:100%; height:100%;">
                     <h1>Year 9</h1> 
                 </a> 
                 
             </div>
-        
-            <!-- <div class="secondMiddle" id="year9">
-                <a href="year9.html" style="display:block; width:100%; height:100%;">
-                    <h1>Year 9</h1> 
-                </a> 
+        <!--
+            <div class="secondMiddle">
+                <h1>Test</h1>
+            
             </div> -->
             
             <div class="secondRight" id="year10" >
@@ -51,18 +50,13 @@
         </div>
 
         <div class="third"> 
-            <div class="archive" id="archiveTile">
-                <a href="archive/juniors22.html" style="display:block; width:100%; height:100%;">
-                    <h1>2022</h1> 
-                </a> 
-            </div>
         </div>
 
     </div>
 
     <style>
         #year9 {
-            background-image: url("images/mc23.png"); 
+            background-image: url("images/minecraft.jpg"); 
             text-shadow: 2px 2px #121311; 
             border-color: black; 
             border-style: solid; 
@@ -70,25 +64,14 @@
             margin-right: 6%;
         }
         #year10 {
-            background-image: url("images/ten23.png"); 
+            background-image: url("images/planet.jpg"); 
             text-shadow: 2px 2px #121311; 
             border-color: black; 
             border-style: solid; 
             margin-left: 6%; 
             margin-right: 6%;
         }
-        #archiveTile {
-            background-color: #003366; 
-            text-shadow: 2px 2px #121311; 
-            text-align: center;
-            border-color: black; 
-            border-style: solid; 
-            margin-left: 20%; 
-            margin-right: 20%;
-        }
-        a {color: #ffffff;}
-
-        a:visited {
+        .secondRight a:visited {
             color: #ffffff;
         }
     </style>

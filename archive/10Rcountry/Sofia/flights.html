@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Book a flight!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/x-icon" href="earth-removebg-preview.png"
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
+.myLink {display: none}
+</style>
+</head>
+<body class="w3-white">
+
+<div class="w3-bar w3-light-pink w3-border-bottom w3-xlarge">
+  <a href="flights.html" class="w3-bar-item w3-button w3-text-pink w3-hover-blue"><b><i class="fa fa-plane w3-margin-right"></i>Kidtropolis Flights!</b></a>
+  <a href="History.html" class="w3-bar-item w3-button w3-text-pink w3-hover-blue"><b><i class="w3-margin-right"></i>History</b></a>
+  <a href="Lifestyle.html" class="w3-bar-item w3-button w3-text-pink w3-hover-blue"><b><i class="w3-margin-right"></i>Lifestyle</b></a>
+  <a href="Accomodation.html" class="w3-bar-item w3-button w3-text-pink w3-hover-blue"><b><i class="w3-margin-right"></i>Accommodation</b></a>
+  <a href="Index.html" class="w3-bar-item w3-button w3-text-pink w3-hover-blue"><b><i class="w3-margin-right"></i>Return to Home</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-pink w3-text-whitek"><i class="fa fa-search"></i></a>
+</div>
+
+
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="background.png" alt="Kidtropolis" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-blue">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button>
+    </div>
+
+ 
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Travel Kidtropolis now!</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half">
+          <label>From</label>
+          <input class="w3-input w3-border" type="text" placeholder="Departing from">
+        </div>
+        <div class="w3-half">
+          <label>To</label>
+          <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+        </div>
+      </div>
+      <p><button class="w3-button w3-pink">Search and find dates</button></p>
+    </div>
+
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find the best hotels</h3>
+      <p>Book a hotel with us and get the swaggiest Accommodation & food! </p>
+      <p>WHAT ARE YOU WAITING FOR, COME TO KIDTROPOLIS!</p>
+      <p><button class="w3-button w3-pink">Search Hotels</button></p>
+    </div>
+
+    <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Best cars in the whole wide world!</h3>
+      <p><span class="w3-tag w3-pink">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with Kiddiecars</p>
+      <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
+      <p><button class="w3-button w3-pink">Search Availability</button></p>
+    </div>
+  </div>
+</header>
+
+
+<div class="w3-content" style="max-width:1100px;">
+
+ 
+  <div class="w3-container w3-margin-top">
+    <h3>Super duper offers on right now!</h3>
+    <h6>Up to <strong>50%</strong> discount.</h6>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="rollercoaster2.png" alt="Kiddiecoaster" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Kiddiecoaster</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="playgroundd.jpg" alt="Playground" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Kidtropolis Playground</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="candyland.jpg" alt="Candyland" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Candyland</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="fairy.jpg" alt="Fairy city" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Fairy City, you can live with fairies!</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="lions.png" alt="Kidtropolis Zoo park!" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding"> Zoo park!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="w3-container">
+    <h3>Explore Kidtropolis</h3>
+    <p> Endless fun is waiting for you!</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <img src="kiddiecastle.jpg" alt="Fairy princess castle!" style="width:100%">
+      <div class="w3-container w3-purple">
+        <h3>Fairy princess castle!</h3>
+        <p class="w3-opacity">Guided tour from $30!</p>
+        <p> Touring Fairy princess castle is a once in a lifetime experience!</p>
+        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <img src="kiddiecars.png" alt="Kiddiecar racing" style="width:100%">
+      <div class="w3-container w3-blue">
+        <h3>Kiddiecar racing!</h3>
+        <p class="w3-opacity">Super duper fun racing only $20 per person!</p>
+        <p>Put yout helmet on and get racing with Kiddiecar racing!</p>
+        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-green w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join the little pumpkin newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-pink w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+  
+  
+  <div class="w3-container w3-pink" >
+    
+    <h2>Contact</h2>
+    <p>Let Kidtropolis flights, book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Kidtropolis, Tenarvia<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 123321<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: kingsausage@gagacloud.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+      <p> We'll get back to you ASAP, pinky promise! </p>
+    </form>
+  </div>
+  
+
+</div>
+
+
+
+</footer>
+
+<script>
+
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-pink";
+}
+
+
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
