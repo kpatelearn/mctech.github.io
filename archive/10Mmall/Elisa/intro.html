@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="EsTitle"> What is your name ? </h1>
+    <input id="userInput">  <br>
+    <button onclick="response()"> Submit </button>
+
+    <br> <br> <br>
+    <button onclick="hello()" > Click Me</button>
+    <button onclick="color()">Color</button>
+    <button onclick="secret()"> Secret</button>
+    <h1 id="message"> </h1>
+
+
+<script>
+    function secret(){
+        var messageSpace = document .querySelector("#message")
+        messageSpace.innerHTML = "take a shower"
+    }
+
+    console . log ("Hello World")
+
+
+    function hello() {
+        alert("You clicked me ")
+    }
+function color () {
+    document.body. style .backgroundColor = 'pink'
+}
+
+function response() {
+    var userInput = document. querySelector("#userInput");
+    var messageSpace = document .querySelector("#message")
+
+    messageSpace.innerHTML = "Hello and welcome " + userInput.value
+}
+
+</script>
+</body>
+</html>

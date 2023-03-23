@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpeg" />
+    <title>Comedy Movies</title>
+    <link rel="stylesheet" href="Comedy.css">
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Amatic SC">
+    
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Shadows Into Light">
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    
+</head>
+<body id="grad1" onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+ <div class="header">
+        <ul>
+         <div class="flex-container"> 
+
+         <li class="flex-item"><img src="Off Movies-logos.jpeg" style="width:150px"></li>
+
+         <li class="flex-item"><h1>Comedy movies</h1>
+           <h4>find a good laugh!</h4>
+         </li>
+         </div>
+        </ul>
+      
+ </div>
+     
+     <div class="topnav">
+       <a href="Index.html">Home</a>
+       <a href="AllMvs.html">All</a>
+       <a href="ComedyMvs.html">Comedy</a>
+       <a href="AdventureMvs.html">Adventure</a>
+       <a href="HorrorMvs.html">Horror</a>
+     </div>
+
+<br>
+<br>
+     <div class="row">
+      <div class="column 1 ">
+        <div class="content">
+          <img src="../comedyimgs/rat.jpg" alt="Car" style="width:100%"  onclick="hello()">
+          <h4>Ratatoing</h4>
+
+        </div>
+      </div>
+      <div class="column 1 ">
+        <div class="content">
+        <img src="../comedyimgs/jesus.jpg" alt="Car" style="width:100%"  onclick="hello()">
+          <h4>Finding Jesus</h4>
+
+        </div>
+      </div>
+      <div class="column 1">
+        <div class="content">
+        <img src="../comedyimgs/jesus2.jpg" alt="Car" style="width:100%" onclick="hello()">
+          <h4>Finding Jesus 2</h4>
+
+        </div>
+      </div>
+
+      <div class="column 1">
+        <div class="content">
+        <img src="../comedyimgs/toes.jpg" alt="Car" style="width:100%" onclick="hello()">
+          <h4>Tappy Toes</h4>
+
+        </div>
+      </div>
+
+      <div class="column 1">
+        <div class="content">
+        <img src="../comedyimgs/bee.jpg" alt="Car" style="width:100%" onclick="hello()">
+          <h4>Plan BEE</h4>
+
+        </div>
+      </div>
+      </div> 
+
+
+
+      <div class="row">
+        <div class="column 2 ">
+          <div class="content">
+            <img src="../comedyimgs/chop.jpg" alt="Car" style="width:100%" onclick="hello()">
+            <h4>Chop Kick Panda</h4>
+  
+          </div>
+        </div>
+        <div class="column 2 ">
+          <div class="content">
+          <img src="../comedyimgs/frozen.jpg" alt="Car" style="width:100%" onclick="hello()">
+            <h4>Frozen land</h4>
+  
+          </div>
+        </div>
+        <div class="column 2">
+          <div class="content">
+          <img src="../comedyimgs/kiara-the-brave.png" alt="Car" style="width:100%" onclick="hello()">
+            <h4>Kiara The Brave</h4>
+  
+          </div>
+        </div>
+  
+        <div class="column 2">
+          <div class="content">
+          <img src="../comedyimgs/leothelionkingofthejungle.jpg" alt="Car" style="width:100%" onclick="hello()">
+            <h4>Leo the king of the jungle</h4>
+  
+          </div>
+        </div>
+  
+        <div class="column 2">
+          <div class="content">
+          <img src="../comedyimgs/penocchio.jpg" alt="Car" style="width:100%" onclick="hello()">
+            <h4>penocchio</h4>
+  
+          </div>
+        </div>
+        </div> 
+
+        <div class="row">
+          <div class="column 3 ">
+            <div class="content">
+              <img src="../comedyimgs/thefrogprince.jpg" alt="Car" style="width:100%" onclick="hello()">
+              <h4>The frog prince</h4>
+    
+            </div>
+          </div>
+          <div class="column 3 ">
+            <div class="content">
+            <img src="../comedyimgs/thelittlemermaid.jpg" alt="Car" style="width:100%" onclick="hello()">
+              <h4>The little mermaid</h4>
+    
+            </div>
+          </div>
+          <div class="column 3">
+            <div class="content">
+            <img src="../comedyimgs/whatsup.jpg" alt="Car" style="width:100%" onclick="hello()">
+              <h4>Whats up?</h4>
+    
+            </div>
+          </div>
+          </div> 
+
+
+
+
+
+
+
+
+
+      <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+
+        function hello(){
+           alert("Movie successfully downloaded!");
+        };
+        </script>
+
+
+
+
+</body>
+</html>

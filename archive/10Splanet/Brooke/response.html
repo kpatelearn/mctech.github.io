@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1> what is your name?</h1>
+<input id="UserInput"> 
+<button onclick="hello()"> SUBMIT </button>
+<h1 id= "response"> </h1>
+
+<style> 
+
+body {text-align: center; background-color: yellowgreen ;}
+
+</style>
+
+<script> 
+
+var user = document.querySelector("#UserInput");
+var response = document.querySelector ("#response")
+function hello() {
+response.innerHTML = "hey there " + user.value
+}
+
+</script>
+
+
+</body>
+</html>

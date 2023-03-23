@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchy Website</title>
+</head>
+<body>
+    
+  <style>
+    body {font-family:Georgia, 'Times New Roman', Times, serif}
+        
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(36, 35, 35, 0.966);
+      overflow-x: hidden;
+      transition: 0.75s;
+      padding-top: 60px;
+      }
+        
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #8f8b8b;
+      display: block;
+      transition: 0.3s;
+      }
+        
+    .sidenav a:hover {color: #896492;}
+        
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    body {border-style: solid; border-color: #d1b1dd; border-width: 10px;}
+    h1 {text-align: center; background-color: #c89fd8b6;}
+    #audio {text-align:center;}
+    #MyImage {text-align: center;}
+    h2 {text-align: end;}
+    body {background-image: url(ezgif.com-gif-maker.gif);}
+    h3 {text-align: center; color: #332836;}
+    span {background-color: #c89fd8b6;}
+    button {color: #332836;}
+    #SecondImage {text-align: center; filter: saturate(85%);}
+        
+    </style>
+        
+    <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="Index.html">Go Back</a>
+       <a href="Gallery.html">Gallery</a>
+       <a href="Society.html">The Society</a>
+       <a href="Enviroment.html">The Enviroment</a>
+       <a href="Morals.html">Morals</a>
+       <a href="Credits.html">Credits</a>
+    </div>
+        
+    <h4> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; contents</span> </h4>
+        
+    <script>
+    
+     function openNav() {document.getElementById("mySidenav").style.width = "275px";}
+     function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+        
+    </script>
+    
+    
+    <div id="audio">
+       <audio controls autoplay>
+          <source src="Q2GGW96-horse-whinny.mp3" type="audio/ogg">
+          <source src="Q2GGW96-horse-whinny.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <h1> You have entered Rotopia <span style='font-size:45px;'>&#9790;</span> </h1>
+
+    <div id="MyImage">
+      <img width=1050 height=600 src="Moose.jpg" img>
+      <h1> What is your name fellow citizen? </h1>
+      <input id="username"> <br>
+      <button onclick="MyFunction()"> ENTER </button>
+      <h3 id="RESPONSE"></h3>
+      
+      <script>
+        var UsersName = document.querySelector("#username")
+        var response = document.querySelector("#RESPONSE");
+        function MyFunction() {
+          response.innerHTML = "Hallor there " + UsersName.value + " you are now a part of the sacred Giraffes please play the audio at the top again to complete the ritual. But anyways...";
+        }
+      </script>
+    </div>
+
+    <h3> 
+      Welcome to Rotopia. A place where there are no limits with imagination. Rotopia is a safe mindspace where it relies on your imagination,
+      your brain, your personality and your wants. Rotopia is a planet that is my home. There are certain boundaries to keep the beautiness of certain living
+      things alive, in the centre there is a city where there are festivities and gatherings but other than that there are also endless designs of houses. On this
+      website I will be showing the environment, population, some morals and photos. My planet as you know is named Rotopia. I got this name from merging Rosanna/Randinie
+      with Utopia. Hence the Ro in Rotopia. As you can see Rotopia is a purple hemisphere because I like the colour purple. I read somewhere that purple can stand for wisdom,
+      bravery and spirituality. Also can express sadness and frustration.  
+    </h3>
+    <div id="SecondImage">
+      <img width=1050 height=600 src="Rainbow.jpg">
+    </div>
+
+</body>
+</html>

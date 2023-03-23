@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-xxlarge" style="width:70px">
+        <a href="Homepage.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a> 
+        <a href="Searchpage.html" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a> 
+        <a href="Aboutpage.html" class="w3-bar-item w3-button"><i class="fa fa-info"></i></a> 
+        <a href="Globepage.html" class="w3-bar-item w3-button"><i class="fa fa-map"></i></a> 
+      </div>
+      
+      <div style="margin-left:70px">
+      <div class="w3-container">
+
+    <h1>Medoran Chronicles Series</h1>
+    <p>(Hover over the images)</p>
+    <p>My Planet was inspired by the book series 'The Medoran Chronicles' by Lynette Noni. The series contains 5 Books - Akarnae, Raelia, Draekora, Graevale and Vardesia - There is also an extra book called 'We three heroes'. The author has also written a Medoran Chronicles short story in 2 parts titled 'A VERY MEDORAN KALDORAS'.</p>
+    
+
+    <div class="gallery">
+        <div class="image-box">
+            <img src="Book1.png">
+        </div>
+        <div class="image-box">
+            <img src="Book2.png">
+        </div>
+        <div class="image-box">
+            <img src="Book3.jpg">
+        </div>
+        <div class="image-box">
+            <img src="Book4.jpg">
+        </div>
+        <div class="image-box">
+            <img src="Book5.jpg">
+        </div>
+    </div>
+
+
+    <style>
+        .w3-sidebar { color:whitesmoke; background-color: #374757;}
+        h1 {color:#374757; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: 4px 4px #fac492;}
+        p {text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; font-style: italic;}
+        p {color:#374757; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;}
+        body {background-color:bisque;}
+        #image {text-align: center;}
+        .gallery {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            margin: 5% auto 0;
+            box-sizing: border-box;
+        }
+        .image-box {
+            margin: 0 1%;
+            flex-grow: 1;
+            flex-basis: 0;
+            transition: .5s;
+        }
+        .image-box img {
+            width: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .image-box:hover {
+            flex-basis: 10%;
+        }
+
+
+    </style>
+
+</body>
+
+</html>

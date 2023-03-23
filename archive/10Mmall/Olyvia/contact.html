@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe De Joy / Contacts</title>
+    <style>
+    body {text-align: center; background-color:rgb(97, 55, 21);}
+
+        nav {
+        list-style-type: none;
+        margin: 0
+        padding 5px;
+        overflow: hidden;
+        background-color: #432818
+      }
+     
+      nav {
+        float: right;
+      }
+     
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+     
+      nav a:hover:not(.active) {
+        background-color: #99582A;
+      }
+      h1 {background-color: rgb(255, 155, 88);}
+      h2 {background-color:rgb(49, 24, 3);}
+    
+    #moreinfo {text-align: center; color: black;background-color:rgb(255, 174, 93)}
+    #contact {text-align: center; color: black;background-color:rgb(196, 108, 21)}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="menu.html">🥐Menu🥐</a>
+        <a href="lattedesigns.html">☕Latte Designs☕</a>
+        <a href="home.html">🏠Home🏠</a>
+        <a href="contact.html">📱Contact📞</a>
+        <a href="about.html">💬About💬</a>
+    </nav>
+
+    <h1>CONTACTS LIST & UPDATES</h1>
+    <img width="1100px" height="1400" src="cafeupdatesandcontacts.jpg"> <br><br><br>
+    <h2>Ways you can contact us on can be found on our Business Cards, here on our website and on flyers around your local areas around yabadabadoo street! :) </h2>
+    <img width="1500px" height="800" src="cafedejoybusinesscard.jpg"> 
+    <p>Here is a personalised list of accounts through many/several of Social Media accounts you can contact us through and so therefore the links of the social media platforms as well can be found below along the name of the accounts of ours to find</p>
+
+<div id="div1" >
+        <a href="https://www.instagram.com/" > Instagram📷 ~  @Cafe_De_Joy_777</a> <br><br>
+        <a href="https://twitter.com/" > Twitter📷 ~ @CafeDeJoyLife</a> <br><br>
+        <a href="https://www.pinterest.nz/" > Pinterest📷 ~ @Aesthetic1Pleaseness2CafeDeJoyLife3</a> <br><br>
+        <a href="https://www.mail.com" > Gmail📷 ~ Cafe.DeJoy@gmail.com</a> <br><br> 
+    <h2>64+ 316 545 162</h2>
+</div>
+    
+    <h2>Photos of our Flyers to find around your area similar to a 🔍'Scavenger Hunt as well as a special discount code being on the back of the flyers' and also on bilboards as well🔍</h2>
+    <h1> 😁FIRST COME FIRST SERVE 😁</h1>
+    <img width="500px" height="400" src="editedflyerpole.jpg">
+    <img width="200px" height="400" src="editedflyerpole2.jpg">
+    <img width="300px" height="400" src="editedflyerpole3.jpg">
+    <img width="500px" height="400" src="editedflyerpole4.jpg">
+    <img width="500px" height="400" src="editedflyerpole5.jpg">
+
+<div id:="moreinfo">
+    <h1>MORE INFO:</h1>
+    <img width="800px" height="950" src="opentime.jpg">
+    <img width="1400px" height="1200" src="newcoffeephonealert.jpg">
+</div>
+
+<div id="contact">
+    <h1>CONTACT US!!!</h1>
+  
+  <h1 id="kpTitle" >What is your form of Contact and email?</h1>
+      <input id="userInput" >    <br><br>
+      <button onclick="response()">Submit</button>
+  
+  
+      <br><br><br>
+      <p>Put down below your email and form of contact through several social media platforms such as Instagram, Twitter and more if you want to book a table, report an issue and others</p>
+      
+      <button onclick="hello()" >Click this button</button>
+      <button onclick="color()" >color</button>
+      <h1 id="message">  </h1>
+  
+  <script>
+console.log("Thank you for trying to contact us, keep going");
+
+
+function hello() {
+    alert("Congratulations for being the 12,548th customer today visiting our dear website")
+}
+
+
+function color() {
+    document.body.style.backgroundColor = "#d2a56d"
+}
+
+function response() {
+    var userInput = document.querySelector("#userInput");
+    var  messageSpace = document.querySelector("#message");
+
+
+    messageSpace.innerHTML = "Thx for sending us your email and be sure to follow us on all platforms ,user " + userInput.value
+}
+
+
+  </script>
+  </div>
+
+</body>
+</html>

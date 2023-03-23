@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazzleDazzle</title>
+</head>
+<ul>
+    <li><a class="active" href="home.html">home💚</a></li>
+    <li><a href="Dinerinfo.html">Party infomation💚</a></li>
+    <li><a href="Activites.html">Activties💚</a></li>
+    <li><a href="Workers.html">workers💚</a></li>
+    <li><a href="photos.html">photos💚</a></li>
+
+  </ul>
+<style> 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(237, 162, 223);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(176, 214, 199);
+}
+
+
+h1{text-align: center;}
+h2{ color:#65af65}
+body { background-color:#e5b8cc ;text-align: center;} 
+h1{ color:#4bb576}
+h2 { text-align: center;}
+h1{ color:#4bb576}
+p.solid {border-style: solid; border-color:#4bb576 ;}
+h1{ color:#4bb576}
+h4 {color: #d382c9;}
+</style>
+<body>
+    <p class="solid"></p>
+  <h1> WELCOME TO RAZZLE DAZZEL CITY!</h1>   
+<h2> WE HAVE RETRO THEMED HOMES, DINERS, ARCADES AND ROLLING RANKS</h2>
+<p class="solid"></p>
+<p class="solid"></p>
+
+
+<img width="350" hight="350"  src= "music.webp" >
+<img src="retro.jpg" width="450" height= "500">
+<img src="coffee.jpeg" width="450" height="500"> 
+<p class="solid"></p>
+<h4> Find the theme of my site and see if you win a prise!</h4>
+<input id="userInput">
+
+<button onclick="myFunction()">click me</button>
+<script>
+ function myFunction() {
+        if (userInput.value == "retro") {
+            alert ("Congrats! you won a free meal at the diner!")
+        } else {
+            document.body.style.backgroundColor = userInput.value
+        }
+    
+    }
+    
+    </script>
+
+
+
+
+</body>
+</html>`

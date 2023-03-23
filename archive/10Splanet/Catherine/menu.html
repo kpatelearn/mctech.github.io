@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu Page </title>
+    <script src="https://kit.fontawesome.com/7731667a9e.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <div class="topnav">
+        <a class="active" href="index.html"> <i class="fas fa-home-lg"></i>  Home</a>
+        <a href="menu.html"> <i class="fas fa-utensils"></i> Menu </a>
+        <a href="areas.html"> <i class="fas fa-running"></i> Areas </a>
+        <a href="facilities.html"> <i class="fas fa-restroom"></i> Facilities </a> 
+        <a href="kitchen.html"> <i class="fas fa-seedling"></i> Kitchen </a>
+        <a href="aboutus.html"> <i class="fas fa-heart"></i> About Us </a>
+     
+      </div>
+      
+      <div style="padding: left 16px;">
+        
+      </div> <br>
+
+      <img width="920" height="1100"  src="menunew.png">
+
+      <br> <br>
+
+    <img width="520" height="700" src="cupposter.jpg.png">
+    <img width="520" height="700" src="balloonmenu.jpg.jpg">
+<br> <br> 
+
+
+<button class="w3-button w3-lime" onclick="hello()">   Enter Name  </button> <br> <br>
+<input id="userinput"> 
+<h1 id="Response">   </h1>
+
+
+<br>
+
+<style>
+
+button {color: #65743a; border-color: #65743a;}
+
+.w3-button {width:150px;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; background-color: #65743a; text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 21px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Times New Roman";
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #243E36;
+}
+
+.topnav a.active {
+  background-color: #65743a;
+  color: white;
+}
+
+h1 {color: #FFF951; text-align: center; font-size: 35px; font-family: "Times New Roman" ;}
+
+</style>
+
+<script> 
+
+    var user = document.querySelector("#userinput")
+    var Response = document.querySelector("#Response")
+    
+    function hello() {
+    
+    Response.innerHTML =
+ "Congratulations you have been enertered into The Little Eatery's Monthly raffle prize competition! On the last friday on this month please call one of our staff members or check our website and find out if YOU are the lucky winner. Good Luck  " +  user.value 
+    
+    }
+    
+    </script>
+
+</body>
+</html>

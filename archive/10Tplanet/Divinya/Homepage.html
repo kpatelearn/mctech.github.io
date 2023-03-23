@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-xxlarge" style="width:70px">
+  <a href="Homepage.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a> 
+  <a href="Searchpage.html" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a> 
+  <a href="Aboutpage.html" class="w3-bar-item w3-button"><i class="fa fa-info"></i></a> 
+  <a href="Globepage.html" class="w3-bar-item w3-button"><i class="fa fa-map"></i></a> 
+</div>
+
+<div style="margin-left:70px">
+
+<div class="w3-container">
+
+  <h1>MEDORA 3D</h1>
+  <p>(Hover over the images)</p>
+  <p>This Website was inspired by the book series 'The Medoran Chronicles'. This website contains 3D models of different places in the Medoran chronicles. The images below show the Author and the main setting in the book. Learn more about the books on the information page and on the official Lynette Noni website... https://lynettenoni.com/.</p>
+
+  <div class="gallery">
+    <div class="image-box">
+      <img width="900" height="300" src="Author.png">
+  </div>
+    <div class="image-box">
+        <img width="900" height="300" src="akarnae academy.jpg">
+    </div>
+    <div class="image-box">
+        <img width="900" height="300" src="OFFICIAL-MEDORA-MAP.jpg">
+    </div>
+</div>
+
+    <style>
+        .w3-sidebar { color:whitesmoke; background-color: #374757;}
+        body {background-color: #FFC9C9;}
+        h1 {text-align: center; color: #374757; font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: 4px 4px #dcc6b1;}
+        p {text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; font-style: italic;}
+        #image {text-align: center;}
+        .gallery {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            margin: 5% auto 0;
+            box-sizing: border-box;
+        }
+        .image-box {
+            margin: 0 1%;
+            flex-grow: 1;
+            flex-basis: 0;
+            transition: .5s;
+        }
+        .image-box img {
+            width: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .image-box:hover {
+            flex-basis: 10%;
+        }
+    </style>
+      
+</body>
+</html>

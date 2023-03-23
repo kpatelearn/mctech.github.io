@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fluffy Cow</h1>
+    <p>By Charlotte</p>
+
+    <style>
+    h1{color: rgb(255, 255, 255);}
+    p{color:rgb(251, 251, 251);}
+
+    body{background-color: #f99575; text-align:center;}
+    </style>
+
+    <img src="fluffy cow.jpg" width="500px" height="580"> <br>
+
+    <h1>Shaggy yack</h1>
+    <img src="Shaggy yack.jpg" width="500" height="430"> <br>
+
+    <h1>Fluffy cows video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jub5Z6DMc7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <h1>CLICK, click me</h1>
+    <button onclick="hello()" >click me</button>
+    <button onclick="secret()" >Secret, now scroll</button>
+    <h1 id="message">  </h1>
+
+    <script>
+        function secret() {
+            var messageSpace = document.querySelector("#message")
+            messageSpace.innerHTML = "Strawberry milk"
+            document.body.style.backgroundColor = "pink"
+        }
+        
+        function hello() {
+            alert("What is a cows favourite drink, click the secret button to find out")
+        }
+
+    
+    </script>
+</body>

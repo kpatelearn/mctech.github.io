@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The View Hotel</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-right">
+        <a href="Index.html">Home Page</a>
+        <a href="Rooms_SectionA.html">Rooms (A)</a>
+        <a href="Rooms_SectionB.html">Rooms (B)</a>
+        <a href="Gym.html">Gym</a>
+        <a href="Restaurant.html">Restaurant</a>
+        <a href="Roof_Top.html">Roof Top</a> 
+        <a href="Bookings.html">Bookings</a> 
+        </div> <br> <br>
+
+        <div>
+            <h1>
+                <img width="355" height="345" src="logo_with_slogan.jpg"> <br>
+                Welcome to The View Hotel Website <br> <br>
+            </h1>   
+        </div>
+
+        <div class="container">
+            <img src="Entry.png" alt="Testing" style="width: 1150px; height: 605px;">
+            <div class="content">
+              <h5>Entrance</h5>
+            </div>
+        </div>
+
+        <div>
+            <h2>
+                <br> Photos of the hotel <br> <br> 
+            <p>
+                <img width="625" height="355" src="Entrance1.png">
+                <img width="625" height="355" src="Entrance3.png"> <br>
+                <img width="625" height="355" src="Entrance2.png"> 
+                <img width="625" height="355" src="Pond.png"> <br> <br>
+            </p>
+        </div>
+        
+        <div>
+            <h2>
+                <br> Current Changes on the Hotel<br> <br>
+                <p>
+                    Recently there has been some renovations happen to the hotel. <br>
+                    More greenery has been added around the plot, Roof Top changes, and the back of the hotel has been modified. <br> <br> <br>
+                </p>
+            </h2>
+        </div>
+
+        <div>
+            <h4> Be in to win a free stay at The View Hotel <br> Enter your name, if you win we will tell you to contact us</h4>
+            <input id="UserInput">
+            <button onclick="hello()">Submit</button>
+            <h4 id="Response"></h4>
+        </div>
+    
+
+   
+    <style> 
+        * {box-sizing: border-box;}
+       
+        body {  margin: 0; font-family: Macondo; text-align: center;}
+       
+        .header {overflow: hidden;   background-color: #883b3b;  padding: 3px 3px; }
+       
+        .header a {float: left;  color: #000000 ;text-align: center; padding: 15px; text-decoration: none; font-size: 23px; line-height: 23px; border-radius: 4px;}
+       
+        .header a:hover { background-color: #722c2c; color: black; }
+       
+        .header-right {  float: right;}
+
+        h1 {text-align: center; font-size:xx-large; font-family: Macondo; background-color: white;}
+        h2 {text-align: center; font-size:xx-large; font-family: Macondo; background-color: white;}
+        h3 {text-align: center; font-size:larger; font-family: Macondo; background-color: white;}
+        h4 {text-align: center; font-size:larger; font-family: Macondo; background-color: #883b3b;}
+        h5 {text-align: center; font-size:xx-large; font-family: Macondo;}
+        p {text-align: center; font-size:x-large; font-family: Macondo; background-color: white;}
+        img {padding-bottom: 5px; padding-top: 5px ; padding-left: 3px; padding-right: 3px;}
+
+        .container {
+            position: relative;
+            max-width: 1150px; /* Maximum width */
+            margin: 0 auto; /* Center it */
+          }
+          
+          .container .content {
+            position: absolute; /* Position the background text */
+            bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+            color: #000000; /* Grey text */
+            width: 1150px; /* Full width */
+          }
+    </style>
+
+    <script>
+        var user = document.querySelector("#UserInput");
+        var response = document.querySelector("#Response");     
+       
+        function hello() {
+            response.innerHTML = "Hey there, " + user.value + ", lucky you, you just won the free stay at The View Hotel. You can contact us at TheViewHotel@gmail.com with proof and we will book your stay."
+        }
+    </script>   
+
+</body>
+</html

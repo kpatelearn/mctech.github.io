@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Parelle Home</title>
+</head>
+
+<body>
+    <h1>Parelle</h1>
+
+    <nav class="navbar">
+        <a href="Index.html" class="Home">Home</a>
+        <a href="About.html" class="About">About</a>
+        <a href="Gallery.html" class="Gallery">Gallery</a>
+    </nav>
+
+    <br>
+    <img src="planet.jpg" class="image">
+    <br><br><br>
+
+
+    <h3>~ WHAT IS YOUR NAME? ~</h3> 
+    <input id="name" > 
+    <button onclick="namefunction()">Submit</button>
+    <h3 id="response"></h3>
+
+
+    <style>
+        h1 {color:white;text-align: center;}
+        h3 {color: white;text-align: center;}
+        h1 {font-family: Georgia, 'Times New Roman', Times, serif;}
+        h3 {font-family:monospace;}
+        body {background-color:cadetblue;}
+        .image {
+             display: block; 
+             margin-left: auto;
+             margin-right: auto;
+             width: 50%;
+            }
+        #video {
+            text-align: center;
+            display: block; 
+             margin-left: auto;
+             margin-right: auto;
+             width: 1000px;
+             height: 500px;
+            }
+        .navbar {
+            background-color: whitesmoke;
+            display: block; 
+             margin-left: auto;
+             margin-right: auto;
+            height: 30px;
+            width: 60%;
+            text-align: center;
+        }
+
+        .Home {
+            font-size: 20px;
+            color: #1a1c27;
+            text-decoration: none;
+            padding: 10px; 
+        }
+
+        .About {
+            font-size: 20px;
+            color: #1a1c27;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+        .Gallery {
+            font-size: 20px;
+            color: #1a1c27;
+            text-decoration: none;
+            padding: 10px;
+        }
+        body {text-align: center;}
+        #response {color: white; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 20px;}
+
+    </style>
+
+     <script>
+        var Name = document.querySelector("#name");
+        var Response = document.querySelector ("#response");
+        
+        function namefunction() {
+            Response.innerHTML = "Welcome to  " + Name.value;
+        }
+
+    </script>
+
+</body>
+</html>
+
+</html>

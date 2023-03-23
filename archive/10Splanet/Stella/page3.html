@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <style>
+
+        .navbar {
+          overflow: hidden;
+          background-color: #90d2d8;
+          position: fixed;
+          z-index: 2;
+          top: 0;
+          width: 100%;
+        }
+        
+        .navbar a {
+          float: left;
+          display: block;
+          color: #000000;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 25px;
+        }
+        
+        .navbar a:hover {
+          background: #b7ded2;
+          color: rgb(255, 255, 255);
+        }
+        
+        .main {
+          padding: 16px;
+          margin-top: 30px;
+          height: 1500px; 
+        }
+        
+        body, html {height: 100%; margin: 0;}
+            .hero-image {background-image: url(Images/heroimageaboutus.jpg);
+            height: 70%;
+            margin-bottom: -2%;
+            margin-top: 4.8%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+                  }
+        
+        .heading {
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Bebas Neue', cursive;
+        }
+
+        #myDIV {
+          margin: auto;
+          border-radius: 25px;
+          border: 5px solid #90d2d8;
+          font-family: 'Questrial', sans-serif;
+          font-size: 20px;
+          padding: 50px;
+          padding-top: 20px;
+          width: 500px;
+          height: 550px;
+        }
+        
+        .button-19 {
+          appearance: button;
+          background-color: #90d2d8;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          box-sizing: border-box;
+          color: #000000;
+          cursor: pointer;
+          display: inline-block;
+          font-family: 'Questrial', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: .8px;
+          line-height: 20px;
+          margin: 0;
+          outline: none;
+          overflow: visible;
+          padding: 7px 7px;
+          text-align: center;
+          text-transform: uppercase;
+          touch-action: manipulation;
+          transform: translateZ(0);
+          transition: filter .2s;
+          user-select: none;
+          -webkit-user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+          width: 10%;
+        }
+        
+        .button-19:after {
+          background-clip: padding-box;
+          background-color: #90d2d8;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          bottom: -4px;
+          content: "";
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: -1;
+        }
+        
+        .button-19:main,
+        .button-19:focus {
+          user-select: auto;
+        }
+        
+        .button-19:hover:not(:disabled) {
+          filter: brightness(1.1);
+          -webkit-filter: brightness(1.1);
+        }
+        
+        .button-19:disabled {
+          cursor: auto;
+        }
+        
+        </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a class="active" href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="page3.html">ABOUT US</a>
+      </div>
+
+      <div class="hero-image">
+    </div>
+  <hr size="50" color="#90d2d8">
+
+  <h2 class="heading">So, you want to learn more about our story?</h2>
+  <div style="text-align: center;">
+  <button class="button-19" onclick="myFunction()">DISCOVER</button>
+  </div>
+  <br>
+  <br>
+  <div id="myDIV" style="display:none; text-align: center;">
+    Once upon a time, a very brilliant Year 10 from Marist College was given a technology assessment. The assessment: to make a website for a business of your creation.
+    The Year 10 thought long and hard about what store she would found, weighed up many options, and finally, she thought of the one... <br> A frozen yogurt store. <br>
+    A simple yet delicious yogurt base ready for an abundance of toppings - it was the perfect idea. So she got to work. She picked out colours and fonts, created every
+    photo on her website, made sure everything worked smoothly and, with feedback from the best class in Year 10 (10S), invented some scrumptious yogurt flavours. 
+    Finally, after many hours of work (and many mishaps), she was done, and she handed in her website to her teacher for marking. Her teacher, Mr Paterson (who is very cool),
+    was absolutely blown away by her incredible website and gave her top marks. Because of the success of her website and the positive reaction to a frozen yogurt store, the Year 10
+    decided to run with the idea of Froyo Delights. She opened the very first Froyo Delights store in Auckland, New Zealand and it was a massive hit! Froyo Delights
+    went global, and the Year 10 became the youngest billionaire ever. And to think, it all started with a good mark from her teacher.
+  <br>
+  <br>
+    And that is the story of the start of our business and of our founder, Stella Scahill.
+  </div>
+  <br>
+  <br>
+  <br>
+  <img src="Images/bottomofpage5.jpg" style="margin-bottom: -17px;" width="100%">
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    
+</body>
+</html>

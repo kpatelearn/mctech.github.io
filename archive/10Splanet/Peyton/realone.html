@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conduire au théâtre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("bl.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+p.solid {border-style: solid;}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {text-align: center;}
+
+ h1 {
+  font-size: 14px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PREMIERING TIMES AND FOOD</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE AND BOOKINGS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open Weekdays, 9am to 5pm</span>
+    <span class="w3-tag">Late Night Drive In Thursday to Sundays 9am-12am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-yellow" style="font-size:90px"><strong> Conduire Au Théâtre </strong> <br></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Ashwood Haven Carpark, 5013</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-dark-grey w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE DRIVE IN AND BUBBLE IN EXPERIENCE</span></h5>
+    <p class="solid">The Ashwood Haven Community are excited to bring back Drive In Theatres to everyone who loves a good Movie! The Conduire au theatre is open 9am-5pm on Weekdays but we are excited to bring back Late Night Movies on Fri, Sat and Sundays! <br> Don't have a car? Book a Bubble In!</p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WHATS A BUBBLE IN?</span></h5>
+    <p class="solid"><strong>Come and Enjoy the Experience in a Bubble-In-Dome atmosphere! <br> In Dome Dining costs $30.00 (including movie ticket as well as the Bubble In Dome) </strong></p>
+    <img src="color.webp" 
+    width="800" height="450"
+    <p>The Bubble In allows those who do not have a car to relax and enjoy in a little dome instead of the boot of your car. The Dome can also be a place to dine in with your friends and family while you watch the Movie! </p>
+    <div class="w3-panel w3-leftbar w3-black">
+      <p><i>"Give me dome dome da-da-da-da-da dome dome dome I ain't trippin on ya money money long long long."</i></p>
+      <p>Nicki Minaj</p>
+    </div>
+    <p class="w3-text-black"><strong>Opening hours:</strong><p class="w3-text-white">Thurs, Fri, Sat, Sun from 9:20 - 12pm.</p>
+    <p class="w3-text-black"><strong>Address:</strong><p class="w3-text-white">Ashwood Haven Carpark, 5013, NY</p>
+    <img src="boot.jpg"
+     width="740" height="450"
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PREMIERING TIMES AND FOOD MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-black">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Session Times</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Food Menu</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card w3-brown">
+      <h5>The Lion King</h5>
+      <p class="w3-text-black">9:25am</p> <img src="lion.jpg" width="100" height="180"      <br> 
+    
+      <h5>Teen Beach Movie</h5>
+      <p class="w3-text-black">11:00am</p>
+      <img src="beach.jpg"  width="100" height="180" <br> 
+    
+      <h5>Uncharted</h5>
+      <p class="w3-text-black">1:00pm</p>
+      <img src="uncharted.jpg" width="100" height="160" <br> 
+    
+      <h5>Fast and Furious 5</h5>
+      <p class="w3-text-black">3:00pm</p>
+      <img src="furious.jpg" width="100" height="160" <br>
+    
+      <h5>The Notebook</h5>
+      <p class="w3-text-black">5:15pm</p>
+      <img src="note.jpg" width="100" height="160" <br>
+
+      <h5>The Orphan</h5>
+      <p class="w3-text-black">7:25pm</p>
+      <img src="orphan.jpg" width="100" height="160" <br>
+
+      <h5>The Conjuring: The Devil Made Me Do It</h5>
+      <p class="w3-text-black">9:32pm</p>
+      <img src="conjuring.jpg" width="100" height="160" <br>
+
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card w3-brown">
+
+      <h5>Coffee</h5>
+      <p class="w3-text-black">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-black">Chocolate espresso with milk 2.50</p><br>
+    
+      <h5>Popcorn</h5>
+      <p class="w3-text-black">Sweet and Salty $2.50 </p>
+      <p class="w3-text-black">Butter Lovers $2.50 </p><br>
+    
+      <h5>Cotton Candy</h5>
+      <p class="w3-text-black">Pink Vanilla $3.00</p>
+      <p class="w3-text-black">Blue Raspberry $3.00</p> <br>
+    
+      <h5>Ice Cream</h5>
+      <p class="w3-text-black">S'more, Strawberry Shortcake, Cookies&Cream, etc. 2.50</p> <br>
+
+      <h5>Donuts</h5>
+      <p class="w3-text-black">Mini Donuts $1.00 each</p>
+      <p class="w3-text-black">Regular Donuts $2.00 each</p>
+    </div>  
+  </div>
+</div> <br>
+<h5 class="w3-center w3-padding-45"><span class="w3-tag w3-wide">OUR STAFF</span></h5> <br>
+<img src="finalstaff.png" width="700" height="550"  <br> 
+
+<h1>Have a staff member to shoutout? Type their name out!</h1>
+<input id="userInput"> <br> 
+<button onclick="secret() ">Submit</button> 
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at our First Premier at Ashwood Haven Carpark,5013, NY</p>
+    <img src="red.jpg" width="750" height="450">
+    <p><span class="w3-tag">FYI!</span> We offer full-service to hosting parties! We also take recommendations for upcoming movies but please let us know prior to your visit.</p>
+    <p><strong>Reserve</strong> a Bubble-In-Dome, Book with your info down below! :)</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message/Movie Recommendations" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Made By Peyton Ah Loo</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+
+document.getElementById("myLink").click();
+        var user = document.querySelector ("#userInput"); 
+        function secret() {
+            if (user.value == "....................................") {
+                alert ("Congartulations!!");
+            }  else {
+                alert ("Thank you for your shoutout! It has been submitted :)");
+            }
+        
+        }
+
+</script>
+
+</body>
+</html>

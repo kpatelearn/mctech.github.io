@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Home.html</title>
+<style>
+* {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica
+}
+.tablink {
+  background-color:rgb(241, 200, 200);
+  color: black;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent {
+  color: black;
+  display: none;
+  padding-bottom: 80%;
+  padding-top: 1%;
+  height: 100%;
+}
+#Home {background-color: #f2e6ff;}
+#About {background-color: #e6ffcc;}
+#News {background-color: #ffffe6;}
+#Images {background-color: #f1ebeb;}
+
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('Home', this, '#f2e6ff')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, '#e6ffcc')" >About Us</button>
+<button class="tablink" onclick="openPage('News', this, '#ffffe6')" >3D world</button>
+<button class="tablink" onclick="openPage('images', this, '#FFFFFF')">Images</button>
+
+
+<div id="demo">
+  <h3>Enter your Name</h3>
+ <button onclick="myFunction()">Click</button>
+</div>
+<style>
+  #demo {text-align: center;}
+  #demo {background-color:#f2e6ff ;}
+</style>
+ 
+ 
+ <script>
+ function myFunction() {
+   let text;
+   let person = prompt("Please enter your name:",);
+   if (person == null || person == "") {
+     text = "User cancelled the prompt.";
+   } else {
+     text = "Hello " + person + ", Welcome to my planet :)";
+   }
+   document.getElementById("demo").innerHTML = text;
+ }
+ </script>
+ </div>
+<div id="Home" class="tabcontent">
+ <h1>Welcome to Lunaverse &#128151;</h1>
+ <style>#Home{text-align: center;}
+   </style>
+   <audio controls autoplay>
+    <source src="fantasy.mp3" type="audio/mpeg">
+  </audio>
+ <p> Lunaverse is a fun planet, where you discover new things, meet new people and have Lots of fun! So take a scroll around this planet and we will show you the beauty of Lunaverse </p>
+ <img width="400" height="300" img src="planet3.png" >
+</div>
+
+
+<div id="About" class="tabcontent">
+  <h1>About Us</h1>
+  
+  <p> Because of the iconic neon lights, the Lunaverse is a world where night reigns over daylight.
+      This planet is comparable to Earth, yet it is better! Unique animals such as three-headed giraffes and blue dragons can also be found in Lunaverse.
+      People in Lunaverse live in tiny huts on the peaks for the spectacular views. </p> 
+      <br>
+      <br>
+  <img width="300" height="400" img src="neon lights.jpg">
+  <img width="400" height="300" img src="mountain 2.jpg">
+  <img width="400" height="300" img src="blue dragon.jpg">
+  <img width="400" height="300" img src="giraffes.jpg">
+
+  
+</div>
+
+<div id="News" class="tabcontent">
+ <h1>3D world</h1>
+ <p>This is how my planet appears in 3D space. </p>
+ <video width="500" height="400" controls autoplay>
+ <source src ="world new.mp4"type="video/mp4">
+</video></div>
+
+<div id="images" class="tabcontent">
+  <h1>Images</h1>
+  <style>h1{text-align: center;}</style> 
+
+  <img width="400" height="300" img src="mountain.jpg">
+  <img width="400" height="300" img src="moon.jpg">
+  <img width="400" height="300" img src="neon lights 2.webp">
+  <img width="400" height="300" img src="mountaingalaxy.jpg">
+  <img width="400" height="300" img src="galaxy.jpg">
+  <img width="400" height="300" img src="nature1.jpg">
+</div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Name</title>
+</head>
+<body>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 

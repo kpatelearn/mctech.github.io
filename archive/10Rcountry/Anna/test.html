@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="topnav" id="myTopnav">
+  <div id="logo">
+    <img src="navbar logo.png" height="65" width="320">
+  </div>
+    <div class="nav-right">
+      <span class="right">
+        <a  class="active" href="home.html" >&#127968;
+          Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">&#127905;
+            Attractions
+            <span>&#8628;</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="beaches.html">Beaches</a>
+            <a href="carnivals.html"> Carnivals</a>
+            <a href="theStatue.html"> The Statue </a>
+          </div>
+          </div>
+        <div class="dropdown">
+          <button class="dropbtn">&#129473;
+
+            Dining 
+            <span>&#8628;</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="Cafes.html">Cafes</a>
+            <a href="fastFoods.html"> Fast food </a>
+            <a href="restaurants.html"> Restaurants </a>
+          </div>
+          </div>
+        <a href="accomidations.html">&#127976;
+          Accommodation</a>
+        <a href="community.html"> &#127774;
+          Community</a>          
+
+
+      </span>
+
+  </div>
+<div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
+  <strong>when the user starts to scroll the page</strong>.</div>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

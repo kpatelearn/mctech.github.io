@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" href="cake 2.gif"> 
+</head>
+<style>
+body {background-color: rgb(137, 118, 102); text-align: center;}
+h2 {color: #d3b997; text-align: center;} 
+h2 {
+     font-family:Snell Roundhand, cursive;
+}
+
+html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, textarea, p { 
+      
+ 
+     
+      font-size: 14px;
+      color: #d3b997;
+      
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      line-height: 42px;
+      font-size: 42px;
+      color: #d3b997;
+      z-index: 2;
+      
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+      
+      .banner {
+      position: relative;
+    
+      width: 600px;
+     
+      background-size: cover;
+      display: flex;
+      justify-content: absolute;
+      align-items: center;
+      text-align: center;
+      }
+      
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid rgb(113, 74, 37);
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      input[type="date"] {
+      padding: 4px 5px;
+      }
+      
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+          .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid ;
+      box-shadow: 0 0 6px 0 #dcd0bc;
+      color: #665b4c;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 15px;
+      color: #151414;
+      }
+      .item i {
+      right: 2%;
+      top: 28px;
+      z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 0.5%;
+      opacity: 100;
+      cursor: pointer;
+      }
+
+      
+     
+      
+      button:hover {
+      background: #885f47;
+      }
+      
+</style>
+
+
+<body>
+  <br>
+  <div class="navbar">
+      
+    <img id="cake" src="LOGO2.0.png" class="logo" width="192" height="50" >
+   <li style="float:right">
+   <a href="homepage.html">Home εϊз</a>
+ 
+   <a href="reservation.html">reservation ❀</a>
+ 
+   
+   
+  
+ 
+     <div class="dropdown">
+       <button id="dropdown"> cats ✧
+         <i class="fa fa-caret-down"></i>
+       </button>
+        
+     
+       <div class="dropdown-content">
+         <a href="meetthecats.html">meet the cats ♡</a>
+         <a href="adopt.html"> adoption? ➷</a>
+       
+       </div>
+       </div>
+     
+ 
+     <div class="dropdown">
+       <button id="dropdown"> shop ♫
+         <i class="fa fa-caret-down"></i>
+       </button>
+        
+     
+       <div class="dropdown-content">
+         <a href="merch.html">merch ꕥ</a>
+         <a href="bakedgoods.html">baked goods 𓎩  </a>
+        
+       
+       </div>
+       </div>
+       <a href="menu.html"> menu ☾</a>
+      </li>
+        <br>
+        
+      </div>
+    </div> 
+  
+
+        </div>
+      </div> 
+    
+    </div>
+    <br>
+    <img src="reservation sign.png" width="856 " height="72">
+    <br>
+
+
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+         
+        </div>
+        <div class="item">
+          <p>Name</p>
+          <div class="name-item">
+            <input id = "userInput" type="text" name="name" placeholder="First" />
+            <input type="text" name="name" placeholder="Last" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="email" name="email"/>
+        </div>
+        <div class="item">
+          <p>Phone</p>
+          <input type="text" name="phone" placeholder="### ### ####"/>
+        </div>
+        <div class="item">
+          <p>Reservation Date</p>
+          <input type="date" name="bdate" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+   <div class="item">
+          <p>Reservation Time</p>
+          <input type="time" name="btime" required/>
+               </div>
+        <div class="item">
+          <p>How many people will you be with?</p>
+          <input type="number" name="language"/>
+        </div>
+         <div class="item">
+          <p>Additional notes</p>
+          <textarea rows="3"></textarea>
+        </div> 
+       
+        
+        <button type="reset" onclick="Show_Alert('userInput')" >Send </button>
+       
+       
+       
+        </div>
+      </form>
+    </div>
+    
+    
+
+
+
+    <br />
+
+    
+    
+</body>
+</html>
+
+<script>
+
+    
+
+
+
+  function Show_Alert(Input_Id) {
+
+var My_Message = document.getElementById(Input_Id).value;
+
+alert('thank you for placing a reservation, ' + My_Message);
+
+}
+
+
+</script>
+

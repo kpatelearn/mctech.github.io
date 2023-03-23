@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tech assessment</title>
+    <style>
+        #div1 a {color:#C1A3A3; background-color:#562B08 ; float: left; width: 24.9%; text-align: center;height: 2cm;text-decoration: none;}
+        #div2 a {color:#C1A3A3; background-color:#562B08 ; float: left; width: 24.9%; text-align: center;height: 2cm;text-decoration: none;}
+        #div3 a {color:#C1A3A3; background-color:#562B08; float: left; width:  24.9%; text-align: center;height: 2cm;text-decoration: none;} 
+        #div4 a {color:#C1A3A3; background-color:#562B08 ; float: left; width: 24.9%; text-align: center;height: 2cm;text-decoration: none;} 
+        h1 {color:sienna; text-align: center; }
+        body {background-color: #D6CDA4;text-align: center;} 
+    </style>
+</head>
+<body>
+    <div id="div1"> 
+        <a href="tech assessment.html"><h1>Home</h1></a>
+    </div>
+        
+     <div id="div2">
+        <a href="tech assessment 2.html"><h1>About</h1></a>
+    </div>
+
+    <div id="div3"> 
+          <a href="tech assessment 3.html"><h1>Online</h1></a>
+    </div> 
+
+    <div id="div4"> 
+        <a href="tech assessment 4.html"><h1>Menu</h1></a>
+  </div>
+<h1>Here you can give us the review of our Food and customer service</h1>
+<label for="fname">Their first name:</label><br>
+<input id="fname" > <br> <br> 
+
+<label for="lname">Their last name:</label><br> 
+<input id="lname"> <br> <br> 
+
+<label for="food">How was the food ?:</label><br> 
+<input id="food"> <br> <br> 
+
+<label for="review">Please give us a review on what we should do to make our service better:</label><br>
+<input id="review"> <br> <br> 
+
+<label for="food2">Please tell us which food or drink you liked the most from what you ordered:</label><br>
+<input id="food2"> <br> <br> 
+
+<button onclick="MyFunction()">Submit</button>
+<h1 id="Message"></h1>
+
+<script>
+    function MyFunction()
+{
+    let UserInput = document.querySelector("#UserInput")
+    let Message = document.querySelector("#Message")
+
+    Message.innerHTML = "Hi " + fname.value + " " + lname.value +
+     ". Thank you for submitting the review form. We will take it into consideration to improve our quality service."
+}
+</script>
+
+
+
+</body>
+</html>

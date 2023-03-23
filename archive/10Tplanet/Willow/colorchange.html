@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> What color should this webpage be ?</h1>
+    <input id="userChoice" > 
+    <button onclick="change()" >Enter</button>
+
+    <style>
+     
+     body{text-align: center;}
+
+    </style>
+
+    <script>
+     function change() {
+      var userChoice = document.querySelector("#userChoice")
+      if (userChoice.value =="biscuits"){
+      alert("Congrats! You are in the secret club");
+      }
+      if (userChoice.value =="cow"){
+      alert("Mooooooo");    
+      }
+      document.body.style.backgroundColor= userChoice.value
+     }
+
+  
+
+     
+
+
+    </script>
+    
+</body>
+</html>

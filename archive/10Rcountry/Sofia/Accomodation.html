@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accommodation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Grandstander', cursive;}
+.mySlides {display: none}
+
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right">
+
+<nav class="w3-sidebar w3-pale-blue w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
+    <h3>Rental</h3>
+    <h3>Pay at least 3 cupcakes!</h3>
+    <h6>per night</h6>
+    <hr>
+    <form action="/action_page.php" target="_blank">
+      <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>          
+      <p><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>         
+      <p><label><i class="fa fa-male"></i> Adults</label></p>
+      <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">              
+      <p><label><i class="fa fa-child"></i> Kids</label></p>
+      <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+      <p><button class="w3-button w3-block w3-blue w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
+      <p> Of course there is availability! We always can find room for you!</p>
+    </form>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
+    
+  </div>
+</nav>
+
+
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <span class="w3-bar-item">Rental</span>
+  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main w3-white" style="margin-left:260px">
+
+
+  <div class="w3-hide-large" style="margin-top:80px"></div>
+
+
+  <div class="w3-container" id="apartment">
+    
+    <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(53, 121, 231);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(169, 207, 239);
+}
+
+.active {
+  background-color: #9cc5d9;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="Accomodation.html">Accommodation</a></li>
+  <li><a href="History.html">History</a></li>
+  <li><a href="Lifestyle.html">Lifestyle</a></li>
+  <li><a href="Index.html">Return to home</a></li>
+  <li style="float:right"><a class="active" href="flights.html">Book a flight!</a></li>
+</ul>
+    
+ 
+    <h2 class="w3-text-blue">Kidtropolis Accomodation!</h2>  
+
+ 
+  </style>
+  </head>
+  
+  <body>
+  
+  
+  
+  <div class="w3-content w3-section" style="max-width:1000px">
+    <img class="mySlides" src="loungeee.jpg" style="width:100%">
+    <img class="mySlides" src="bedroomupdated.jpg" style="width:100%">
+    <img class="mySlides" src="playroom.jpg" style="width:100%">
+    <img class="mySlides" src="bath.jpg" style="width:100%">
+  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+  }
+  </script
+
+  <div class="w3-container">
+    <h4><strong>The space</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-male"></i> Max people: As many as you want, of course!</p>
+        <p><i class="fa fa-fw fa-bath"></i> Pool: The pool is your dream pool, it includes a luxury bathroom too!</p>
+        <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1 and the sleepover room obvi!</p>
+      </div>
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-clock-o"></i> Check In: Whenever</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Check Out: Whenever!</p>
+      </div>
+    </div>
+    <hr>
+    
+    <h4><strong>Fancy things, our houses also have!</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-shower"></i> Shower</p>
+        <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+        <p><i class="fa fa-fw fa-tv"></i> TV</p>
+      </div>
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
+        <p><i class="fa fa-fw fa-thermometer"></i> Heating</p>
+        <p><i class="fa fa-fw fa-child"></i> This house is Kiddie-approved!</p>
+      </div>
+    </div>
+    <hr>
+    
+    <h4><strong>Rules</strong></h4>
+    <p>NO RULES, HAVE FUN. </p>
+    
+    <hr>
+    
+    <h4><strong>Extra info!</strong></h4>
+    <p>Kidtropolis houses are filled with FUN FUN AND FUN. If your an introvert like some Kiddies are, then the house above is perfect for you!</p>
+    <p>Keep an eye out for more super duper houses. REMINDER: This house is just one house in Kidtropolis. There are many to stay at but this is our most popular one. Although it may seem weird that our houses are not as bright and fun as other things in Kidtropolis, we prefer our houses to be calm and less full on to the world around us!</p>
+    
+  </div>
+  <hr>
+  
+ 
+    
+  </div>
+  
+
+
+
+</div>
+
+
+<div id="subscribe" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-padding-large">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-button w3-xlarge w3-right w3-transparent"></i>
+      <h2 class="w3-wide">JOIN KIDTROPOLIS ACCOMODATION </h2>
+      <p>Join Kidtropolis accomodation, in case you need somewhere to stay, duh!</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-purple w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+<script>
+
+  

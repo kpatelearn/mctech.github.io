@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="sun.png">
+<meta charset="UTF-8">
+<link rel="javasheet" href="java.js">
+
+    <title>Document</title>
+    <style>
+
+    
+    </style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593
+    Top</button>
+  <div class="topnav" id="myTopnav">
+    <div id="logo">
+      <img src="navbar logo.png" height="65" width="320">
+    </div>
+      <div id="nav-right">
+        <span class="right">
+          <a href="home.html" >&#127968;
+            Home</a>
+          <div class="dropdown">
+            <button class="dropbtn" ><i class="fa fa-fw fa-ferris wheel"></i>&#127905;
+              Attractions
+              <span>&#8628;</span>
+            </button>
+            <div class="dropdown-content" id="attractDrop">
+              <a href="beaches.html">Beaches</a>
+              <a href="carnivals.html"> Carnivals</a>
+              <a href="theStatue.html"> The Statue </a>
+            </div>
+            </div>
+          <div class="dropdown">
+            <button class="dropbtn" class="active">&#129473;
+
+              Dining 
+              <span>&#8628;</span>
+            </button>
+            <div class="dropdown-content" id="foodDrop">
+              <a class="active" href="Cafes.html">Cafes</a>
+              <a href="fastFoods.html"> Fast food </a>
+              <a href="restaurants.html"> Restaurants </a>
+            </div>
+            </div>
+          <a href="accomidations.html">&#127976;
+            Accommodation</a>
+          <a href="community.html"> &#127774;
+            Community</a>          
+
+
+        </span>
+
+    </div>
+</body>
+<script>
+  var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+</html>

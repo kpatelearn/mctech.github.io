@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Envirnoment</title>
+</head>
+<body>
+
+    <style>
+        body {font-family:Georgia, 'Times New Roman', Times, serif}
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgba(36, 35, 35, 0.966);
+          overflow-x: hidden;
+          transition: 0.75s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #8f8b8b;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #896492;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        body {background-color: #e2c9e9;}
+        h1 {text-align: center;}
+        h2 {color: #332836;}
+        #Giraffe {float: left; filter: saturate(25%);}
+        #button {text-align: center;}
+        
+    </style>
+        
+    <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="Index.html">Go Back</a>
+       <a href="Introduction.html">Homepage</a>
+       <a href="Gallery.html">Gallery</a>
+       <a href="Society.html">The Society</a>
+       <a href="Morals.html">Morals</a>
+       <a href="Credits.html">Credits</a>
+    </div>
+        
+    <h4><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; contents</span></h4>
+        
+    <script>
+    
+     function openNav() {document.getElementById("mySidenav").style.width = "275px";}
+     function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+        
+    </script>
+
+    <h1>The Environment:</h1>
+
+    <div id="Giraffe">
+        <img width="60" height="75" src="Giraffe-removebg-preview.png">
+    </div>
+
+    <h2>  
+        Rotopia is filled with plants. Some may look deadly but none of them are. The plants are restricted areas so that people will not destroy the beauty of Rotopia.
+        It's a whole range of plants such as flowers, bushes, trees. Basically everything on Earth but all the plants are purple, blue, pink and teal. The reason for the 
+        colours is to match the colour of the planet. They kinda look like this:
+    </h2>
+
+    <img width="450" height="300" src="a.jpeg">
+    <img width="450" height="300" src="lol.jpeg">
+    <img width="450" src="e.jpeg">
+    <img height="450" src="b.jpg">
+    <img width="450" src="c.jpeg">
+    <img width="650" height="450" src="landscape.jpeg">
+
+    <h2>    
+      Imagine a dry area with a few lakes and the sand and dirt is purple teal. You have bunches of bushes and little weeds and some
+      colourful trees. In Rotopia there is Winter and Spring. During the snow time it snows everywhere. It is also colder but the plants
+      don't get affected by this and the giraffes. In the spring time the flowers grow, it's warmer so there are more activities.
+
+    </h2>
+
+    <div id="button">
+      <button onclick="window.location.href='BrokenEnviroment.html';">
+        What would happen if the Environment wasn't looked after?
+      </button>
+    </div>
+    
+</body>
+</html>

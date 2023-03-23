@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a class="active" href="Assessment.html"><i class="fa fa-home"></i> Home </a>
+  <a href="Arcade.html"><i class="fa fa-gamepad"></i> Arcade </a>
+  <a href="Prices.html"><i class="fa fa-money"></i> Rates </a>
+<a href="Cafe.html"><i class="fa fa-cutlery"></i>   The Reef    </a>
+  <a href="Whatson.html"><i class="fa fa-book"></i>  Bookings </a>
+</div>
+<style>
+  a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+</style>
+
+
+ <style>
+        .icon-bar {
+  width: 100%; /* Full-width */
+  background-color: rgb(231, 231, 231); /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: rgb(7, 7, 7); /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: rgb(173, 173, 173); /* Add a hover color */
+}
+
+.active {
+  background-color: rgb(107, 143, 243); /* Add an active/current color */
+}
+body {background-color: rgb(87, 87, 87);} 
+p {font-size: 50%;}
+a {font-family: 'Times New Roman', Times, serif;}
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("Unclebucks4.html"); }
+.img2 { background-image: url("Picture1.html"); }
+.img3 { background-image: url("Picture2.html"); }
+.img4 { background-image: url("UncleBucksRestraunt.html"); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bolder;
+  font-size: 80px;
+  font-family: fantasy;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  height:275px;
+  padding: 1px;
+  text-align: center;
+}
+ </style>
+ 
+</body>
+</html>
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+
+
+<div class="bg-text">Oceanic bowling</div>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What's your name?</h1>
+    <input id="userInput"> <br> <br>
+    <button onclick="hello()">Submit</button>
+<h1 id="Response">  </h1>
+<script>
+var user=document.querySelector ("#userInput");
+var response=document.querySelector ("#Response");
+function hello(){
+response.innerHTML = "Wassup, take a look around my bowling alley " + user.value }
+</script>
+</body>
+</html> 
+
+
+
+    <style>
+        body {text-align: center; background-color: cornflowerblue; color: rgb(255, 255, 255); font-family: fantasy; }
+    </style>
+    <script> 
+    var user = document.querySelector ("#userInput");
+
+    function Secret() {
+       if (user.value == "hi") {
+           alert("Congratulations");
+       } else {
+           alert("ur wrong")
+       }
+     } 
+
+
+    </script>
+    <br>
+</body>
+</html> 

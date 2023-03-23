@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe De Joy / About</title>
+    <style>
+        body {text-align: center; background-color:rgb(204, 138, 83);}
+
+        nav {
+        list-style-type: none;
+        margin: 0
+        padding 5px;
+        overflow: hidden;
+        background-color: #432818
+      }
+     
+      nav {
+        float: right;
+      }
+     
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+     
+      nav a:hover:not(.active) {
+        background-color: #99582A;
+      }
+      
+      #origin {background-color: brown;}
+      #survey {background-color: red}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="menu.html">🥐Menu🥐</a>
+        <a href="lattedesigns.html">☕Latte Designs☕</a>
+        <a href="home.html">🏠Home🏠</a>
+        <a href="contact.html">📱Contact📞</a>
+        <a href="about.html">💬About💬</a>
+    </nav>
+
+    <h1>OUR STORY!!!</h1>
+    <img width="1000px" height="1900" src="10Mallnotification2.jpg">
+<div id="origin">
+    <p>As you can see above which is the image of a screenshot I took on my phone (Iphone 11pro) that morning is how our business called 'Cafe De Joy' all started.The notifications I got were about this 10Mall and vacant positions for shops were open and I Marie Grande felt like I needa a push into a career especially in my 3rd reminder I aspired to be the person who would finish uni early and started his own business. Recently I have been working at Wendys as a part timer but with these motivational notifications and reminder this morning made me quit my job and start a coffee business which was my dream when I was little. Straight away I called the management team and Manager/co-operator of the whole of the 10Mall 'K.P' and was able to open up my shop. Overtime each and every customer who visted spread the word about my shop to their friends and families and soon all my empty work positios I would do would be filled up with both new/noob and professional/pro workers. To all you dreamers out there I reccomend to go further than the limits set for you and exceedingly pass them. Heres a quote down below that I read everyday to myself and sometimes to my regulars (customers) and thanks to @reallygreatsite for assisting me in the process and development of my Website and for Starbucks for recently partnering up with me. #keepgoing #Lovecoffeeeee #CAFEDEJOY</p>
+</div>
+    <img width="1400px" height="1500" src="originmessages.jpg">
+    <h1>Owner of Cafe De Joy:</h1>
+    <h2>MARIE GRANDE</h2>
+
+<div id="survey">
+    <h1>WORK WANTED!!!!!!!!</h1>
+    <h2>We soon would be starting out branches across the entire mall since its so huge as well as across the area around us</h2>
+      
+    <h1 id="kpTitle" >Enter your Registration Name</h1>
+    <h2>Specifically speaking First Name & Last Name / Surname</h2>
+    <input id="userInput" >    <br><br>
+    <button onclick="response()">Submit</button>
+      
+    <h1 id="kpTitle" >Email*</h1>
+    <h2>Enter your email for us to contact you as soon as possible so we can book an interview with you when an open time slot is available</h2>
+    <input id="userInput" >    <br><br>
+    <button onclick="account()">Submit</button>
+      
+    <h1 id="kpTitle" >Enter your suburb</h1>
+    <input id="userInput" >    <br><br>
+    <button onclick="suburb()">Submit</button>
+
+    <h1 id="kpTitle" >Enter Gender</h1>
+    <input id="userInput" >    <br><br>
+    <button onclick="gender()">Submit</button>
+    
+    <h1 id="kpTitle" >What services would you do here?</h1>
+    <h2>For instance/example, a waiter/waitress, Bartender, Cashier, Chef/Cook etc. e.g</h2>
+    <input id="userInput" >    <br><br>
+    <button onclick="service()">Submit</button>
+    
+    
+    <br><br><br>
+
+
+    <p></p>
+    <button onclick="hello()" >Click this button when your info is submitted</button>
+    <button onclick="color()" >color</button>
+    <h1 id="message">  </h1>
+      
+      
+<script>
+      console.log("Hello dear Customer or visitor from all around the world and remember to spreas the word about our Cafe to all your friends and family");
+      
+      
+      function hello() {
+          alert("Thanks for submitting your form of resume and we will take this into consideration. Check your emails daily to hear more from us and if you did not recieve the job we will reccomend you to other workplaces you would like to be emploed/deployed at")
+      }
+      
+      
+      function color() {
+          document.body.style.backgroundColor = "#bc6c25"
+      }
+      
+      function response() {
+          var userInput = document.querySelector("#userInput");
+          var  messageSpace = document.querySelector("#message");
+      
+      
+          messageSpace.innerHTML = "Thanks for submitting your email, " + userInput.value
+      }
+
+</script>
+</div>
+
+    <img width="1400px" height="1000" src="Coffee Collage.png">
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanetXena</title>
+    
+    <style>
+        p.solid {border-style: solid;}
+    </style>
+</head>
+
+<body>
+    <p class="solid"> </p>
+    <h1> Welcome to planet Xena </h1> 
+    <p class="solid"> </p>
+    
+     <div id="div3">
+        <img src="PlanetXena.jpg" alt="Planet">
+    </div>
+
+    <h2>What is your name?</h2> 
+    <input id="userName"> <br> <br>
+    <button onclick="myFunction()">Submit</button> <br>
+    <h3 id="response"></h3>
+
+    <style>
+        body {text-align: center;}
+    </style>
+
+    <script>
+        var UserName= document.querySelector("#userName");
+        var response= document.querySelector("#response");
+
+        function myFunction() {
+            response.innerHTML = "I have been expecting you,  " + UserName.value + ". I am Domonic death, the founder and leader of Xena. I have awaiting your arrival. I would like to welcome you to our wonderful Xena.";}
+
+    </script>
+
+    <p class="solid"> </p>
+    <nav>
+    <a href="LifeInXena.html"> About Xena.</a>
+    <a href="Activities.html"> Activities in Xena.</a> 
+    </nav>
+    <p class="solid"> </p>
+
+    <style>
+        #div3 {text-align: center;} 
+        body {background-color: black;}
+        h1 {color:rgb(219, 201, 143);}
+        p {color:rgb(70, 92, 255);}
+        a {color: rgb(219, 201, 143)}
+        h2 {color:rgb(219, 201, 143);}
+        h3 {color:rgb(219, 201, 143);}
+
+        a {font-family: cursive}
+        h1 {font-family:fantasy}
+        h1 {text-align: center;}
+        h1 { text-decoration-line: underline;} 
+
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{background-color: darkolivegreen; text-align: center;}
+a:link {
+    color: rgb(10, 10, 10);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(3, 3, 3);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(3, 3, 3);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+      #nav{background-color: rgb(6, 48, 4);text-align: center;font-size:35px;padding:20px;}
+      a{padding-left: 10%;padding-right: 10%;}
+      body{text-align: center;}
+      body{padding: 5%;}
+      body {background-color: rgb(46, 49, 41);}
+     
+      
+     
+      

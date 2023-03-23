@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+   
+   <style>
+         #nav{background-color:#FFC0CB; font-size: 25px;}
+         body {background-color: #FFF4F0;}
+         a {padding-left: 8.5%; padding-right: 8.5%;}
+         h1 {text-align: center; font-size: 350%;}
+         p {font-size: 150%; ; text-align: center; padding-left: 20%; padding-right: 20%;}
+         #moon {text-align: center; }
+         #nest {text-align: center; }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="nav"> 
+        <a href="home.html">Home</a>
+        <a href="photo.html">Gallery</a>
+        <a href="activities.html">Activities</a>
+        <a href="compitition.html">Competition</a>
+    </div>
+
+    <h1>Photo Gallery</h1>
+
+    <p>In Upside Down Town instead of the sun coming up each day and seeing the moon at night time. We see a 
+        moon in the day and the sun at night.</p>
+   
+   <div id="moon">
+    <img width="950" height="600" src="moonday2.png"> <br>
+    <img width="950" height="600" src="sun.png">
+   </div>
+
+   
+    <p> In upside down town instead of rabbits nesting and living in burrows they live in the sky. 
+        Not too many pop up at a time so take a seat on a cloud and have a picnic. 
+        Some rabbits are so nice that they will come up to you and give you a hug.</p>
+ 
+<div id="nest">
+    <img width="950" height="600" src="nest.jpg">
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+</body>
+</html>

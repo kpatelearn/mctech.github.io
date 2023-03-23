@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* Style the header */
+.header {
+  background-color:#d24fb2;
+  padding: 0px; color: #d24fb2;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#fba0ea;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b38787;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 5px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .column {
+    width: 80%;
+  }
+}
+
+content {
+  text-align: center;
+  color: #d24fb2;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Special Attractions & Headquarters</h1>
+<hr>
+
+
+  <div class="topnav">
+      <a href="victorious.html">Home</a>
+      <a href="aboutpage.html">About</a>
+      <a href="Placespage.html">Places</a>
+      <a href="blogpage.html">Blog</a>
+    </div>
+
+<h2>PINK CITY </h2>
+<p>Take a look at the most fabulous places on Victorious</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img width="200" height="230" src="skyscrapers.JPEG">
+      <h3>Valentina Velocity</h3>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img width="200" height="230" src="cruise.JPG">
+      <h3>Vienna Cruise Water Park</h3>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img width="200" height="230" src="boats.JPEG">
+      <h3> The Violets Viaduct</h3>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img width="200" height="230" src="water.JPEG">
+      <h3>The Viviana Fountain</h3>
+      
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</div>
+
+<div class="content">
+  <img src="headquarters.JPG" alt="Victorious" class="center" width="800" height="400">
+      <p> This is Victorious Headquarters, located right at the tippy top of the planet.</p>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
