@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+	<style>
+		body {
+			font-size: 24px;
+			text-align: center;
+			background-color: #1e1e1e;
+            color: #ffffff;
+		}
+
+		h1 {
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+		#question {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			padding: 20px;
+			background-color: #007acc;
+			border: 1px solid #2e2e2e;
+            color: #1e1e1e;
+			border-radius: 10px;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#choices {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.choice {
+			margin: 20px;
+			padding: 20px;
+			background-color: #d9d9d9;
+			border: 1px solid #2e2e2e;
+            color: #007acc;
+			border-radius: 10px;
+			width: 200px;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.choice:hover {
+			background-color: #007acc;
+            color: #d9d9d9;
+		}
+
+		.selected {
+			background-color: #88CC88;
+		}
+
+		#score {
+			margin-top: 50px;
+			font-size: 48px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Math Quiz</h1>
+	<div id="question"></div>
+	<div id="choices"></div>
+	<div id="score"></div>
+	<script>
+		var questions = [			
+            {	question: "What is the capital of NZ?",
+                choices: ["Auckland", "Dunedin", "Wellington", "Nelson"],
+				answer: "4"
+			},
+			{
+				question: "What is 3 * 4?",
+				choices: ["7", "8", "10", "12"],
+				answer: "12"
+			},
+			{
+				question: "What is 7 - 3?",
+				choices: ["3", "4", "5", "6"],
+				answer: "4"
+			},
+			{
+				question: "What is 15 / 5?",
+				choices: ["2", "3", "4", "5"],
+				answer: "3"
+			},
+			{
+				question: "What is 10 + 5?",
+				choices: ["12", "13", "14", "15"],
+				answer: "15"
+			},
+			{
+				question: "What is 6 * 6?",
+				choices: ["32", "34", "36", "38"],
+				answer: "36"
+			},
+			{
+				question: "What is 8 - 6?",
+				choices: ["1", "2", "3", "4"],
+				answer: "2"
+			},
+			{
+				question: "What is 9 / 3?",
+				choices: ["2", "3", "4", "5"],
+				answer: "3"
+			},
+			{
+				question: "What is 10 * 10?",
+			choices: ["90", "100", "110", "120"],
+			answer: "100"
+		},
+		{
+			question: "What is 4 + 5?",
+			choices: ["8", "9", "10", "11"],
+			answer: "9"
+		}
+	];
+
+	var currentQuestion = 0;
+	var score = 0;
+
+	function displayQuestion() {
+		var question = questions[currentQuestion];
+		var questionDiv = document.getElementById("question");
+		questionDiv.textContent = question.question;
+
+		var choicesDiv = document.getElementById("choices");
+		choicesDiv.innerHTML = "";
+		for (var i = 0; i < question.choices.length; i++) {
+			var choiceDiv = document.createElement("div");
+			choiceDiv.classList.add("choice");
+			choiceDiv.textContent = question.choices[i];
+			choiceDiv.addEventListener("click", selectAnswer);
+			choicesDiv.appendChild(choiceDiv);
+		}
+	}
+
+	function selectAnswer(event) {
+		var selectedChoice = event.target;
+		var choices = document.getElementsByClassName("choice");
+		for (var i = 0; i < choices.length; i++) {
+			choices[i].classList.remove("selected");
+		}
+		selectedChoice.classList.add("selected");
+
+		var question = questions[currentQuestion];
+		if (selectedChoice.textContent === question.answer) {
+			score++;
+		}
+
+		currentQuestion++;
+		if (currentQuestion < questions.length) {
+			displayQuestion();
+		} else {
+			displayScore();
+		}
+	}
+
+	function displayScore() {
+		var scoreDiv = document.getElementById("score");
+		scoreDiv.textContent = "Your score is: " + score + "/" + questions.length;
+	}
+
+	displayQuestion();
+</script>
+
