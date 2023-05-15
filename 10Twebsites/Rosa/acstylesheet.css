@@ -1,0 +1,108 @@
+h1{
+  font-style: italic; 
+  font-size: 100px;
+  color: azure;
+  margin-top: 0%;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: lightseagreen;
+}
+                                                                     
+
+    
+
+    h2 {color: black;
+        display: inline;
+        }
+
+p {
+    color: black;
+     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+    }
+div{
+  font-size: 15px;
+    background-color: lightgray;
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: center;
+      height: 35px;
+      margin-top: 40px;
+      color:black ;
+}
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  background-size: 25px;
+ }
+
+
+button {
+padding: 14px 13px;
+} 
+
+
+.hidetext {
+  display: none;
+}
+.show {display:block;}
+
+.container {
+    display: flex; 
+        justify-content: flex-start;
+}
+
+a {
+ 
+    padding: 14px, 16px;
+    text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+a:hover {
+
+    color: white;
+   background-color: rgb(142, 151, 160);
+   padding: 9.5px, 9.5px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 23px;
+ }
+
+
+
+span {
+    padding: 8px;
+
+}
+
+
+#l3 {
+  float: left;
+  padding-left: 20px;
+  }
+
+#l2 {
+  float: right;
+  padding-left: 30px;
+  }
+
+#l1 {
+  float: none;
+  padding-left: 40px;
+  }
+
+  
+
+
+

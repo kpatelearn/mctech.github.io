@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.navbar {
+          overflow: hidden;
+          background-color: rgb(255, 130, 130);
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        .dropdownno2 {
+          float: left;
+          overflow: hidden;
+        }
+        
+
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .dropdownno2 .dropbtnno2 {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: rgb(255, 83, 83);
+        }
+        .navbar a:hover, .dropdownno2:hover .dropbtnno2 {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgb(255, 130, 130);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(255, 83, 83);
+          z-index: 1;
+        }
+        
+        .dropdown-contentno2 {
+          display: none;
+          position: absolute;
+          background-color: rgb(255, 130, 130);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(255, 83, 83);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          float: none;
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        
+        .dropdown-contentno2 a {
+          float: none;
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        
+        .dropdown-contentno2 a:hover {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdownno2:hover .dropdown-contentno2 {
+          display: block;
+        }
+#mySidenav a {
+  position: absolute;
+  transition: 0.3s;
+  left: -190px;
+  padding: 15px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#cottoncandy {
+  top: 180px;
+  background-color: #9e7457;
+  text-align: right;
+}
+#chocolate {
+  top: 260px;
+  background-color: #9e7457;
+  text-align: right;
+}
+#icecream {
+  top: 340px;
+  background-color: #9e7457;
+  text-align: right;
+}
+#lollipops {
+  top: 420px;
+  background-color: #9e7457;
+  text-align: right;
+}
+body {
+    background-color: beige;
+    font-family: "monaco", monospace;
+    }
+    #banner {
+text-align: center;
+background-color: rgb(177, 177, 177);
+    }
+    .shop {
+font-family: "monaco", monospace;
+    }
+    #right {
+      text-align: right;
+      font-size: 18px;
+    }
+    #learnmore {/*width:height = 328:547*/
+        display: inline-block;
+    }
+
+.column {
+  float: right;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.column {
+  position: relative;
+}
+
+
+.column .btn {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.column .btn:hover {
+  background-color: black;
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="welcomefinalwebsite.html">Welcome</a>
+        <a href="tragedyfinalwebsite.html">The Recent Tradgedy</a>
+        <div class="dropdown">
+            <button class="dropbtn">Donate
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="moneydonationfinalwebsite.html">Donate Money</a>
+                <a href="conversionfinalwebsite.html">Feed A Lolmon</a>
+                <a href="gamepagefinalwebsite.html">Help A Lolmon Get Their Keyruncy Back</a>
+              </div>
+        </div> 
+
+        <div class="dropdownno2">
+            <button class="dropbtnno2">Fun Facts
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-contentno2">
+                <a href="lolmonfunfactpagefinalwebsite.html">Lolmon</a>
+                <a href="lollylandfunfactpagefinalwebsite.html">Lollyland</a>
+              </div>
+        </div> 
+    </div>
+
+<div id="banner">
+<h1 class="shop">Feed A Lolmon</h1>
+
+<div id="right">
+  <img width="40" height="40" src="pinkcurrency.png">
+<span id="result"></span> keyruncy
+<script>
+    var number=document.getElementById("result").innerHTML=localStorage.getItem("output");
+</script>
+</div>
+</div>
+
+
+
+<div class="row">
+    <div class="column">
+        <img width="246" height="410" src="orangelollipopinformationno1.png" alt="sidebar"> 
+        <button class="btn" onclick="myFunction()"><img width="25" height="25" src="pinkcurrency.png">50</button>
+    </div>
+    <div class="column">
+        <a href="watermelonflavouredfinalwebsite.html"><img width="250" height="200" src="watermelonlollipopno3.png"></a>
+            </div>
+    <div class="column">
+        <a href="cokeflavouredfinalwebsite.html"><img width="250" height="200" src="cokelollipopno3.png"></a>
+            </div>
+    <div class="column">
+        <a href="grapeflavouredfinalwebsite.html"><img width="250" height="200" src="grapelollipopno3.png"></a>
+        </div>
+    <div class="column">
+        <a href="orangeflavouredfinalwebsite.html"><img width="250" height="200" src="orangelollipopno3.png"></a>
+    </div>
+  </div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="cottoncandypagefinalwebsite.html" id="cottoncandy">Cotton Candy <img width="20" height="35" src="cottoncandyimageiconno2.png"></a>
+  <a href="chocolatepagefinalwebsite.html" id="chocolate">Chocolate <img width="20" height="35" src="chocolateimageiconno2.png"></a>
+  <a href="icecreampagefinalwebsite.html" id="icecream">Ice Cream  <img width="20" height="40" src="icecreamimageiconno2.png"></a>
+  <a href="lollipoppagefinalwebsite.html" id="lollipops">Lollipops  <img width="25" height="35" src="lollipopremovebgno2.png"></a>
+</div>
+
+
+
+<script>
+    function myFunction() {
+if (number < 50) {
+    alert("That's not enough keyruncy to buy this item")
+} else {
+    location.replace("feedlolmonorangeflavouredfinalwebsite.html")
+}
+    }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+</head>
+
+<center>    
+    <nav><h1>Bookings</h1></nav> 
+    <Nav>
+        <a href="Home page.html" > |Home page|</a>  
+    
+     <a href="About teephora.html">|about Tephora|</a>  
+    
+     <a href="Accomodation.html">|Exclusives|</a>
+    
+        <a href="Bookings.html">|booking|</a> 
+    
+    
+    </Nav> 
+       </center>
+
+       
+       
+        
+        <SCRIPT>
+            function ShowRadioButtonDiv (IdBaseName, NumberOfButtons) {
+                for (x=1;x<=NumberOfButtons;x++) {
+                    CheckThisButton = IdBaseName + x;
+                    ThisDiv = IdBaseName + x +'Div';
+                if (document.getElementById(CheckThisButton).checked) {
+                    document.getElementById(ThisDiv).style.display = "block";
+                    }
+                else {
+                    document.getElementById(ThisDiv).style.display = "none";
+                    }
+                }
+                return false;
+            }
+            </SCRIPT>
+            
+  
+<body>
+    <div> <h1>email address</h1>
+        <input placeholder="Example@gmail.com">
+    
+        <h2>phone number</h2>
+        <input placeholder="64+ 00 000 0000"> <BR> <BR>
+        
+
+        <Div id="divi"><FORM  style="position: unset;">
+            <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName1" ONCLICK="ShowRadioButtonDiv('GroupName', 4)"/>Credit card<BR>
+            <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName2" ONCLICK="ShowRadioButtonDiv('GroupName', 4)"/>Debit<BR>
+            <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName3" ONCLICK="ShowRadioButtonDiv('GroupName', 4)"/>paypal <BR>
+            <INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName4" ONCLICK="ShowRadioButtonDiv('GroupName', 4)"/>other<BR>
+            </FORM>
+        </Div>
+    
+     <DIV ID="GroupName1Div" STYLE="display:none;"><h2>Credit card</h2> <input placeholder="Credit card"></DIV>
+     <DIV ID="GroupName2Div" STYLE="display:none;"><h2>Debit</h2><input placeholder="Debit"></DIV>
+     <DIV ID="GroupName3Div" STYLE="display:none;"><h2>Paypal</h2><input placeholder="Paypal"></DIV>
+     <DIV ID="GroupName4Div" STYLE="display:none;"><h2>other</h2> <input placeholder="other"> </DIV>
+     
+    
+        <H2>Full name</H2>
+        <input placeholder="Full name" id="userinput"> 
+        <button onclick="myfunction ()">submit </button> 
+        <h3 id="message"></h3>
+    </div>
+   
+</body>
+
+<script>
+ 
+        function myfunction () {let userinput = document.querySelector ("#userinput");
+        let message = document.querySelector ("#message"); 
+
+        message.innerHTML="cant wait to see you " + userinput.value;
+    }
+  
+  </script>
+
+<style>
+    body {background-color: antiquewhite;text-align: center;}
+    b {text-align: center;}
+    nav {background-color: lightpink ;text-align: center;font-size: larger;}
+     a {color: black;}
+     div {text-align: start;}
+     
+     
+</style>
+<img src="powerpuff baddiee.html "> <br> <br>
+</html>

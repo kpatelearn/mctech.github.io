@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+</head>
+<body>
+
+<div class="navigation">
+    <nav>
+    
+      <div class="memeow">
+    <li><a href="./homepage.html">Home page</a></li>
+    <li><a href="./thingstodo.html">Things to do</a></li>
+    <li><a href=" ./placestogo.html">Places to go</a></li>
+    <li><a href="./accomodation.html">Places to stay</a></li>
+    <div class="neverleft">
+      "What if dinosaurs never left?"
+    </div>
+    
+  </div>
+  </div>
+    </nav>
+</div>
+
+
+<div class="speech">
+<p>In Terrawrian, happiness comes naturally. Its in our culture, our people, 
+  our deep sense of family, and our stunning surroundings. So whether you're looking for adventure, community connection, natural getaways,
+   or to recharge and reconnect, we've got just the thing. Join in with festivals and become embraced in both the water
+   and land socities unique cultures and forests. </p>
+
+</div>
+
+
+
+
+<div class="slidestext">
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img height="900" src="https://thumbs.dreamstime.com/b/big-city
+    -night-life-reflection-water-wave-long-exposure-techn
+    ics-panorama-landscape-town-urban-concept-149808021.jpg" style="width:250%">
+    <div class="text">Liopleurodon city</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img height="900" src="dinsoauersonthyebeach.jpg" style="width:250%">
+    <div class="text">Naeavaian</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img height="900" src="water.jpg"
+    style="width:250%">
+    <div class="text">Plesio<div>
+  </div>
+
+
+  
+</div>
+
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+
+<div class="thecontainer">
+  <div class="piccy">
+<img width="550" height="850" src="map.jpeg">
+</div>
+
+<div class="ahhhhhh">
+<p>Welcome to the Terrawrian Iles. They are made up of three subsections, the Liopleurdon area, Mosadorn and Stegola. Each section of the Iles offer something new to whoever visits them, maybe a memory, maybe a four leaf clover, or even just a new friend. If this is your first time here, we highly reccomend you take a day trip tour around the all of the islands, so you can really feel whats its like to live here.
+</p>
+</div>
+</div>
+
+
+
+<style>
+
+
+.thecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.piccy {
+  flex-basis: 40%
+}
+
+.ahhhhhh {
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+
+.speech {
+ font-size:30px;
+ color:darkgreen;
+ 
+ }
+
+.slidestext 
+{font-style: bold;
+font-size: 40px;
+text-align: left;}
+
+nav {position: relative; 
+background-color:rgb(253, 254, 255); 
+overflow: hidden;} 
+
+body 
+{
+  background-color:rgb(216, 228, 215); 
+  text-align: center;
+  font-family: 'times new roman';} 
+
+.memeow
+{text-align:left;}
+
+.neverleft{
+  text-align: right;
+  font-size: 40px;
+}
+
+.navigation ul 
+  {list-style: none; 
+  background: rgb(233, 147, 161); 
+  padding:0; 
+  margin:0;}
+
+.navigation li 
+{display:inline-block } 
+
+
+.navigation a 
+{ text-decoration: none; 
+  color:black; 
+  width: 80px; 
+  padding:20px 25px;
+  display:block; 
+  font-size: 20px; 
+  text-align: left;} 
+
+.navigation a:hover
+{background: rgb(180, 207, 175);} 
+
+
+.slideshow-container {
+  max-width: 1000px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}}
+</style>
+
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides() { 
+let i; 
+let slides = document.getElementsByClassName("mySlides"); 
+let dots = document.getElementsByClassName("dot"); 
+for (i = 0; i < slides.length; i++) { 
+  slides[i].style.display = "none";   
+} 
+slideIndex++; 
+if (slideIndex > slides.length) {slideIndex = 1}     
+for (i = 0; i < dots.length; i++) { 
+  dots[i].className = dots[i].className.replace(" active", ""); 
+} 
+slides[slideIndex-1].style.display = "block";   
+dots[slideIndex-1].className += " active"; 
+setTimeout(showSlides, 2000); } 
+</script>
+</body>
+</html>
+

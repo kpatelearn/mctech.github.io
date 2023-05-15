@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">Home ~</a>
+        <a href="page1.html">Our Experiences ~</a>
+        <a href="page2.html">Accomadation ~</a>
+        <a href="page3.html">About</a>
+    </nav>
+
+
+    <h1>Maulandia 🌊 </h1>
+    <h2>welcome to the official webpage of Maulandia</h2>
+    <p>Come visit the beautiful place of Maulandia where you are guranteed to see our famous Maui dolphins</p>
+
+    <style>
+         body {background-color:aliceblue;}
+        h1 {color:black;text-align: center; font: size 40px;px;}
+        nav {background-color: slategray;}
+        a {color:aliceblue;font-size: 20px;}
+        h2 {color:black;text-align: center;font-size: 30px;}
+        p {color: black;text-align: center; font-size: 20px;}
+        h3 {color: black;font-size: 30px;}
+        
+    </style>
+<marquee>
+
+
+</marquee>
+    <center>
+        <img src="tech stuff/maulandia.png" width="1200" height="850">
+
+        <h3>Would you like to sign up? 
+            Enter your name here and scroll down:
+        </h3>
+
+   
+  
+    <input id="userInput"> <br> <br>
+    <button onclick="myFunction()"> submit </button>
+    <h1 id="message">  </h1>
+    </center>
+
+
+    <script>
+        
+         function myFunction() {
+            let userInput = document.querySelector("#userInput");
+            let message = document.querySelector("#message");
+            
+
+            message.innerHTML = "Welcome to Maulandia " + userInput.value; 
+         }
+
+    </script>
+    
+</html>

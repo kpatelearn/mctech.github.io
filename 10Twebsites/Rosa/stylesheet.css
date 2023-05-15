@@ -1,0 +1,76 @@
+div {background-color: white;
+    height: 100px;
+     text-align: center;
+      height: 35px;
+      margin-top: 40px;
+    }
+
+
+   h2 {color: black;
+    display: inline;
+    }
+
+   h1 {
+    background-color: lightseagreen;
+    font-style: italic; font-size: 90px;
+    color: azure;
+    margin-top: 0%;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+      
+
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+     background-image: url("https://images7.alphacoders.com/546/546435.jpg");
+      background-repeat: no-repeat;
+       background-size: 100%;}
+      
+
+ a {
+     padding: 14px, 16px;
+     text-align: left;
+   color:black;
+   text-decoration: none;
+ }
+
+ a:hover {
+
+     color: azure;
+    background-color: rgb(23, 133, 127);
+    padding: 7.5px, 7.5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  span {
+      padding: 8px;
+
+  }
+
+  
+ #l3 {
+    float: left;
+    padding-left: 20px;
+    }
+ 
+  #l2 {
+    float: right;
+    padding-left: 30px;
+    }
+ 
+  #l1 {
+    float: none;
+    padding-left: 40px;
+    }
+
+    .container {
+        display: flex; 
+        justify-content: flex-start;
+    } 
+
+
+
+    
+   

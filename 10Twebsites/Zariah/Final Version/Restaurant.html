@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    * {box-sizing: border-box;}
+
+    body {font-family:Georgia, 'Times New Roman', Times, serif ; font-size: 17px;}
+
+    .container {position: relative;max-width: 800px; margin: 0 auto;}
+
+    .container img {vertical-align: middle;}
+
+    .container .content {position: absolute; bottom: 0 ; background: rgb(0,0,0);
+    /* Fallback color*/
+    color: #f1f1f1;
+    width: 50%;
+    padding: 20px;
+    }
+</style>
+
+<style>
+    body{font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
+    }
+
+    #myBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:rgb(85, 145, 171);
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #mybtn:hover {background-color: #555;}
+</style>
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to the top">^</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+//When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function()
+{scrollFunction()};
+
+function scrollFunction() {if (document.body.scrollTop > 20||
+    document.documentElement.scrollTop>20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+//when the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop =0;
+}
+
+</script>
+
+    <style>
+        body{background-color:rgb(203, 232, 255);}
+    </style>
+
+    <style>
+        body{text-align: center;}
+    </style>
+
+<style>
+      ul {
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgb(42, 93, 151);
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #ffffff;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(101, 188, 246);
+    }
+</style>
+
+
+<ul>
+    <li style="float: left;"><a class="active" href="Homepage.html">Home</a></li>
+    <li><a class="active" href="Booking.Html">Bookings</a></li>
+    <li><a class="active" href="Chambers.html">Chambers</a></li>
+    <li><a class="active" href="Restaurant.html">Restaurant</a></li>
+    </div>
+    <li><a class="active" href="Activites.html">Activities</a></li>
+</ul>
+
+
+<h2>Restaurant</h2>
+<p>Here are the Top 3 Restaurant the Resort have recommended</p>
+
+<style>
+    h2{color: rgb(42, 103, 171);}
+    p{color: rgb(62, 142, 228);}
+</style>
+
+<br>
+
+<div class="container">
+    <img src="Jeffrey Shells copy.jpg" alt="Jeffrey" style="width: 50%;">
+    <div class="content">
+        <h1>Jeffrey Shells</h1>
+        <p>4.5 star Restaurant + indoor & outdoor bar. Sereves familys of all ages and does a theme every month</p>
+        <p>Cost entry: </p>
+        <p>$12 per Adult</p>
+        <p>$10 per Child</p>
+        <p>$85 1-5 people (Including children)</p>
+
+    </div>
+</div>      
+
+<br><br>
+
+<div class="container">
+    <img src="Millions Grains copy.jpg"alt="Sand" style="width: 60%;">
+    <div class="content">
+        <h1>Millions Grains of Sand</h1>
+        <p>4 star Restaurant + indoor bar . Sereves familys of all ages and has entertainment at 7:30PM</p>
+        <p>Cost entry: </p>
+        <p>Cost entry: </p>
+        <p>$10 per Adult</p>
+        <p>$8 per Child</p>
+        <p>$95 1-5 people (Including children)</p>
+    </div>
+</div>      
+
+<br> <br>
+
+
+<div class="container">
+    <img src="Daimond copy.jpg"alt="Diamond" style="width: 75%;">
+    <div class="content">
+        <h1>Diamond in the rough</h1>
+        <p>5 star Indoor & outdoor Restaurant + bar . Sereves familys of all ages and has entertainment at 24/7.</p>
+        <p>This Resturant has to be walked on foot. Don't worry it is only a 2-5 minuete walk. Includes amazing views.</p>
+
+        <p>Cost entry: </p>
+        <p>Cost entry: </p>
+        <p>$7.99 per Adult</p>
+        <p>$4.99 per Child</p>
+        <p>$90 1-5 people (Including children)</p>
+    </div>
+</div> 
+
+<br><br>
+
+</body>
+</html>
+

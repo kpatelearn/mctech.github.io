@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+ 
+ <style>
+    body {
+      font-family: "Lato", sans-serif;
+      transition: background-color .5s;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:hotpink;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: pink;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color:pink;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="member.html"> Home </a>
+      <a href="about.html">Contact</a>
+      <a href="donation.html">Donations</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      
+    </div>
+
+    
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+
+    <style>
+      #main {color: white;}
+    </style>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "pink";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "pink";
+    }
+    </script>
+
+    
+<style>
+  body {
+    background-color: pink;
+    font-family: cursive;
+  }
+  
+  .glow {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1 class="glow">Resturants & cafes</h1>
+
+  <style>
+    body{
+      color: white;
+    }
+
+
+    div.gallery {
+      margin: 5px;
+      border: 10px solid hotpink;
+      float: left;
+      width: 175px;
+    }
+
+    
+    
+    div.gallery:hover {
+      border: 10px solid  white;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    /* Add a hotpink text color to links */
+    a {
+          color: hotpink; text-align:center;
+        }
+        a:link {
+              text-decoration: none;
+            }
+           
+            a:visited {
+              text-decoration: none;
+            }
+           
+            a:hover {
+              text-decoration: underline;
+            }
+           
+            a:active {
+              text-decoration: underline;
+            }
+
+    
+    
+    </style>
+    </head>
+    <body>
+    
+    <div class="gallery 1">
+      <a target="_blank" href="rsz_1pink_cafe_outside_kardashian.jpg">
+        <img src="rsz_1pink_cafe_outside_kardashian.jpg" alt="pink cafe" width="600" height="400">
+      </a>
+      <div class="desc">The pink cafe</div>
+      <div class="desc">Known for their pink style! Come and enjoy baked treats and ice cream at this destination!</div>
+      <a href="Pink.png">Click for more information </a>
+    </div>
+
+   
+    
+    <div class="gallery">
+      <a target="_blank" href="officalrare.jpg">
+     <img src="officalrare.jpg" alt="Pink" width="600" height="400">
+      </a>
+      <div class="desc">The Rare Resturant</div>
+      <div class="desc">Rumored to be the best resturant in town. Enjoy the most luxurious meal in town! </div>
+      <a href="rare.html">Click for more information </a>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="rsz_1captain_beaver_after.jpg">
+        <img src="rsz_1captain_beaver_after.jpg" alt="Rare" width="600" height="400">
+      </a>
+      <div class="desc">Captin Beaver</div>
+      <div class="desc">Come to Captain Beaver to experiance true beaver pride with a side of burgers & fries!</div>
+      <a href="beavemenu.html">Click for more information </a>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="rsz_11la_emily.jpg">
+        <img src="rsz_11la_emily.jpg" alt="french" width="600" height="400">
+      </a>
+      <div class="desc">Café de france</div>
+      <div class="desc"> Can't get to France? Enjoy the ultimate french dream in the comfort of your own country!</div>
+      <a href="france.html">Click for more information </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="rsz_3royal_resutrant.jpg">
+        <img src="rsz_3royal_resutrant.jpg" alt="country" width="600" height="400">
+      </a>
+      <div class="desc">Country Club Bar & Resturant</div>
+      <div class="desc">Dine at the luxurious bar & resturant located in the top country club!</div>
+      <a href="country.html">Click for more information </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="rsz_1purple_cafe.jpg">
+        <img src="rsz_1purple_cafe.jpg" alt="purple" width="600" height="400">
+      </a>
+      <div class="desc">Purple Resturant</div>
+      <div class="desc">like the colour purple? If so, come to this small little cafe and let your eyes enjoy a full purple dine in!</div>
+      <a href="purple.html">Click for more information </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="rsz_nature_cafe.jpg">
+        <img src="rsz_nature_cafe.jpg" alt="Nature" width="600" height="400">
+      </a>
+      <div class="desc">The Nature Dine In</div>
+      <div class="desc">Come to this little cafe, be emerged with nature without having to go the extra mile!</div>
+      <a href="Nature.html">Click for more information </a>
+    </div>
+  
+    
+
+   
+
+
+
+
+
+
+
+
+
+</body>
+</html>

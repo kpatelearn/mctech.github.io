@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+    body {
+          font-family: "monaco", monospace;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: rgb(255, 130, 130);
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        .dropdownno2 {
+          float: left;
+          overflow: hidden;
+        }
+        
+
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .dropdownno2 .dropbtnno2 {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: rgb(255, 83, 83);
+        }
+        .navbar a:hover, .dropdownno2:hover .dropbtnno2 {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgb(255, 130, 130);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(255, 83, 83);
+          z-index: 1;
+        }
+        
+        .dropdown-contentno2 {
+          display: none;
+          position: absolute;
+          background-color: rgb(255, 130, 130);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(255, 83, 83);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          float: none;
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        
+        .dropdown-contentno2 a {
+          float: none;
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        
+        .dropdown-contentno2 a:hover {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdownno2:hover .dropdown-contentno2 {
+          display: block;
+        }
+body {
+    background-color: beige;
+    font-family: "monaco", monospace;
+    }
+    #banner {
+text-align: center;
+background-color: rgb(177, 177, 177)
+    }
+    .shop {
+font-family: "monaco", monospace;
+    }
+    #right {
+      text-align: right;
+      font-size: 18px;
+    }
+    #lolmon {
+        text-align: center;
+    }
+    
+
+.b1 {
+            background-color: rgb(255, 130, 130);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 13px;
+            padding: 7px;
+            text-align: center;
+        }
+        .b1:hover {
+            background-color: rgb(255, 83, 83);
+        }
+        .b2 {
+            background-color: rgb(255, 130, 130);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 13px;
+            padding: 7px;
+        }
+        .b2:hover {
+            background-color: rgb(255, 83, 83);
+        }
+        #result {
+            color:beige;
+        }
+
+        #mydiv {
+  position: absolute;
+  z-index: 9;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+}
+#imgcenter {
+    text-align: center;
+}
+#right {
+  text-align: right;
+}
+#in {
+  width: 5%;
+  background-color: rgb(177,177,177);
+  color: black;
+  border: none;
+  font-family: "monaco", monospace;
+  font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+
+           
+    <div class="navbar">
+        <a href="welcomefinalwebsite.html">Welcome</a>
+        <a href="tragedyfinalwebsite.html">The Recent Tradgedy</a>
+        <div class="dropdown">
+            <button class="dropbtn">Donate
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="moneydonationfinalwebsite.html">Donate Money</a>
+                <a href="conversionfinalwebsite.html">Feed A Lolmon</a>
+                <a href="gamepagefinalwebsite.html">Help A Lolmon Get Their Keyruncy Back</a>
+              </div>
+        </div> 
+
+        <div class="dropdownno2">
+            <button class="dropbtnno2">Fun Facts
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-contentno2">
+                <a href="lolmonfunfactpagefinalwebsite.html">Lolmon</a>
+                <a href="lollylandfunfactpagefinalwebsite.html">Lollyland</a>
+              </div>
+        </div> 
+    </div>
+
+
+<div id="banner">
+<h1 class="shop">Feed A Lolmon</h1>
+
+<div id="right">
+  <img width="40" height="40" src="pinkcurrency.png">
+  <input id="in"></input> keyruncy
+</div>
+</div>
+
+<body onload="multiply ()">
+    <script>
+        function multiply () {
+        var d,e,f
+        var d=document.getElementById("result").innerHTML=localStorage.getItem("output");
+        e=200
+        f=+d-e
+        document.getElementById("in").value=f;
+        localStorage.setItem("in",f)
+        return false;
+    }
+    </script>
+
+<p>
+    Drag the ice cream to the lolmon's mouth and press eat to feed the lolmon. 
+</p>
+
+
+<div id="mydiv">
+    <div id="mydivheader">
+        <img width="48" height="81" src="strawberryicecreamremovebg.png" id="demo2">
+    </div>
+  </div>
+<p id="result"></p>
+<div id="imgcenter">
+<img width="368" height="276" src="bluecharacter.png">
+<br>
+<button class="b1" onclick="myFunction()">Eat!</button>
+
+<button class="b2" onclick="myFunction2()">Next</button>
+</div>
+<script>
+function myFunction() {
+  const element = document.getElementById("demo2");
+  element.remove();
+}
+
+function myFunction2() {
+        location.replace("thankyouforfeedinglolmonfinalwebsite.html")
+}
+</script>
+
+
+<script>
+    dragElement(document.getElementById("mydiv"));
+    
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        elmnt.onmousedown = dragMouseDown;
+      }
+    
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+      }
+    
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    
+      function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+    </script>
+</body>
+</html> 

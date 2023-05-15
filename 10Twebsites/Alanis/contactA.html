@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid  #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: pink;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: hotpink;
+          padding: 20px;
+        }
+        </style>
+        </head>
+        <body>
+        
+            <style>
+                body {
+                  background-color:pink;
+                  font-family: cursive;
+                }
+               
+                .glow {
+                  font-size: 35px;
+                  color: #fff;
+                  text-align:left;
+                  animation: glow 1s ease-in-out infinite alternate;
+                }
+               
+                @-webkit-keyframes glow {
+                  from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                  }
+                 
+                  to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px  #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                  }
+                }
+                </style>
+                </head>
+                <body>
+               
+                <h3 class="glow">Contact Alanis</h3>
+
+        
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Your country..">
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+            
+            <input type="submit" value="send">
+          
+
+            
+            
+               
+
+            
+           
+        </div>
+</body>
+</html>

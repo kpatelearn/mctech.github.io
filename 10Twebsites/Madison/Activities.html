@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: lightblue;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: rgb(98, 180, 207);
+    }
+    </style>
+    </head>
+    <ul>
+        <li><a class="active" href="Homepage.html">Home</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutus.html">About</a></li>
+      </ul>
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {box-sizing: border-box}
+      body {font-family: "Lato", sans-serif;}
+      
+      /* Style the tab */
+      .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: lightblue;
+        width: 30%;
+        height: 300px;
+      }
+      
+      /* Style the buttons inside the tab */
+      .tab button {
+        display: block;
+        background-color: lightblue;
+        color: rgb(98, 180, 207);
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: rgb(98, 180, 207);
+      }
+      
+      /* Create an active/current "tab button" class */
+      .tab button.active {
+        background-color: lightblue;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 70%;
+        border-left: none;
+        height: 300px;
+      }
+      body {background-color: rgb(98, 180, 207); color:floralwhite;}
+      </style>
+      </head>
+      <body>
+      
+      <h2>Activities</h2>
+      <p>Click on what intrests you!</p>
+      
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Whales')" id="defaultOpen">Whales</button>
+        <button class="tablinks" onclick="openCity(event, 'Dinosaurs')">Dinosaurs</button>
+        <button class="tablinks" onclick="openCity(event, 'Candy')">Candy</button>
+        <button class="tablinks" onclick="openCity(event, 'Forest')">Forest</button>
+      </div>
+      
+      <div id="Whales" class="tabcontent">
+        <h3>Riding whales at sunset</h3>
+        <p>Come along and enjoy a once in a life time oppurtunity riding whales! 
+            As you ride on your whales back you can enjoy an incrediable view of the best sunsets you will ever see. 
+            We have different sessions depending on how long you want to go for:
+            30 minutes, 1 hour or 2 hours
+        </p>
+    
+      </div>
+      
+      <div id="Dinosaurs" class="tabcontent">
+        <h3>Dinosaur Zoo</h3>
+        <p>Feeling bored? Come have a blast at dinosaur zoo! A place safe to get close to the biggest animal on earth, you'll
+            see many different dinosaurs in their habitats and if your lucky you get to see some of our friendly ones roaming around. This is 
+            perfect for people of all ages to visit!
+        </p> 
+      </div>
+      
+      <div id="Candy" class="tabcontent">
+        <h3>Candy Mansion</h3>
+        <p>If your a sweet tooth be sure to stop and look around at our Candy Mansion! Yes you heard me candy 
+            that means a mansion made out of candy. This mansion can house up to 500 people! The best candy in 
+            the world lives right here, you can even try the house itself. Whats taste testing wine when you can 
+            taste test candy, we are looking for the best candy eaters to come and join!
+        </p>
+      </div>
+
+      <div id="Forest" class="tabcontent">
+      <h3>Magical forest</h3>
+      <p>There's strolls in the park and then there's strolling though a magical forest. Let our tour guides 
+        take you on a enchanting experience through the magical forest! There's lakes that whisper, winds telling secrets and 
+        many more intriguing things, if you listen closley you can hear the voices of faeries in the sound of bells and if you 
+        see one we beleive you will have luck for the rest of your life. Make sure you pack your walking shoes and let this tour show
+        you the beauty of our forest.
+      </p>
+
+      </div>
+      
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+     
+     <h1>What's your favourite activity</h1>
+     <input id="userInput">
+     <button onclick="myFunction()">Submit </button>
+     <h1 id="message"></h1>
+ 
+ 
+ 
+     <script>
+         function myFunction() {
+            let userInput = document.querySelector("#userInput");
+            let message = document.querySelector("#message");
+ 
+            message.innerHTML = "I love the " + userInput.value;
+         }
+     </script>
+    
+</body>
+</html>

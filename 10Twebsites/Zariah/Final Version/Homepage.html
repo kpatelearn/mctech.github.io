@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    body {background-color: rgb(255, 255, 255) ;}
+</style>
+
+<style>
+
+    ul {
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgb(110, 178, 255);
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #ffffff;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(101, 188, 246);
+    }
+
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* clearfix (clear floats) */
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+</style>
+
+<style>
+    body {font-family:Georgia, 'Times New Roman', Times, serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solic #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input [type=submit] {
+        background-color: #ccc;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+</style>
+
+</body>
+</html>
+
+<ul>
+    <li style="float: left;"><a class="active" href="Homepage.html">Home</a></li>
+    <li><a class="active" href="Booking.Html">Bookings</a></li>
+    <li><a class="active" href="Chambers.html">Chambers</a></li>
+    <li><a class="active" href="Restaurant.html">Restaurant</a></li>
+    <li><a class="active" href="Activites.html">Activities</a></li>
+</ul>
+
+<img width="1424" height="583" src="Final Resport.png"> <br>  
+
+<h1> Welcome to Isla Resort</h1>
+<style>
+    h1{text-align: center; color: lightskyblue;}
+</style>
+
+<h3> 
+    
+    Otherwise known as paradise! This wonderful institution was established 2023 owned by Zariah Collamat. Located on the beachy region of DimeSands Island. If you come across our local town, stay at Isla Resort! Filled with all your vacation needs. White sand beaches, spas, swim-up bars, and even in-room jacuzzis are all available. 
+<br><br>
+    Have a relaxing week away from reality. We will be waiting for you.
+</h3>   
+
+  
+ <style> 
+h3 {text-align: center; color: lightblue;}
+</style>
+
+<div class="row">
+<div class="column">
+    <h2>Contact us</h2>
+    <div class="container">
+        <form function="Homepage">
+    
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="firstname" placeholder="your name..">
+       
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="Lastname" placeholder="Your lastname..">
+        
+            <label for="country">country</label>
+            <select id="country" name="country">
+                <option value="New Zealand">New Zealand</option>
+                <option value="Austraila">Austraila</option>
+                <option value="Other">Other</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height: 50px;">
+            </textarea>
+        
+          
+        </form>
+
+        <label> Give us a Review: </label>
+
+        <input id="UserInput"> <br>
+        <button onclick="myFunction()">Submit</button>
+        <h1 id="message"></h1>
+
+        <script>
+            function myFunction() {
+                let UserInput = document.querySelector("#UserInput");
+                let message = document.querySelector("#message");
+                message.innerHTML = "Thank you for your review. " }
+        </script>
+
+
+
+    </div>
+    
+
+
+</div>
+<div class="column">
+    <img src="spa copy.jpg" alt="Spa" style="width:95%;">
+</div>
+<div class="column">
+    <img src="Beach view copy.jpg" alt="Beach" style="width: 100%;">
+</div>
+<div class="column">
+    <img src="Surfing copy.jpg" alt="Surfing" style="width: 100%;">
+</div>
+</div>

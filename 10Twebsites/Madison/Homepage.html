@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Welcome to Dreamlandia</h1>
+<h2>where all your best dreams come true</h2> 
+
+
+
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: lightblue;
+    
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: rgb(98, 180, 207);
+    }
+body {background-color: rgb(98, 180, 207); text-align: center; color: floralwhite;}
+    </style>
+    </head>
+    <body>
+    
+    <ul>
+      <li><a class="active" href="Homepage.html">Home</a></li>
+      <li><a href="Activities.html">Activities</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="aboutus.html">About</a></li>
+    </ul>
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="flyingwhales.jpg" alt="Whales" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i.guim.co.uk/img/media/6934a86e88b24bcfea3ffdf0ec1972dd143ae5cc/189_0_4622_2776/master/4622.jpg?width=1200&quality=85&auto=format&fit=max&s=4b1a597b0fd6219f496cf1b639a8e8f3" alt="Dinosaurs" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://tiffanydawn.files.wordpress.com/2014/05/screen-shot-2014-05-08-at-11-08-52-am.png?w=620&h=404" alt="Candy Mansion" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://t4.ftcdn.net/jpg/05/41/66/35/360_F_541663564_TUSOQROrrPZPkSZvdbXd6Wil5yCezuI7.jpg" alt="Magical forest" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>

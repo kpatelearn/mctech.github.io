@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+<h1>BOOKING</h1>
+<h3>Available doctors and available times (tbc)</h3>
+
+
+<div id="doctors">
+<p1>Doctor Zariah Collamat: 10:00 AM - 9:00 PM</p1> 
+</div>
+
+<div id="doctors">
+    <p2>Doctor Lucy Merid: 10:00 AM - 10:00 PM</p2>
+</div>
+
+<div id="doctors">
+    <p4>Doctor Zoe Gillman: 8:00 AM - 5:30 PM</p4>
+</div>
+
+<ul>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="doctors.html">Doctors</a></li>
+
+</ul>
+
+<div id="myDivtwo">
+    <h1>Would you like to book with us?</h1>
+    <h4>Yes or No?</h4>
+    <input id="UserInput"> <br><br>
+    <button onclick="myFunction()" class="button">click</button>
+    <h5>Please note that if you say no, you will be returned to the home page.</h5>
+  </div>  
+
+
+
+
+
+
+
+
+<style>
+    h1 {text-align: center;}
+    h3 {text-align: center;}
+    body {background-color: bisque;}
+    #myDivtwo {text-align: center;}
+ #doctors {
+    text-align: center;
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #466ac3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid rgb(90, 51, 218)
+}
+li {
+    float:left
+}
+li a {
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #dddd;
+    text-decoration: none;
+}
+
+/* change the link color to #111 (black) on hover */
+li a:hover {
+background-color: #111;
+}
+
+.active {
+    background-color: green
+}
+ 
+
+</style>
+
+<script>
+    var UserInput=document.querySelector("#UserInput")
+    function myFunction ()
+    {if (UserInput.value == "Yes") {
+        location.replace ("availability.html")
+    }
+    else {
+        location.replace ("homepage.html")
+    }}
+    </script>
+    
+
+</body>
+</html>

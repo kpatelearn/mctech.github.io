@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+    body{font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
+    }
+
+    #myBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 50px;
+        border: none;
+        outline: none;
+        background-color:rgb(85, 145, 171);
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #mybtn:hover {background-color: #555;}
+</style>
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to the top">^</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    //When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function()
+    {scrollFunction()};
+    
+    function scrollFunction() {if (document.body.scrollTop > 20||
+        document.documentElement.scrollTop>20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    
+    //when the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop =0;
+    }
+    
+    </script>
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+    
+        .bg {
+            /*the image used*/
+            background-image:url(Chambers\(nolable\).png);
+    
+            /*full height*/
+            height: 50%;
+            
+            /*center and scale the image nicely*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+<style>
+
+ul {
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgb(103, 134, 108);
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #ffffff;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(101, 188, 246);
+    }
+</style>
+
+<style>
+    body {background-color: #a9bba8;}
+</style>
+
+</body>
+</html>
+
+<ul>
+    <li style="float: left;"><a class="active" href="Homepage.html">Home</a></li>
+    <li><a class="active" href="Booking.Html">Bookings</a></li>
+    <li><a class="active" href="Chambers.html">Chambers</a></li>
+    <li><a class="active" href="Restaurant.html">Restaurant</a></li>
+    <li><a class="active" href="Activites.html">Activities</a></li>
+    
+</ul>
+
+<div class="bg"></div>
+
+<h1>Rooms you can choose</h1>
+<style> 
+h1 {color: rgb(81, 101, 84) ;text-align: center;}
+</style>
+
+<style>
+    h3 {text-align: center; color: rgb(255, 255, 255);}
+    body{ text-align: center;}
+</style>
+
+<h3>Single room</h3>
+<img src="Single copy.jpg"> 
+<p> Cost: $75 one night </p>
+<p> 1 bedroom,1 bed, 1 bathroom </p>
+<p> Mini fridge Cost: drinks $3.50 Snacks $4.00</p>
+
+<h3>Twin room</h3>
+<img src="Twin room copy.jpg">
+<p> Cost: $85 one night </p>
+<p> 1 bedroom,2 beds, 1 bathroom </p>
+<p> Mini fridge Cost: drinks $3.50 Snacks $4.00</p>
+
+<h3>Studio room</h3>
+<img src="Studio copy.jpg">
+<p> Cost: $105 one night </p>
+<p> 1 bedroom, 1 bathroom+jacuzzi </p>
+<p> Balcony over looking the Resort pool</p>
+<p> Mini fridge Cost: drinks $3.50 (non-alcholic) Snacks $4.00</p>
+
+<h3>Deluxe room</h3>
+<img src="Deluxe copy.jpg">
+<p> Cost: $115 one night </p>
+<p> 2 bedroom, 2 bathroom+hot tub </p>
+<p> Mini fridge Cost: drinks $3.50 Snacks $4.00 Alcholic drinks $25.00</p>
+
+<h3>Room+View room</h3>
+<img src="Room+view copy.jpg">
+<p> Cost: $115 one night </p>
+<p> 2 bedroom, 2 bathroom+hot tub </p>
+<p> Mini fridge Cost: drinks $3.50 Snacks $4.00 Alcholic drinks $25.00</p>
+<p>Every room has a view but this is the best view of the whole Resort</p>
+
+
+<h3>Suite room</h3>
+<img src="Suite copy.jpg">
+<p> Cost: $115 one night </p>
+<p> 2 bedroom, 2 bathroom+hot tub with jacuzzi function </p>
+<p> Mini fridge Cost: drinks $3.50 Snacks $4.00 Alcholic drinks $25.00</p>
+
+
+<h3>Presidential room</h3>
+<img src="Presidential copy.jpg">
+<p> Cost: $450 one night </p>
+<p> 3 bedroom, 2 bathroom+hot tub with jacuzzi </p>
+<p> Kitching facilities Cost: drinks $3.50 Snacks $4.00 Alcholic drinks $25.00</p>
+<p>Very own living room</p>
+
+<br>
+
+
+

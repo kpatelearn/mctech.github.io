@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* Full height */
+            height:50%;
+
+            /* Center and Scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /*images used*/
+        .img1 {background-image: url(Scuba.jpg);}
+        .img2 {background-image: url(Spa.jpg);}
+        .img3 {background-image: url(ActiveSurf.jpeg);}
+        .img4 {background-image: url(Rock.jpg);}
+        .img5 {background-image: url(Jetski.jpg);}
+
+        /*posistion text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0,0,0);
+            /*Fall back color */
+            background-color: rgb(0,0,0,0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 80px;
+            border: 10px solid #f1f1f1;
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index:2;
+            width: 1000px;
+            Padding: 20px;
+            Text-align:center;
+        }
+    </style>
+
+
+<style>
+    body{font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
+    }
+
+    #myBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 50px;
+        border: none;
+        outline: none;
+        background-color:rgb(85, 145, 171);
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #mybtn:hover {background-color: #555;}
+</style>
+
+</head>
+<body>
+
+ 
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to the top">^</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    //When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function()
+    {scrollFunction()};
+    
+    function scrollFunction() {if (document.body.scrollTop > 20||
+        document.documentElement.scrollTop>20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    
+    //when the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop =0;
+    }
+    
+    </script>
+
+    <style>
+
+    ul {
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgb(53, 69, 57);
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #ffffff;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(101, 188, 246);
+    }
+    </style>
+
+<ul>
+    <li style="float: left;"><a class="active" href="Homepage.html">Home</a></li>
+    <li><a class="active" href="Booking.Html">Bookings</a></li>
+    <li><a class="active" href="Chambers.html">Chambers</a></li>
+    <li><a class="active" href="Restaurant.html">Resturant</a></li>
+    <li><a class="active" href="Activites.html">Activities</a></li>
+</ul>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+
+<div class="bg-text">Activities all under $30</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<script type="text/javascript">
+    function add() {
+        var num = document.getElementById("mynum").value;
+        if(num == '') num = 0;
+        document.getElementById("mynum").value = parseInt(num ,10) + 1;
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+    <center>
+        <h1 class="order-header">ENTER ORDER AMOUNT</h1>
+        
+        <img 
+        class="jumper1"
+        width="250";
+        src="Tech/vote-jumper1-v2.png">
+    
+        <img 
+        class="jumper2"
+        width="250";
+        src="Tech/vote-jumper2-v2.png">
+    
+        <img 
+        class="tshirt1"
+        width="205";
+        src="Tech/vote-tshirt2-v2.png">
+    
+        <img 
+        class="tshirt2"
+        width="215";
+        src="Tech/vote-tshirt1-v2.png">
+         
+        <br>
+
+    <H1 class="invis2"><input class="counter" type="text" id='mynum'> __________
+            <input class="counter" type="text" id='mynum'> __________
+            <input class="counter" type="text" id='mynum'> __________
+            <input class="counter" type="text" id='mynum'></H1>
+        
+            <marquee>     
+                <a class="vote-banner"> VOTE ELLIOT 2023 </a><a class="invis1">_________</a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________
+                </a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________
+                </a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________
+                </a><a class="vote-banner">VOTE ELLIOT 2023 <a class="vote-banner"> VOTE ELLIOT 2023 </a><a class="invis1">_________</a><a class="vote-banner">
+                    VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">
+                    VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">
+                    VOTE ELLIOT 2023</a><a class="invis1">_________</a><a class="vote-banner">VOTE ELLIOT 2023</a>       
+            </marquee>
+
+</center>
+<div class="flex">
+       <span>
+            <h1 class="shipping-payment">SHIPPING ADDRESS</h1>  
+            <h3 class='form-mini-headings'> First name <a class="invis3">_________________</a> Last Name </h3>
+            <br> <input class="info-box-type2"> <input class="info-box-type2">
+            <h3 class='form-mini-headings'> Location </h3>
+            <br> <input class="info-box-type1">
+            <h3 class='form-mini-headings'> Phone Number </h3>
+            <br> <input class="info-box-type1">
+            <h3 class='form-mini-headings'> Address </h3>
+                <br> <input class="info-box-type1">
+        </span>
+<center>
+
+        <span>
+            <h1 class="shipping-payment">PLEASE SELECT PAYMENT METHOD</h1>
+            
+            
+            
+               <input type="checkbox" class="credit" id="credit" name="credit" value="credit">
+                <label for="credit"> <img class="card-img" src="Tech/credit card.png"> </label>
+
+                 <input type="checkbox" id="debit" name="debit" value="debit">
+                <label for="debit"> <img class="card-img" src="Tech/debit card.png"> </label>
+                
+                <input type="checkbox" id="pay pal" name="pay pal" value="pay pal">
+                <label for="pay pal"> <img class="card-img" src="Tech/pay pal.png"> </label>
+        </span>
+
+<br>
+
+        <br>
+
+        <a href="Confirm.html"> <button class="confirm-button">Confirm</button> </a>
+    
+<h1 class="line">___________________________</h1>
+
+<h1 class="cupon-heading">Enter copon code hiden in the website to earn 25% off</h1>
+
+<div id="function"></div>
+<input class="copon-input" id="userInput">
+<button onclick="myFunction()" class="copon-button">click</button>
+</div>
+<script>
+    var userInput = document.querySelector ("#userInput")
+    function myFunction ()
+    {if (userInput.value =="Co67Ellv0TE")  {alert("Congradulations you have won 25% off!")}
+    else {alert("incorect code")}}
+</script>
+
+</center>
+    
+
+    <style>
+   body{
+    background-color: #fff6d7;  
+        } 
+
+    .order-header{
+        color:#b80808;
+        font-size: 2.25cm;
+    }
+
+    .jumper1{
+
+    }
+    
+    .vote-banner {
+        color: #fff6d7;
+        background-color: #b80808;
+        font-size:20px;} 
+
+    .invis1 {
+        color: #b80808;
+        background-color: #b80808;   
+        font-size:20px;}
+        
+        .invis2{
+        color:#fff6d7
+        }
+
+        .invis3{
+        color:#2a415b
+        }
+
+        .flex { display: flex; }
+
+        .shipping-payment{
+        color: #fff6d7;
+        font-size: 1cm;
+    }
+
+        .form-mini-headings{
+        color:#fff6d7;
+        font-size: 30px;
+        margin:1px;
+        }
+
+        .info-box-type1{
+            width:635px;
+            height:40px;
+            border-color: #b80808; 
+            margin:1px;
+            background-color: #fff6d7;
+            color:#b80808;
+            font-size:25px;
+        }
+
+        .info-box-type2{
+            width:312.5px;
+            height:40px;  
+            border-color: #b80808; 
+            margin:1px;
+            background-color: #fff6d7;
+            color:#b80808;
+            font-size:25px;
+        } 
+
+        .counter {
+            width:60px;  
+            height:30px;
+            color:#b80808;
+            font-size: 20px;
+            border-color: #b80808;
+            border-radius: 10px;
+        }
+
+       
+
+        .credit {
+            margin-right: 1em;
+        }
+
+        .card-img {
+            width:150px;
+            margin-right: 1em;
+        }
+
+        .confirm-button{
+            width:300px; 
+            height:75px;
+            font-size:50px;
+            background-color:#b80808;
+            color:#fff6d7;
+         }
+         .confirm-button:hover {
+        background-color: #a11313;  
+        
+    } 
+    .confirm-button:active  {
+        background-color: #6e0a0a;
+    }
+
+        .portrait-line-cream{
+            width:300px;
+        }
+
+        .line {
+        color:#fff6d7;
+        font-size:25px
+    }
+
+    .cupon-heading{
+        color:#fff6d7;
+        font-size:30px
+    }
+
+    .copon-button{
+        background-color: #fff6d7;
+        color:#b80808;
+        font-size:25px;
+        border-color: #b80808;
+    }
+
+    .copon-input {
+        border-color: #b80808;
+        font-size:20px;
+        color:#b80808;
+        background-color: #fff6d7;
+    }
+
+        body{   
+            width: 100%;
+          height: 950px;
+          background: linear-gradient(
+            to top,
+            #2a415b 50%,
+            #2a415b 40%,
+            #fff6d7 0%,
+            #fff6d7 60%);}
+
+    .bar-buttons {
+    font-size:15px
+    }
+
+
+    body   
+        {  
+        height: 125vh;  
+        margin-top: 80px;  
+        padding: 30px;  
+        background-size: cover;    
+        }  
+        header {  
+        background-color: rgb(252, 255, 236);  
+        position: fixed;  
+        left: 0;  
+        right: 0;  
+        top: 5px;  
+        height: 30px;  
+        display: flex;  
+        align-items: center;  
+        box-shadow: 0 0 25px 0 #2a415b;  
+        }  
+        header * {  
+        display: inline;  
+        }  
+        header li {  
+        margin: 20px;  
+        }  
+        header li a {  
+        color: #b80808;  
+        text-decoration: none;  
+        }  
+        </style>   
+        </Head>  
+        <Body>   
+        <header>  
+        <nav>  
+        <ul>  
+        <li>  
+        <a href="Testrin.02.html"> Home </a>  
+        </li>  
+        <li>  
+        <a href="About.html"> About </a>  
+        </li> 
+        <li>  
+        <a href="Contact.html"> Contact </a>  
+        </li>  
+        <li> <a href="Donate.html"> Donate </a>  
+        </li>  
+        <li>  
+        <a href="Merch.html"> Merch </a>  
+        </li> 
+        <li>  
+        <a href="Vote.html"> Vote </a>  
+        </li>  
+        </ul>  
+        </nav>  
+        </header> 
+        </Body>
+   
+        <style>
+            
+    </style>
+</body>
+</html> 

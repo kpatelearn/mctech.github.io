@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+<style>
+    body{font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
+    }
+
+    #myBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 50px;
+        border: none;
+        outline: none;
+        background-color:rgb(85, 145, 171);
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #mybtn:hover {background-color: #555;}
+</style>
+
+</head>
+<body>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to the top">^</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+//When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function()
+{scrollFunction()};
+
+function scrollFunction() {if (document.body.scrollTop > 20||
+    document.documentElement.scrollTop>20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+//when the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop =0;
+}
+
+</script>
+
+<style>
+
+ul {
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgb(77, 126, 182);
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #ffffff;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(101, 188, 246);
+    }
+</Style>
+<Style>
+    body {font-family:Georgia, 'Times New Roman', Times, serif ;}
+    * {box-sizing: border-box;}
+
+    input [text=type], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input [type=submit] {
+        background-color: azure;
+        color:white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px; 
+        cursor: pointer;
+    }
+
+    input [type=submit]:hover {
+        background-color: deepskyblue;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: rgb(189, 231, 253);
+        padding: 20px;
+    }
+</Style>
+
+<style>
+    body {background-image: url("Tropical\ Resort.jpeg");}
+</style>
+
+
+</body>
+</html>
+
+<ul>
+    <li style="float: left;"><a class="active" href="Homepage.html">Home</a></li>
+    <li><a class="active" href="Bookings.html">Bookings</a></li>
+    <li><a class="active" href="Chambers.html">Chambers</a></li>
+    <li><a class="active" href="Restaurant.html">Restaurant</a></li>
+    <li><a class="active" href="Activites.html">Activities</a></li>
+</ul>
+
+<h1>Bookings</h1>
+<style>
+    h1{color:rgb(255, 255, 255); text-align: center;}
+</style>
+
+<br>
+<div class="container">
+    <form function="Booking">
+        <div class="row">
+            <label for="country">Chambers</label>
+            <select id="country" name="country">
+                <option value="Single Room">Single Room</option>
+                <option value="Twin Room">Twin Room</option>
+                <option value="Studio Room">Studio Room</option>
+                <option value="Deluxe Room">Deluxe Room</option>
+                <option value="Room with a View">Room+View</option>
+                <option value="Suite">Suite</option>
+                <option value="Presidential Suite">Presidential Suite</option>
+            </select>
+            <label for="country">People</label>
+            <select id="country" name="country">
+                <option value="1-2people">1-2 people</option>
+                <option value="1-5people">1-5 people</option>
+                <option value="6+ people">6+ people</option>
+            </select>
+            
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname"
+    placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="Lastname"
+    placeholder="Your Last name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="flame">D/M/Y</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="Date"
+    placeholder="The date today..">
+            </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Subject">Anything you would like to add?</label>
+            </div>
+            <div class="col-75">
+                <textarea id="Subject" name="Subject" placeholder="write something.."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<br>
+
+<div class="container">
+    <form function="Bookings">
+        <div class="row">
+            <label for="country">Restaurant</label>
+            <select id="country" name="country">
+                <option value="Jeffrey Shells">Jeffrey Shells</option>
+                <option value="Million Grains">Million Grains</option>
+                <option value="Diamond in the rough">Diamond in the rough</option>
+            </select>
+            <label for="country">people</label>
+            <select id="country" name="country">
+                <option value="1-2people">1-2 people</option>
+                <option value="1-5people">1-5 people</option>
+                <option value="6+ people">6+ people</option>
+            </select>
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname"
+    placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="Lastname"
+    placeholder="Your Last name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="flame">D/M/Y</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="Date"
+    placeholder="The date today..">
+            </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Subject">Anything you would like to add?</label>
+            </div>
+            <div class="col-75">
+                <textarea id="Subject" name="Subject" placeholder="write something.."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</div>
+
+<div class="container">
+    <form function="Bookings">
+        <div class="row">
+            <label for="country">Activities</label>
+            <select id="country" name="country">
+                <option value="Scuba">Scuba</option>
+                <option value="Surfing">Surfing Lessons</option>
+                <option value="RockClimbing">Rock Climbing</option>
+                <option value="Jetski">Jetski</option>
+            </select>
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname"
+    placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="Lastname"
+    placeholder="Your Last name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="flame">D/M/Y</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="Date"
+    placeholder="The date today..">
+            </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Subject">Anything you would like to add?</label>
+            </div>
+            <div class="col-75">
+                <textarea id="Subject" name="Subject" placeholder="write something.."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</div>
+
+
+
