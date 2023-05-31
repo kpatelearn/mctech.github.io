@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body>
+<div id="introduction">
+<nav>
+<a href="homepage.html"> <img width="130" height="50" src="home2-removebg-preview.png"></a>
+<a href="menu.html"> <img width="130" height="50" src="menu2-removebg-preview.png"></a>
+<a href="aboutus.html"> <img width="150" height="40" src="about-us2-removebg-preview.png"></a>
+<a href="ourrecipes.html"> <img width="150" height="40" src="our-recipe2-removebg-preview.png"></a>
+</nav>
+<h1>,</h1>
+</div>
+
+<div id="div1">
+    <img width="920" height="1100" src="main-menu.png">
+<br> <br>
+</div>
+
+
+
+    
+<div id="order2">
+    <h2>Pre-order</h2>
+    <input id="userInput" placeholder="Name">
+    <br> <br>
+    
+    <input placeholder="Email">
+    
+    <br> <br>
+    
+    <input placeholder="Mobile">
+    <br> <br>
+
+    <input placeholder="Dessert/s Of Choice">
+    <br> <br>
+
+    <input placeholder="Time Of Pick-Up">
+    <br> <br>
+    
+    <input placeholder="Date Of Pick-Up">
+    <br> <br>
+    <label>
+   <input type="checkbox" checked="checked" name="save"> Receive Future Discounts And Specials?
+    </label>
+<br> <br>
+    
+    <button onclick="myFunction()">Submit </button>
+    
+    <h2 id="message"> </h2>
+    
+    <script> 
+    
+        function myFunction() {
+    
+        let userInput = document.querySelector("#userInput");
+    
+        let message = document.querySelector("#message");
+    
+        message.innerHTML = "Your Pre-Order Has Been Placed, " + userInput.value 
+    
+        }
+    
+    </script>
+</div>
+<div id="cafeandicecream">
+    <br> <br>
+    <img width="590" height="770" src="cafemenu.png" >
+    <img width="590" height="770" src="icecreammenu.png">
+</div>
+
+<style>
+#div1 {text-align: center;}
+</style>
+</div>
+
+
+<style>
+h1 {text-align: center; font-size: 10px; color: #FAE8C4;}
+h2 {text-align: center;}
+body {background-color: #FAE0AA;}
+nav {background-color: #FAE8C4; text-align: left; block-size: 60px; }
+ #photo {text-align: center;}
+ #order2 {text-align: center; font-size: larger; color: #FE7373;}
+ #container {text-align: center; background-color: #FAE8C4;}
+#order2 {background-color: #FAE8C4; border-color: #FE7373; border-style:outset ;}
+#cafeandicecream {text-align: center; background-color: #FAE0AA;}
+</style>
+</body>
+</html>

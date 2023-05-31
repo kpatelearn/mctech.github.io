@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+</head>
+<body>
+    <style>
+        body {background-color: rgb(80, 80, 152);}
+        h1{font-size:xx-large;text-align:center; color:floralwhite;font-family: monospace;}
+        h2 { font-size: larger;text-align:center; color:floralwhite;font-family: monospace;}
+        h3 {font-size: large;text-align:center; color:floralwhite;font-family: monospace;}
+        h4 {font-size:x-large;text-align:center; color:floralwhite;font-family: monospace;}
+        h5 {font-size:x-large;text-align:center; color:floralwhite;font-family: monospace}
+        p {font-size: large; text-align: center; color:floralwhite;font-family: monospace;display: inline-block; margin-right:200px;}
+        a {color: floralwhite; font-size:xx-large;font-family: monospace;}
+        #cubodydiv {background-color:rgb(46, 46, 79) ;}
+        #userInput {text-align: center;}
+        #submitbutton {text-align: center;}
+    </style>
+
+
+<a href="BethGwebsiteindex.html"> Bien Bagguette</a>
+<a href="ourbread.html"> |  Our Bread  |</a>
+<a href="contact us.html"> Contact Us</a>
+
+<h1> Contact us!</h1>
+<h2> Any queries or questions? Don't be shy to contact our team! </h2>
+<h3> Call this number to order, complain, or find the shop near to you!</h3>
+<h4> 📞<u>0800 111 222 3333 </u>  </h4>
+
+<div id="cubodydiv">
+    <div class="image">
+      <img src="insidemyshop.jpg">
+      <img width= height= src="ourhistorybetter.png">
+    </div>
+  </div>
+
+
+
+<h1> Sign Up Today! </h1> 
+<h2>Sign up today to recive our daily bread program. Just enter your name here and be the first to know about and deals or new tasty treat in store or online!
+    <h2>Scroll down to see if your email has been sucessfully regiestered!</h2>  
+    
+    <div id="submitbutton"> 
+        <input id="userInput">
+        <br>
+        <br>
+        <button onclick="myFunction()"> submit </button>
+        <h3 id="message"> </h3>
+    </div>
+    
+    
+    <script> 
+    function myFunction() {
+         let userInput = document.querySelector ("#userInput");
+         let message = document.querySelector ("#message");
+
+         message.innerHTML = "Thank you for signing up we will contact you shortly with bready infomation, " + userInput.value;
+    }
+
+     </script>
