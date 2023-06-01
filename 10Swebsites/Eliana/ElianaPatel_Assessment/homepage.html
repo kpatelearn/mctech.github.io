@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly Donuts New Zealand</title>
+
+    <style>
+      #sale {text-align: center;}
+      #button {text-align: center; color: white;}
+      h1 {font-family: cursive;}
+      #welcomeMessage {text-align: center; font-family: cursive;}
+      #squareImages {text-align: center;}
+      #subscription {text-align: center;}
+      #colourChange {text-align: center;}
+      #searchBar {text-align: right;}
+      #welcomeImage {text-align: center;}
+      nav a:hover { background-color: gainsboro;}
+      nav {background-color: rgb(245, 245, 245);}
+      #bottomMessage {font-family:'Times New Roman'; background-color: rgb(245, 245, 245) ;}
+    </style>
+
+</head>
+<body>
+  <nav> <br>
+      <a href="homepage.html"> <img width="8%" src="UD logo.png"></a>
+      <a href="aboutus.html"> <img width="10%" src="NAV_about_us-.png"></a>
+      <a href="menu.html"> <img width="7%" src="NAV_menu.png"> </a>
+      <a href="contactus.html"> <img width="9%" src="NAV_contact_us.png"> </a>
+      <a href="order.html"> <img width="10%" src="NAV_order-.png"></a>
+  </nav>
+  <br> <br>
+   <div id="sale">
+     <img width="42%" src="aestheticdonutAD.png">
+     <img width="49%" src="neoncollectionAD.png">
+     <br> <br>
+   </div>
+
+   <div id="button">
+    <a href="menu.html"> <button> SHOP DONUTS NOW  </button></a>
+   </div>
+<br> <br>
+
+   <div id="welcomeMessage">
+    <h1> Welcome! </h1>
+    <h3> Welcome to Ugly Donuts! Our main branch is in the 10S Neighbourhood, and we <br> are dedicated to giving you the most amazing donuts you have ever tasted! <br> <br> To join our growing Ugly Donuts fam, scroll to the bottom of this page to sign up today!</h3>
+    <div id="helloCustomer">      
+        <button onclick="clickMe()"> Got a query? <br>Click Me for more Info! </button>
+        <h1  id="message"> </h1>
+    
+        <script>
+            function clickMe() {
+            let userInput = document.querySelector("#userInput");
+            let message = document.querySelector("#message");
+    
+            alert ("Welcome! We hope you have an enjoyable experience with us! If you have a query, you can call on 021 023 75619, or come in store to have a chat with our friendly staff!")
+            }
+        </script>
+    <img id="welcomeImage" width="20%" src="Employee of the Month - Techonology.jpg">
+    <img width="27%" src="We are hiring!.png">
+    <br> <br> <br>
+  </div>
+
+   <div id="squareImages">
+    <img width="30%" src="birthdaypartyframe.png">
+    <img width="30%" src="DIYkitAD.png">
+    <img width="30%" src="kids making donuts.png">
+    <h5> Included: 12 Cinnamon donuts, chocolate and glaze icing, <br> sprinkles depending on your chosen kit + multi coloured sprinkles x2 piping bags.</h5>
+    
+<br>
+    <a href="order.html"> <button> ORDER KIT NOW </button></a>
+   </div>
+<br> <br> <br> <br>
+
+<div id="subscription">
+  <h3> Want to join the Ugly fam? Put in your name and e-mail address below to join our mailing list <br> and get exclusive UD discounts! </h3>
+    <input  id="userInput" placeholder="Name"> <br> <br>
+    <input id="otherBar" placeholder="E-mail address"> <br> <br>
+    <button onclick="myFunction()" > Join the Fam! </button>
+    <h1  id="message"> </h1>
+
+    <script>
+        function myFunction() {
+        let userInput = document.querySelector("#userInput");
+        let message = document.querySelector("#message");
+
+        alert ("You donut need to worry about a thing! Thanks for subscribing and we'll keep you posted, " + userInput.value +"!")
+        }
+    </script>
+
+<br> <br> <br> 
+<div id="bottomMessage">
+  <p> If you have a query or want to get in touch with us:  Contact: 021 023 57619 <br> E-mail Address: edhyanapatel@gmail.com | Store Address: 1098 Brickface Road, Hillside <br> <br> Or come in store and have a chat with our friendly staff!<p>
+  <br>
+</div>
+
+</body>
+</html>

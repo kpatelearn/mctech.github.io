@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+
+         <p class="Shop">
+            ❗ DUE TO FLOODING AND WEATHER ISSUES IN AUCKLAND, WE WILL BE CLOSING DOWN UNTIL FURTHER NOTICE, ORDERS THAT HAVE ALREADY BEEN ORDERED WILL BE DELIVERED ASAP ❗             </p>
+         <div class="Homepage">
+         <nav>
+             <a href="homepage.html">Back Home</a> 
+             <a href="Shop.html">Shop</a>
+             <a href="ContactStaff.html">Contact Us</a>
+             <a href="Buy.html">Buy</a>
+         </nav>
+         </div>
+    
+        
+     <h1>❄ WINTER COLLECTION ❄</h1>
+     <h3> ALL OF OUR WINTER COLLECTION BOUQUETS ARE CURRENTLY OUT OF ORDER, RESTOCK WILL BE IN UNTIL WEATHER CONDITIONS ARE SAFE.</h3>
+     <h4> All orders range from 50-100 NZD depending on what size and bouquet you want.</h4>
+     <br>
+     <div class="Allergen">
+     <button onclick="Allergy()">Allergen Info</button>
+    </div>
+    <br>
+    <hr size="10" color="black">
+
+     <div class="Bouquet">
+        <img width="400" height="400" src="Blueboquet3.jpg">  
+        <img width="400" height="400" src="Bluebouquet2.jpg">
+        <img width="400" height="400" src="Bluebouquet.jpg">
+        <br>
+        <hr size="10" color="black">
+        <img width="400" height="400" src="Bluebouquet4.jpg">
+        <img width="400" height="400" src="Bluebouquet5.jpg">
+        <img width="400" height="400" src="Bluebouquet6.jpg">
+        <hr size="10" color="black">
+
+        <h2 class="Secret"> Try figure out the riddle down below to win 2 limited edition winter bouquets from our Winter Collection [Your choice]</h2>
+        <h2> Hint: There is only one letter and it's a capital</h2>
+        <h2>What is the end of a rainbow?</h2>
+
+        <div id="Color">
+          <input id="userInput"><br></br>
+          <button onclick="myfunction()">Submit</button>
+          </div>
+          <hr size="10" color="black">
+
+          <h1 id="End">Imani's Florist</h1>
+          <h3>Newmarket Auckland 1023</h3>
+          <h3>Call 021098737132 to pre-order/order</h3>
+
+     
+    <script>
+        function Allergy() {alert("Please be self-conscious of what flower bouquet you will be ordering as it can cause symptoms such as sneezing, runny nose, headaches, nasal congestion etc. If you are concerned or have no clue on whether these flowers are non-allergic or will cause an allergic reaction contact one of our staff members located in the Contact Page or call 021098737132.")}
+
+        let userChange = document.querySelector("#userInput");
+
+function myfunction() {
+if (userInput.value == "W") {alert("Congrats on winning 🥳! All details will be sent to your email")
+} else {alert("Incorrect word! Try again")} }
+
+        </script>
+      
+    
+      
+      
+         <style>
+
+    #End {text-align: center; border-style: none; background-color: white;}
+ 
+    h4 {text-align: center;}
+  h1 {border-style: solid; border-color: black; background-color: lightblue; }
+
+
+
+  button {block-size: 1cm; border-radius: 0%;}
+  .Allergen {text-align: center}
+
+  body {
+    margin: 0;
+      }
+      
+.Homepage {
+ overflow:hidden;
+ background-color: black;
+        }
+
+.Homepage a {
+ float: left;
+ color: #f2f2f2;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ font-family:monospace
+  }
+
+.Homepage a:hover {
+ background-color: white;
+ color:black;
+}
+
+.button-19 {
+    
+          background-color:white; color: black;}
+    
+     
+    .Bouquet {text-align: center;}
+     
+   
+    
+    h3 {text-align: center;}
+    h1 {text-align: center;}
+     a {font-family: monospace; color: black;}
+     
+     .Shop {
+     text-align: center; border-style:solid; border-color: black; margin: 0; font-size:large; font-family: monospace;}
+     body {
+         margin: 0;
+           }
+           
+    
+     
+      
+    </style>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 2</title>
+<style>
+body{background-color:#f9e3bd;text-align: center;
+     background-image: url(beach.jpeg); background-repeat: no-repeat;background-attachment: fixed;
+  background-size: 100% 100%; }
+
+a {color: black;font-size:x-large;}
+#topnav {text-align: center;font-size: x-large;font-family:sans-serif;}
+
+h1 {font-family:fantasy;font-size: x-large;text-align: center;}
+h2 {font-family:fantasy;font-size: x-large;text-align: center;}
+h3 {font-family:fantasy;font-size: x-large;text-align:center;}
+h4 {font-family:fantasy;font-size: x-large;text-align: center;}
+h5 {font-family:fantasy;font-size: x-large;text-align:center;}
+
+</style>
+</head>
+<body>
+    <div id="topnav">
+        <br>
+       <a  href="homepageindex.html">home</a>
+       <a   href="page1index.html"> menu</a>
+       <a  href="page2index.html">online orders</a>
+       </div>  
+
+       <h1>online orders  </h1>
+       <br>
+       <h2>  your online food order </h2>
+        <h3>name</h3> <input id="userInput"> 
+        <h4>your online food order</h4>
+        <input id="food" size="50"> 
+        <h5>how many would you like </h5>
+        <input id="number" size="5"> <br> <br>
+       <button onclick="myFunction()">Enter</button>
+       <h1 id="message"> </h1>
+       
+       <script>
+       function myFunction(){
+       let userInput = document.querySelector("#userInput");
+       let message = document.querySelector("#message");
+       message.innerHTML = "thanks for ordering " + userInput.value;
+       
+       }
+       </script>
+<img src="about us.png" alt="about us" height="500"
+width="400">
+<img src="staff.png" alt="staff" height="500"
+width="400">
+<img src="best sellers.png" alt="best sellers"height="500"
+width="400">
+<img src="photos.png" alt="" height="500"
+width="400">
+</body>
+
+</html>

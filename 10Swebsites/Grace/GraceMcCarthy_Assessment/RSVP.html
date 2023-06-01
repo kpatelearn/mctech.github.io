@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+</head>
+<body>
+    <nav> 
+
+        <a href="Homepage.html"> Home</a> 
+        <a href="RSVP.html"> RSVP</a> 
+        <a href="Cats.html"> Cats</a> 
+        <h1>Make a Reservation</h1> 
+        
+        </nav> 
+        
+        <p>Make reservations here. Please make your reservation at least 24 hours in advance. </p>
+
+<p1>Email</p1>
+<input>
+<br> <br>
+
+<p1>Phone Number</p1>
+<input>
+<br> <br> 
+
+<p1>Time</p1>
+<input>
+<br> <br> 
+
+<p1>Date</p1>
+<input>
+<br> <br>
+
+<p1>Name</p1>
+<input id="userInput"> <br> <br>
+<button onclick="myFunction()"> Submit </button> 
+<h1 id="message"> </h1> 
+
+        <style> 
+        body {background-color: rgb(255, 241, 227); text-align: center;} 
+        h1 {color: rgb(206, 164, 204); text-align: center;} 
+        nav {background-color: rgb(255, 241, 227); text-align: right; font-size: x-large;} 
+        a {color: rgb(206, 164, 204); } 
+        p {color: rgb(206, 164, 204);text-align: center;}
+        button {align-items: center;}
+        
+        </style> 
+
+<script>  
+
+    function myFunction() { 
+    let userInput = document.querySelector("#userInput"); 
+    let message = document.querySelector("#message"); 
+    message.innerHTML = "Thank you for making a reservation, " + userInput.value + "!"
+    } 
+</script>
+
+</body>
+</html>

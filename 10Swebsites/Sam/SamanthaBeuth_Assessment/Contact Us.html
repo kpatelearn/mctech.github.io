@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {background-color: darkslategray;}
+    h1 {color: white; text-align: center;}
+    h2 {color: white; text-align: center;}
+    h3 {color: black; text-align: center; background-color: darkgrey;}
+    h4 {color: greenyellow; text-align: center;}
+    h5 {color: black; text-align: center;}
+    #MyDiv {text-align: center;}
+
+</style>
+
+<body>
+
+    <br> <h1> Contact Us! </h1>
+    <h3> <nav> <a href="Home Page.html"> Back To Main Menu </a> <a href="Venue (Page 1).html"> | Venue </a> <a href="Tickets (Page 2).html"> | Tickets </a> </nav> </h3>
+    
+    <br> <img src="Spark Arena.jpg" img width="1335" img height="450"
+    
+    <div id="MyDiv"> 
+        <br> <br> <br> <br> <br>
+        <h1> Email Us </h1>
+        <br> <h2> Name : <input id="Userinput"> </h2>
+        <h2> Phone No : +64 <input id="Userinput"> (Optional) </h2>
+        <h2> Email : <input id="userinput"> </h2>
+        <h2> Subject : <input id="Userinput"> (Optional) </h2>
+        <h2> Message : <br> <br> <textarea rows = "10" cols = "60"> </textarea> <br> </h2>
+
+        <h4> <button onclick="myfunction ()"> Send Email </button> </h4>
+        <h4 id="message"> </h4>
+
+        <div id="Back To Main Menu"> </div> <div id="Venue"> </div> <div id="Opening Hours"> </div>
+        
+    <div> 
+    
+
+
+<script>
+
+    function myfunction () {
+       let Userinput = document.querySelector ("#userinput");
+       let message = document.querySelector ("#message");
+
+       message.innerHTML = "Email Successfully Sent from : " + userinput.value;
+
+    }
+
+</script>
+
+<br> <br> <h2> info@sparkarena.co.nz <br> <br> Phone : + 64 9 358 1250 <br> <br> After Hours EMERGENCY Contact : + 64 21 743 026 <br> <br> <br> 42-80 Mahuhu Crescent, Parnell <br> Auckland 1010 </h2> 
+
+<br> <br> <br> <h5> Last Updated : 26 May 2023 </h5>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="x-icon" type="image/x-icon" href="Beige Boutique Flower Florist Business Logo.png">
+     
+</head>
+<body>
+    <p class="Shop">
+       💐 Call us on 0210921092 before 3.00pm, for same-day delivery only in Auckland! 💐
+        </p>
+    <div class="Homepage">
+        <a href="homepage.html">Imani's Florist</a> 
+        <a href="Shop.html">Shop</a>
+        <a href="ContactStaff.html">Contact Us</a>
+        <a href="Buy.html">Buy</a>
+    </div>
+        
+     
+    <br>
+<div class="H2">
+    <h2> Our new blue winter bouquet collection is currently available now, limited edition.</h2>
+</div>
+
+<br>
+<div class="View">
+<a href="Shop.html">View More of Our Winter Collection</a>
+</div>
+
+    <div class="Bouquet">
+    <img width="400" height="400" src="Blueboquet3.jpg">
+    <img width="400" height="400" src="Bluebouquet2.jpg">
+    <img width="400" height="400" src="Bluebouquet.jpg">
+    </div>
+
+<hr size="10" color="black">
+<br>
+<img src="Camerabouquet.jpg" style="float:right;width: 9cm;;height:11cm;">
+<img src="Camerabouquet2.jpg" style="float:right;width: 9cm;;height:11cm;">
+<h1 class="Approach">Our Approach Towards the Flower Industry</h1>
+
+<div class="About"></div>
+<h3>
+Flowers produced with exquisite craftsmanship are what we specialise in at Imani's Florist.
+<button class="b1" onclick="nav1 ()">Our team of florists</button> 
+puts a lot of effort into creating gorgeous arrangements that are sure to cheer up any room and enrich your life. 
+</h3>
+
+<h3>At Imani's Florist, we like to push the envelope and attempt new things. We don't just keep to your standard neighbourhood floral store. For instance, experimenting with hues, textures, and designs to produce eye-catching floral designs.
+</h3>
+<h3>Imani's Florist can provide you with a gorgeous arrangement for your residence, place of business, or other location.</h3>
+<h3>We also love getting feedback from our customers so please don't be afraid to give any 🥰</h3>
+<h3>If you have any inquiries or concerns please email: matilafaapopo09@gmail.com 🌷</h3>
+<br>
+<br>
+<br>
+<br>
+   
+<hr size="10" color="black">
+<br>
+
+<div class="Signup">
+    <h2>Sign up and enter your email below to receive offers and discounts as well as 50% off your first purchase 💐</h2>
+    <input id="userInput"> <br><br>
+    <button onclick="myFunction()"> Sign up </button> 
+<h1 id="message"> </h1>
+    </div>
+
+    <hr size="10" color="black">
+ <h1>Imani's Florist</h1>
+<h3>Newmarket Auckland 1023</h3>
+<h3>Call 021098737132 to pre-order/order</h3>
+ <hr size="10" color="black">
+ <h1>Types of Payment Available at Imani's Florist.</h1>
+<img sizes="50cm" src="PaymentCards.png">
+
+ 
+ 
+ 
+<br> 
+    <style>
+
+h1 {font-family: monospace}
+h2 {font-family: monospace;}
+ .Signup { margin-right: 5cm; margin-left: 5cm;}
+ .Review {text-align: center;}
+h3 {font-family: monospace; font-size:large;}
+ .Approach {text-align:center; margin: 0.05; font-size:xx-large; font-family: monospace;}
+ 
+.View {text-align: center;font-size: large; font-family: monospace; color: black;}
+.H2 {text-align: center; border-style:solid; margin: 0.1cm; font-family: monospace;}
+ 
+ .Bouquet { text-align: center; margin: 0.6cm;}
+a {font-family: monospace; color: black;}
+
+.Shop {
+text-align: center; border-style:solid; border-color: black; margin: 0; font-size:large; font-family: monospace;}
+body {
+    margin: 0;
+      }
+      
+.Homepage {
+ overflow:hidden;
+ background-color: black;
+        }
+
+.Homepage a {
+ float: left;
+ color: #f2f2f2;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ font-family:monospace
+  }
+
+.Homepage a:hover {
+ background-color: white;
+ color:black;
+}
+
+ h2 {text-align: center;}
+body {text-align: center; font-family: 'Times New Roman', Times, serif;}
+.b1:hover {
+            background-color: blue;
+        }
+        .b1:active {
+             background-color: rgb(84, 84, 255);
+             box-shadow: 0 3px #666;
+              transform: translateY(4px);}
+
+              .b1 {
+            display: inline-block;
+            font-family: "monaco", monospace;
+            padding: 5px 1px;
+            cursor: pointer;
+            background-color: lightpink;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 12px;
+  box-shadow: 0 3px #999;
+  text-decoration: underline;
+         }
+    </style>
+
+
+<script>
+    function myFunction() {
+        let userInput = document.querySelector("#userInput");
+        let message = document.querySelector("#message");
+        message.innerHTML = "Your sign up has been successful and all discount details will be sent to your email: " + userInput.value;  
+
+    }
+
+    function nav1 () {
+            location.replace("ContactStaff.html")
+        }
+
+        
+
+</script>
+ 
+
+</body>
+</html>

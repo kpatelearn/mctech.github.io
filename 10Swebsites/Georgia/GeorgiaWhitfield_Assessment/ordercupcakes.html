@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Craze Shop</title>
+    <style>
+#Introduction {text-align: center; 
+        color: rgb(0, 0, 0); background-color: rgb(255, 204, 137);}
+ body {background-color:  rgb(255, 233, 205); text-align: center;}
+ nav {text-align: left;}  
+    </style>  
+</head>
+    
+<body>
+  
+    <nav> 
+     <a href="GeorgiaWhitfield_assessment.html"> <img width= "70" length="10"
+             src="logo1.png"> </a>
+     <a href="cupakemenu.html"> <img width="60" langth="10"
+            src="logo2.png"> </a>
+     <a href="ordercupcakes.html"> <img width="60" length="10"
+            src="logo3.webp"> </a>  
+    </nav>
+   
+<div id="Introduction">
+        <h2>Enter details:</h2>
+        <p>Order your cupcakes!</p>
+        <br>
+
+        <label for="lname">cupcakes</label>
+        <select id="cupcakes" name="cupcakes">
+            <option value="cupcake">Cupcakes</option>
+            <option value="cupcake">Classic Vanilla Cupcake</option>
+            <option value="cupcake">Chocolate Cupcakes</option>
+            <option value="cupckae">Fresh Strawberry Cupcakes</option>
+            <option value="cupcake">Red Velvet Cupcakes</option>
+            <option value="cupcake">Nutella Cupcakes</option>
+            <option value="cupcake">Maple Cupcakes</option>
+            <option value="cupcake">Cinnamon Cupcakes</option>
+            <option value="cupcake">Mint Chocolate Chip Cupcakes</option>
+            <option value="cupcake">Lemon Cupcakes </option>
+            <option value="cupcake">Carrot Cake Cupcakes</option>
+            <option value="cupcake">Banana Split Cupcakes</option>
+            <option value="cupcake">Coffee Cupcakes</option>
+            <option value="cupcake">Peach Cupcakes</option>
+            <option value="cupcake">Caramel Cupcakes</option>
+        </select>
+        <br>
+        <br>
+            <label for="lname">Date of pickup</label>
+            <input type="text" id="dday" name="date" placeholder="Date of pickup">
+        <br>
+        <br>
+        <label for="cupcakes">Time of pickup</label>
+        <select id="cupcakes" name="cupcakes">
+            <option value="time">7:00</option>
+            <option value="time">8:00</option>
+            <option value="time">9:00</option>
+            <option value="time">10:00</option>
+            <option value="time">11:00</option>
+            <option value="time">12:00</option>
+            <option value="time">1:00</option>
+            <option value="time">2:00</option>
+            <option value="time">3:00</option>
+            </select>
+        <br>
+        <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last name..">
+        <br>
+        <br>
+            <label for="lname">First Name</label>
+            <input id="userInput" type="text" placeholder="First name" name="name" required=""> 
+        <br> <br>
+  
+        <button onclick="myFuction()"> Submit </button>
+        <h1 id="message">  </h1> 
+        <script> 
+            function myFuction() {
+            let userInput = document.querySelector("#userInput");
+            let message = document.querySelector("#message");
+            
+            message.innerHTML = "Thank you for ordering from Cupcake Craze, " + userInput.value; 
+            }
+        </script>
+</div>        
+     
+<img width="300" length="500"
+src="cupcake4.jpg">
+
+<img width="600" length="500"
+src="cupcake5.jpg">
+
+<img width="267" length="500"
+src="cupcake6.jpg">
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: cursive; font-size: ;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: azure;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: aqua;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: aqua;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="Sports Cars.html">SportsCars</a>
+  <a href="About us.html">About us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="padding-left:16px">
+  <h2>SPORTSCARS IN THE HOOD</h2>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<style>
+    h2{ text-align: center;background-color: azure;}
+    p{text-align: center;background-color: azure;}
+    h6{ text-align: end;text-align: center; background-color: azure;}
+    body{background-color: black;}
+
+</style>
+<div>
+   <style>
+   img{text-align: center;}
+   </style>
+
+    <img src="sportscar b.jpeg" width="500" height="320">
+    <img src="sportscar g.jpeg" width="500" height="320">
+    <img src="sportscars.jpeg" width="400" height="320">
+    <br>
+    <img src="sportscar grey.jpeg" width="500" height="320">
+    <img src="sportscar teal.jpeg" width="500" height="320">
+    <img src="sportscar yd.jpeg" width="400" height="320">
+    <br>
+    <img src="sportscar.jpeg" width="500" height="320">
+    <img src="sportscar drift.jpeg" width="500" height="320">
+    <img src="sportscars.jpeg" width="400" height="320">
+</div>
+
+<h1> Hello, Welcome to the offical SportsCars in the hood website.
+     What is your name?
+</h1>
+<style>
+    h1{color: black; background-color: azure;}
+    body {text-align: center;}
+</style>
+
+<input id="userInput">   <br>
+<button onclick="myFunction()"  > Submit </button>
+<h1 id="message">  </h1>
+
+
+
+
+<script>
+    function myFunction() {
+      let userInput = document.querySelector("#userInput");
+      let message = document.querySelector("#message");
+
+      message.innerHTML = " Haha Welcome, " + userInput.value ;
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="homepageindex.html"><img width="30" height="30"src="home(1).png"> </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="locationsindex.html"><img src="maps-and-flags.png" width="30" height="30"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="orderindex.html"><img src="copy.png" width="30" height="30"></a>
+    </nav>
+    <div id="header">
+    <h1>Order Details And Pick Up</h1>
+    <h2>Please Fill Out This Form To Confirm Your Order</h2>
+    </div>
+</body>
+<div id="java">
+        <h2>Order Here</h2>
+        <input id="userInput" placeholder="Name">
+        <br>  <br>
+       
+        <input placeholder="Phone Number/Email">
+       
+        <br> <br>
+       
+        <input placeholder="Smoothie Of Choice">
+        <br><br>
+    
+        <input placeholder="Price">
+        <br> <br>
+    
+        <input placeholder="Pick-up Time">
+        <br> <br>
+       
+        <input placeholder="Location">
+        <br> <br>
+        <label>
+       <input type="checkbox" checked="checked" name="save"> Was This Website Easy To Use
+        </label>
+    <br> <br>
+       
+        <button onclick="myFunction()">Order </button>
+       
+        <h2 id="message"> </h2>
+       
+        <script> 
+       
+            function myFunction() {
+       
+            let userInput = document.querySelector("#userInput");
+       
+            let message = document.querySelector("#message");
+       
+            message.innerHTML = "Thank You, Your Order Will Soon Be Ready For Pickup, " + userInput.value 
+       
+            }
+       
+        </script>
+</div>
+<style>
+    #header {background-color:rgb(239, 176, 230);color: beige; text-align:center;}
+    #java   { background-color:rgb(239, 176, 230); text-align: center;color: beige;}
+</style>
+</html>

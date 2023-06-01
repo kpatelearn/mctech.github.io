@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+</head>
+<body>
+    <a href="homepageindex.html"><img width="30 height="30" src="home.png"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="plantsindex.html"><img width="30" height="30" src="plant.png"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="communitypageindex.html"><img width="30 height="30" src="united.png"></a>
+        <div id="first">
+    <h5>Claphams Greenary</h5>
+    <h2>Claphams will slap’em prices down to the soil</h2>
+    </div>
+
+    <div id="third">
+
+        <h1> Enter our giveaway by entering your email: </h1>
+        
+        <input id="userinput"> <br> <br>
+        <button onclick="myFunction()">Submit</button>
+        <h1 id="message">  </h1>
+     </div>
+
+     <div id="javascript">
+        <script> 
+   
+            function myFunction() {
+       
+            let userInput = document.querySelector("#userinput");
+       
+            let message = document.querySelector("#message");
+       
+            message.innerHTML = "You Have Entered The Giveaway, " + userInput.value 
+       
+            }
+       
+        </script> 
+
+     </div>
+ 
+<ul>
+<h4>Opening Hours:</h4>
+    <li>Mon: 9am - 5pm</li>
+    <li>Tue: 9am - 5pm</li>
+    <li>Wed: 9am - 5pm</li>
+    <li>Thur: 9am - 5pm</li>
+    <li>Fri: 10am - 6pm</li>
+    <li>Sat: 9am - 5pm</li>
+    <li>Sun: Closed</li>
+
+</ul>
+<div id="second">
+<img src="plants.jpg" width="600" height="550">
+</div>
+<style>
+#first{background-color: rgb(104, 125, 66);color: #f7f0f0;text-align: center;} 
+body {background-color: rgb(85, 109, 69);}
+ul {background-color: rgb(104, 125, 66);color: #f7f0f0;} 
+#second {text-align: center;}
+#third {float:right; color: rgb(252, 252, 252);} 
+h1 {font-size: medium;}
+h5 {font-size: xx-large;}
+h2 {font-size: large;}
+
+</style>
+</body>
+
+</html>

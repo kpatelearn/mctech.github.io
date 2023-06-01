@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book now!</title>
+</head>
+<body>
+    <style>
+        body {background-color: rgb(121, 44, 192);}
+        a {color: rgb(52, 10, 91); font-size: larger;}
+        h1 {color: rgb(52, 10, 91);}
+        #java {text-align: center; font-size: larger; background-color: rgb(161, 87, 230); border-style: solid; border-color: rgb(52, 10, 91); border-width: thick;}
+        nav {background-color: rgb(161, 87, 230); font-size: larger;}
+        #pix {background-color: rgb(161, 87, 230); text-align: center;}
+        #abouttaylor {font-size: larger; text-align: center;}
+    </style>
+    <nav>
+    <a href="Homepageindex.html">About us</a>
+    <a href="Page1index.html">Find your concert here</a>
+    <a href="page2index.html"> Previous concerts</a>
+    </nav>
+    
+
+    <h1> You are in luck! Taylor swift is coming back to TAS Stadium to perform The Eras Tour!</h1>
+    <div id="pix">
+        <img width="360" height="450" src="lover.avif">
+        <img width="385" height="450" src="red.jpeg">
+        <img width="265" height="450" src="Purpledress.jpeg">
+        <img width="375" height="450" src="curlyhair.jpeg">
+    </div>
+
+    <div id="abouttaylor">
+<p> Taylor Swift has announced that she will be singing with us yet again at the TAS Stadium for 6 back to back shows, breaking her last record and doubling it! Swift will be joining us from Tuesday the 12th if December to the 17th of December; Celebrating her special day with her special fans. Swift has announced she will be holding 13 giveaway meet and greets along with ONE secret session. Come along and pre-order tickets for the upcoming shows. Dont miss out!!</p>
+    </div>
+    <div id="java">
+        <br>
+        Please enter the date you would like the see Taylor Swift below  <br>
+        <input placeholder="Name" id="userInput"> <br> 
+        <input placeholder="Email"> <br> 
+        <input placeholder="Mobile Number"> <br> 
+        <input placeholder="Date of concert"> <br> 
+        <button onclick="myFunction()">Submit</button>
+        <h1 id="message"></h1>
+    
+        <script>
+            function myFunction() {
+                let userInput = document.querySelector("#userInput");
+                let message = document.querySelector("#message");
+            
+                message.innerHTML = "Thank you " + userInput.value + "! An email will be sent to you shortly with more details about the night of your chosen concert date!"
+            }
+                </script>
+    </div>
+
+    
+</body>
+</html>
