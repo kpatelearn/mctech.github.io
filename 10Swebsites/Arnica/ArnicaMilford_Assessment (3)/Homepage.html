@@ -44,7 +44,7 @@
         h1 {color:  #90d2d8; font-size:x-large;}
         h2 {color:  #90d2d8; text-align: center;}
         p  {color: #90d2d8; text-align: center; border: 2px solid #90d2d8;}
-        body {background-color: rgb(255, 255, 255); text-align: center; color: floralwhite; background-color: rgb(255, 244, 246);}
+        body {background-color: rgb(255, 255, 255); text-align: center; color: floralwhite; background-color: rgb(255, 255, 255);}
         #h4{color: #90d2d8;font-size: medium; border: 2px solid #90d2d8;}
         #name{color: #90d2d8;}
 </style>
@@ -66,47 +66,26 @@
 <img width="385" src="Image2.html">
 
 <body>
-  <div id="h4">
-  <h4>Hey potential booklover! let's get to know each other more, what is your name?</h4>
+  <div id="myDiv">
+       <h1> what colour should this web page be?</h1>
+       <input id="userInput"> <br><br>
+       <button onclick="change()"> Submit </button>   
   </div>
 
-  <input id="userInput"> <br> <br>
-  <button onclick="myFunction()">submit</button>
-  <h1 id="message"> </h1>
+  <style>
+      #myDiv{text-align: center;}
+  </style>
 
-  <script id="Name">
-      function myFunction() {
-          let userInput = document.querySelector("#userInput");
-          let message = document.querySelector("#message");
-
-          message.innerHTML = "Welcome to my website " + userInput.value + " I hope you enjoy your experience with us!";
-      }
-      
+  <script> 
+  let userChange = document.querySelector ("#userInput");
+      function change() { 
+          document.body.style.backgroundColor = userChange.value;
+      } 
   </script>
 </body>
 
-<img width="267" src="bs.jpg">
-<img width="500" src="bss2.jpg">
-
-<div id="myDiv">
-  <h3>What is your favourite color? submit it to see what happens!<br><br>
-    Reminder: all lower case letters are required
-  </h3>
-  <input id="userInput"> <br><br>
-  <button onclick="change()"> Submit </button>   
-</div>
-
-<style>
-  h3{color: #90d2d8; font-size:medium;}
- #myDiv{text-align: center; border: 3px solid #90d2d8;}
-</style>
-
-<script> 
-let userChange = document.querySelector ("#userInput");
- function change() { 
-     document.body.style.backgroundColor = userChange.value;
- } 
-</script>
+<img width="360" src="bs.jpg">
+<img width="600" height="450" src="bss2.jpg">
 
 <script>
   let userchange = document.querySelector ("#U");

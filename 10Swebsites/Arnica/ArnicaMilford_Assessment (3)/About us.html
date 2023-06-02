@@ -141,10 +141,31 @@ p.solid {border-style: solid;}
 <h5>We are located in the 10S neighbourhood, akl and would love for you to give us a call!</h5>
 <p>This website was created in 2023, by a student attending Marist college - named Arnica Milford. She has a passion for english and loves reading therefor decided to create a website where people could browse for their favourite books and buy them online! There are also some fun initiations put in place for you so you may enjoy your experience. Thank you for viewing this website hope you enjoy.</p>
 
+<body>
+  <div id="h4">
+  <h4>Enough about me, what's is your name?</h4>
+  </div>
+
+  <input id="userInput"> <br> <br>
+  <button onclick="myFunction()">submit</button>
+  <h1 id="message"> </h1>
+
+  <script id="Name">
+      function myFunction() {
+          let userInput = document.querySelector("#userInput");
+          let message = document.querySelector("#message");
+
+          message.innerHTML = "Welcome to my website " + userInput.value + " I hope you enjoy your experience with us!";
+      }
+      
+  </script>
+</body>
+
 <style>
 p{color:#90d2d8; text-align: center; border: 2px solid #90d2d8; font-style: italic;}
 p{font-size:larger;}
 #Title{color: #ffffff; font-size: x-large; background-color:#90d2d8;}
+#h4{color:#90d2d8; text-align: center; font-style: italic;}
 </style>     
 
 <div id="Neighbour">
