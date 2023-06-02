@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movies </title>
+</head>
+<nav>
+    <a href="homePage.html"> Home </a>
+    <a href="snacksPage.html"> Snacks </a>
+    <a href="moviesPage.html"> Movies </a>
+</nav> 
+<body>
+<h1> Movies: </h1>
+<p> Our Available Movies: </p1>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</body>
+<style>
+ a {padding: 10px; background-color:lightgrey; margin: 10px;}
+ body {font-family: Arial, Helvetica, sans-serif; background-color:lightslategray;}
+h1 {color: black; text-align: center;} 
+p {color:darkred; text-align: center;}
+#movies {text-align: center;}
+</style>
+<div id="movies">
+<img src="titanicPoster.jpg" alt="titanic" width="400" height="700">
+<img src="jawsPoster.jpg" alt="jaws" width="400" height="700">
+<img src="barbiePoster.jpg" alt="barbie" width="400" height="700">
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="javascript">
+   <h3> Book ticket:</h3>
+    <h2> Fill out details below:</h2>
+    <input id="userInput" placeholder="Name">
+    <br>  <br>
+   
+    <input placeholder="Email/Phone Number">
+   
+    <br> <br>
+   
+    <input placeholder="Movie of choice">
+    <br><br>
+
+    <input placeholder="Time">
+    <br> <br>
+
+    <input placeholder="Snacks (optional)">
+    <br> <br>
+   
+    <input placeholder="Seat(s) e.g F3, G7, J5">
+    <br> <br>
+    <label>
+   <input type="checkbox" checked="checked" name="save"> Was this website easy to use?
+    </label>
+<br> <br>
+   
+    <button onclick="myFunction()">Order </button>
+   
+    <h2 id="message"> </h2>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <script> 
+   
+        function myFunction() {
+   
+        let userInput = document.querySelector("#userInput");
+   
+        let message = document.querySelector("#message");
+   
+        message.innerHTML = "Thank you, your ticket will be sent to you via email " + userInput.value
+   
+        }
+   
+    </script>
+
+</html>
