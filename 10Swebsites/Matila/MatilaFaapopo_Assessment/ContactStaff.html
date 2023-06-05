@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <nav class="Homepage">
+        <a href="homepage.html">Imani's Florist</a> 
+        <a href="Shop.html">Shop</a>
+        <a href="ContactStaff.html">Contact Us</a>
+        <a href="Buy.html">Buy<a>
+    </nav>
+    <style>
+h2 {text-align: center;}
+body {margin: 0%;}
+.Homepage {
+ overflow:hidden;
+ background-color: black;
+        }
+
+.Homepage a {
+ float: left;
+ color: #f2f2f2;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ font-family:monospace
+  }
+
+.Homepage a:hover {
+ background-color: white;
+ color:black;
+}
+
+img {
+  border-radius: 50%;
+  margin: 1cm;
+}
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+
+        .Staff {text-align: center;}
+
+         
+        .Agna {float: left;}
+        .Matila {text-align: right;}
+
+        body {font-family: monospace;}
+        h3 {text-align: center;}
+        h2 {text-align: center;}
+
+        #careerform {text-align: center;}
+        .Signup {text-align: center;}
+        h1 {text-align: center;}
+        </style>
+      
+        </head>
+        <body>
+        
+        <h2>Contact our staff members for any inquiries or assistance! Our team is always here to help and don't be afraid to ask questions 💗</h2>
+        
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Number</th>
+          </tr>
+          <tr>
+            <td>Arnica Milford</td>
+            <td>Assistant Manager</td>
+            <td>0210979328123</td>
+          </tr>
+           
+          <tr>
+            <td>Agna Saijan </td>
+            <td>Manager</td>
+            <td>0242309483443</td>
+          </tr>
+          <tr>
+            <td>Matila Fa'apopo</td>
+            <td>CEO</td>
+            <td>0210982098392</td>
+          </tr>
+          <tr>
+            <td>Lu'isa Tohi</td>
+            <td>Accountant</td>
+            <td>0210983409838</td>
+          </tr>
+          <tr>
+            <td>Sophia Araipu</td>
+            <td>Producer</td>
+            <td>0320983409848</td>
+          </tr>
+        </table>
+      <br>
+      <h2> Here are what our staff look like! (they are in order from the table above 🙂) </h2>
+      <div class="Staff">
+        <img src="Arnica.jpg"   width="250" height="300">
+        <img src="Agna.jpg"  width="250" height="300">
+        <img src="Matila1.jpg" width="250" height="300">
+        <img src="Luisa.jpg" width="250" height="300">
+        <img src="Sophia.png" width="250" height="300">
+      </div>
+
+      <hr size="10" color="black">
+      <h1>We are currently in need of staff, if you're interested please fill in form and requirements</h1>
+      <div id="careerform">
+        <label for="name"><u>What is your name?</u></label> <br> <br>
+        <label for="fname"> <u> First name:</u>
+        <input id="userInput"> <br><br>
+      <label for="lname"><u> Last name:</u></label> 
+      
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email"><u>What's your email?</u></label>
+      <input type="text" id="email"> <br> <br>
+      <label for="reasoning"><u>What are you applying for?</u></label> <br> <br>
+      <input type="radio" id="reasoning" name="Accountant" value="Job">
+      <label for="Account">Accountant</label><br>
+      <input type="radio" id="reasoning" name="Digital Marketer" value="Job">
+      <label for="Job">Digital Marketer</label> <br> 
+      <input type="radio" id="reasoning" name="Main designer" value="Job">
+      <label for="Job">Main Designer</label> <br>
+      <input type="radio" id="reasoning" name="Other" value="Job">
+      <label for="Job">Other</label> <br>
+      <label for="expectations"><u>What expectations do you meet?</u></label> <br> <br>
+      <input type="checkbox" id="expectations" name="generosity" value="Generosity">
+      <label for="generosity"> I have a sense of generosity.</label><br>
+      <input type="checkbox" id="expectations" name="16weeks" value="16Weeks">
+      <label for="16weeks"> I am encouraging and can work under pressure.</label><br>
+      <input type="checkbox" id="expectations" name="citizenship" value="Citizenship"> 
+      <label for="citizenship"> I have full, legal and permanent citizenship of this country with proof. </label> <br>
+      <input type="checkbox" id="expectations" name="age" value="17+"> 
+      <label for="age"> I am 19 or above.</label> <br> <br>
+      <label for="Number to contact you"><u>Number to contact you</u></label> 
+      <input type="text" id="extra"> <br> <br>
+      </div>
+
+      <div class="Signup">
+        
+        
+        <button onclick="myFunction()"> Submit form </button> 
+    <h2 id="message"> </h2>
+        </div>
+ 
+        <script>
+        function myFunction() {
+          let userInput = document.querySelector("#userInput");
+          let message = document.querySelector("#message");
+          message.innerHTML = "Your submission form has been submitted, have a good day " + userInput.value;  
+  
+      }
+    </script>
+     </body>
+</html>

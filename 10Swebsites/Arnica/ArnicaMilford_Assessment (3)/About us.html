@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ'Sbookshop </title>
+</head>
+<style>
+    
+    .topnav {
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif ;
+    }
+    
+    .topnav {
+              overflow: hidden;
+              background-color:  #90d2d8;
+            }
+            
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 14px;
+            }
+            
+            .topnav a:hover {
+              background-color: #ddd;
+              color: #90d2d8;
+            }
+            
+            .topnav a.active {
+              background-color: #04AA6D;
+              color: white;
+            }
+    
+            h1 {color:  #90d2d8; border: 2px solid #90d2d8; text-align: center; font-size: xx-large;}
+            h2 {color: #90d2d8; text-align: center;}
+            h3 {text-align: center; font-style: italic; color: #000000;}
+            h4 {color: #90d2d8; text-align: center;}
+
+            
+
+            h5 {color: #90d2d8; text-align: center; font-style: italic; font-size:larger;}
+            body {background-color: rgb(255, 255, 255); text-align: center; color: floralwhite;}
+            #Neighbour {text-align: center;}
+            #employees{border: 2px solid #000000; color: #000000;}
+
+
+      p.double {border-style: double;}
+
+     ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: 	#f2e6e6	   ;
+  text-align: center;
+  padding: 30px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+   div {text-align: center;}
+   p { text-align: center; font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif ;}
+    p.solid {border-style: solid;} 
+    
+  
+  
+  li a:hover {
+    background-color:  	#f8f8f8   	       ;
+  }
+  
+  li {
+    display: right T ;
+  }
+  table, td, th {
+  border: 1px solid black;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ffffff	 ;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: whitesmoke ;}
+#customers tr:hover {background-color: #ddd;}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#ffffff ;
+  color: white;
+}
+p.solid {border-style: solid;}
+</style>
+
+    <body>
+    
+        <div class="topnav">
+            <a href="Homepage.html">Home</a>
+            <a href="About us.html">About us</a> 
+            <a href="Browse.html">Browse</a> 
+            <a href="Buy now.html">Checkout</a>       
+        </div>
+        
+<h1>About us</h1>
+<h5>We are located in the 10S neighbourhood, akl and would love for you to give us a call!</h5>
+<p>This website was created in 2023, by a student attending Marist college - named Arnica Milford. She has a passion for english and loves reading therefor decided to create a website where people could browse for their favourite books and buy them online! There are also some fun initiations put in place for you so you may enjoy your experience. Thank you for viewing this website hope you enjoy.</p>
+
+<body>
+  <div id="h4">
+  <h4>Enough about me, what's is your name?</h4>
+  </div>
+
+  <input id="userInput"> <br> <br>
+  <button onclick="myFunction()">submit</button>
+  <h1 id="message"> </h1>
+
+  <script id="Name">
+      function myFunction() {
+          let userInput = document.querySelector("#userInput");
+          let message = document.querySelector("#message");
+
+          message.innerHTML = "Welcome to my website " + userInput.value + " I hope you enjoy your experience with us!";
+      }
+      
+  </script>
+</body>
+
+<style>
+p{color:#90d2d8; text-align: center; border: 2px solid #90d2d8; font-style: italic;}
+p{font-size:larger;}
+#Title{color: #ffffff; font-size: x-large; background-color:#90d2d8;}
+#h4{color:#90d2d8; text-align: center; font-style: italic;}
+</style>     
+
+<div id="Neighbour">
+<img width="500" src="10S neighbourhood.jpg"> 
+<img width="500" src="Auckland.jpg">
+<img width="500" src="Auckland edited.jpg">
+</div>
+
+<div id="Title">Note: In the table are our current employees! whom you can contact for further details about our business
+</div>
+
+<br>
+<table id="employees">
+  <tr>
+    <th>Name</th>
+    <th>contact</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td>Arnica Milford</td>
+    <td> 023 453 7861</td>
+    <td>Owner</td>
+  </tr>
+  <tr>
+    <td>Matila Faapopo</td>
+    <td>027 234 7631</td>
+    <td>Flower producer/decorater</td>
+  </tr>
+  <tr>
+    <td>Luisa Tohi</td>
+    <td>024 439 5728</td>
+    <td>Assistant manager</td>
+  </tr>
+  <tr>
+   <tr>
+    <td>Sophia Araipu</td>
+    <td>021 199 027 53</td>
+    <td>VIP sign up manager</td>
+  </tr> 
+  <tr>
+    <td>Simran Kummar</td>
+    <td>021 034 109 64</td>
+    <td>Accountant</td>
+  </tr>
+  <tr>
+    <td>Agna Saijan</td>
+    <td>021 056 7379</td>
+    <td>Assistant</td>
+  </tr> 
+
+<form>
+  <div id="employeeform">
+    <header>BECOME AN EMPLOYEE</header>
+    <label for="name"><u>First name?</u></label> <br> <br>
+    <label for="fname"> <u> First name:</u></label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname"><u>Last name:</u></label> 
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email"><u>Email:</u></label>
+  <input type="text" id="email"> <br> <br>
+
+  <label for="applying"><u>What are you applying for?</u></label> <br> <br>
+  <input type="radio">
+
+  <label for="manager">Manager</label><br>
+  <input type="radio">
+
+  <label for="Assistant">Assistant</label><br>
+  <input type="radio">
+
+  <label for="Part-time">Part-time</label><br>
+
+  <label for="expectations"><u>What expectations do you think you meet?</u></label> <br> <br>
+  <input type="checkbox">
+
+  <label for="experience"> I have experience in this area.</label><br>
+  <input type="checkbox">
+
+  <label for="passion"> I am passionate about this job and would like to give it a try.</label><br>
+  <input type="checkbox"> 
+
+  <label for="citizenship"> I can socialise with others </label> <br>
+  <input type="checkbox"> 
+
+  <label for="hospitality"> I have hospitality skills I can put to use</label> <br> <br>
+  <label for="add"><u>Anything else you would like to add?</u></label> 
+  <input type="text"> <br> <br>
+</form>
+
+  <style>
+    
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dedede;
+    }
+    #employeeform{color: #90d2d8; text-align: center; border: 2px solid #90d2d8; background-color:#fffbfb ;}
+    header{color: #90d2d8;}
+    </style>
+
+<body>
+  <button onclick="MyFunction()">Submit</button>
+  <h1 id="Message"></h1>
+
+<script>
+  function MyFunction()
+{ 
+  let UserInput = document.querySelector("#UserInput");
+  let Message = document.querySelector("#Message");
+
+  Message.innerHTML = "Thank you for your submission. We will be sure to get back to you when we are able to hire you for your service!"
+}
+</script>
+</body>
+
+<style>
+  #Message{font-size: x-large;}
+</style>
+
+</body>
+</html>

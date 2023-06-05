@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovejarasa</title>
+</head>
+<body>
+    <div id="navi"><nav><a href="Page1.html">Page 1</a>
+        <a href="Page2.html">Page 2</a>
+        <a href="Page3.html">Page 3</a>
+        <a href="Page4.html">Page 4</a>
+    </nav></div>
+ 
+    <h1>The Ovejarasa Peaks</h1> <br>
+    <p>The <a href="Page2.html">Ovejarasa Peaks</a> are a mountain range located in the region of <a href="Page1.html">Navarei</a>. There are three mountains that make up this range; Lefenki, Enbija, Atsariv. Lefenki is the tallest mountain, have a height of 2,500 m. It is also an active volcano, with the previous eruption dating back to over 12,000 years ago. Nowadays, these three mountains are a great hiking spot for families because of their easy slopes and forest landscape. </p>
+   <br> <br><br> <img src="forest.jpg" width="450" height="300">
+   <h5>Check out this below box, type in a direction (left, right, etc.) to change the text!</h5>
+   <div id="Div1"></div>
+   <input id="U"> 
+         <button onclick="woah()">Go</button>
+    <style>
+        h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: black;}
+    
+        
+        p{color: black; font-family:Georgia, 'Times New Roman', Times, serif; font-size: larger; text-align: left;}
+        body { text-align: center; background-color:rgb(202, 207, 238);}
+        
+        nav {text-align: left; font-size: medium;}
+        #navi {background-color: rgba(183, 223, 171, 0.705);}
+        nav:hover { 
+            color: azure;
+           background-color: lightseagreen ;
+           padding: 7.5px, 7.5px;
+
+        }
+    </style>
+
+<script>
+    let userchange = document.querySelector ("#U");
+    
+    
+    
+        function woah() {document.body.style.textAlign= U.value; 
+            
+        }
+        
+        </script>
+</body>
+</html>

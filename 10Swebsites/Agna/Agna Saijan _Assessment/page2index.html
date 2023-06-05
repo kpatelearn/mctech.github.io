@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order Now </title>
+</head>
+<body>
+
+    <div> 
+        <h2>Place your order </h2>
+        <input id="userInput"> <br><br>
+        <button onclick="myfunction()"> Order </button>
+    </div>
+        <script>
+           let userChange = document.querySelector("#userInput");
+           function myfunction() {
+           {alert ("Your order has been placed, pay when picking up.") }  }
+        </script>
+
+<h2>Review</h2>
+<input id="userInput"> <br> <br>
+<button onclick="myFunction()" > Enter </button>
+<h2 id="message">  </h2>
+<Script>
+    function myFunction(){
+        let userInput = document.querySelector("#userInput");
+        let message = document.querySelector("#message");
+        message.innerHTML = " Thank you for your review about our " + userInput.value;
+    }
+     
+</Script>
+
+
+    <div class="navbar"> 
+        <a href="homepageindex.html"> Homepage </a>
+        <a href="page1index.html"> Menu </a>
+        <a href="page2index.html"> Order Now </a>
+        <a href="page3index.html"> About Us </a>
+     </div>
+
+    <style>
+    h2{color: #E5989B; ;}
+
+    body{background-color: #FFCDB2; text-align: center;}
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #b5838d;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #E5989B;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      
+      .navbar a:hover {
+        background: #6D6875;
+        color: rgb(255, 255, 255);
+      }
+      
+      .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px; 
+      }
+      
+      body {
+            margin: 0;
+            font-size: 50px;
+            font-family: fantasy;
+          }
+          </style>
+    
+</body>
+</html>

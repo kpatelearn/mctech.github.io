@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+</head>
+<body>
+<nav>
+        <a href="homePage.html"> Home </a>
+        <a href="snacksPage.html"> Snacks </a>
+        <a href="moviesPage.html"> Movies </a>
+</nav>
+<style>
+    a {padding: 10px; background-color:lightgrey; margin: 10px;}
+    h1 {color:black; text-align: center;}
+    body {font-family: Arial, Helvetica, sans-serif; background-color:lightslategray;}
+    p {color:darkred; text-align: center; }
+   h3 {color: black; text-align: start;}
+  h2 {color:black;}
+ 
+</style>
+    <h1> Cross-station Cinemas</h1>
+<p>Tickets on sale now!<p>
+<div id=introduction>
+    <h2> Experience a lifetime of fun! </h2>
+    <h3> Opening Hours: </h3>
+   <ul>
+    <li> Mon: Closed </li>
+    <li> Tue: 12pm - 10pm </li>
+    <li> Wed: 12pm - 10pm</li>
+    <li> Thur: 12pm - 11pm</li>
+    <li> Fri: 12pm - 11pm</li>
+    <li> Sat: 11am - 11pm</li>
+    <li> Sun: 11am - 11pm</li>
+   </ul>
+   <p>NOW SCREENING BARBIE!!!!!<br/>
+    <img src="barbiePoster.jpg" alt="barbie" width="40%"/>
+   </p>
+
+    
+    <h2> Enter your email, to win a free movie ticket.</h2>
+    <input id="userInput"> <br> <br> 
+    <button onclick="myFunction()"> sumbit </button>
+    <h2 id="message"> </h2>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+   <script>
+    function myFunction() {
+        let userInput = document.querySelector("#userInput");
+        let message = document.querySelector("#message");
+        message.innerHTML = "Thank you. Email " + userInput.value + " is now registered.";
+  }
+   </script>
+
+  </div>
+</body>
+</html>

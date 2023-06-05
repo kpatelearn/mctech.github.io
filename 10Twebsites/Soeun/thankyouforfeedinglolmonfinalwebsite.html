@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               
+               .navbar {
+          overflow: hidden;
+          background-color: rgb(255, 130, 130);
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        .dropdownno2 {
+          float: left;
+          overflow: hidden;
+        }
+        
+
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .dropdownno2 .dropbtnno2 {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: rgb(255, 83, 83);
+        }
+        .navbar a:hover, .dropdownno2:hover .dropbtnno2 {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgb(255, 130, 130);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(255, 83, 83);
+          z-index: 1;
+        }
+        
+        .dropdown-contentno2 {
+          display: none;
+          position: absolute;
+          background-color: rgb(255, 130, 130);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(255, 83, 83);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          float: none;
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        
+        .dropdown-contentno2 a {
+          float: none;
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        
+        .dropdown-contentno2 a:hover {
+          background-color: rgb(255, 83, 83);
+        }
+        
+        .dropdownno2:hover .dropdown-contentno2 {
+          display: block;
+        }
+    body {
+        background-color: beige;
+        font-family: "monaco", monospace;
+        }
+        .shop {
+    font-family: "monaco", monospace;
+        }
+        
+#right {
+  text-align: right;
+}
+#in {
+  width: 3%;
+  background-color: rgb(177,177,177);
+  color: black;
+  border: none;
+  font-family: "monaco", monospace;
+  font-size: 18px;
+}
+        #result {
+            color:beige;
+        }
+body {
+    background-color: beige;
+    font-family: "monaco", monospace;
+    }
+    #banner {
+text-align: center;
+background-color: rgb(177, 177, 177)
+    }
+    .shop {
+font-family: "monaco", monospace;
+    }
+    #right {
+      text-align: right;
+      font-size: 18px;
+    }
+        
+
+.b2 {
+            display: inline-block;
+            font-family: "monaco", monospace;
+            padding: 5px 1px;
+            cursor: pointer;
+            background-color: purple;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 12px;
+  box-shadow: 0 3px #999;
+  text-decoration: underline;
+         }
+         
+        .b2:hover {
+            background-color: blue;
+        }
+        .b2:active {
+             background-color: rgb(84, 84, 255);
+             box-shadow: 0 3px #666;
+              transform: translateY(4px);
+}
+.imgcenter {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+               
+    <div class="navbar">
+        <a href="welcomefinalwebsite.html">Welcome</a>
+        <a href="tragedyfinalwebsite.html">The Recent Tradgedy</a>
+        <div class="dropdown">
+            <button class="dropbtn">Donate
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="moneydonationfinalwebsite.html">Donate Money</a>
+                <a href="conversionfinalwebsite.html">Feed A Lolmon</a>
+                <a href="gamepagefinalwebsite.html">Help A Lolmon Get Their Keyruncy Back</a>
+              </div>
+        </div> 
+
+        <div class="dropdownno2">
+            <button class="dropbtnno2">Fun Facts
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-contentno2">
+                <a href="lolmonfunfactpagefinalwebsite.html">Lolmon</a>
+                <a href="lollylandfunfactpagefinalwebsite.html">Lollyland</a>
+              </div>
+        </div> 
+    </div>
+        
+       
+        <script>
+            document.getElementById("result").innerHTML=localStorage.getItem("out");
+            function homenav() {
+                location.replace("welcomefinalwebsite.html")
+            }
+        </script>
+        <div class="imgcenter">
+    <img width="346" height="394" src="thankyoulolmonno2.png">
+    <br><br>
+    <button class="b2" onclick="homenav()">Return To Homepage</button>
+</div>
+</body>
+</html>

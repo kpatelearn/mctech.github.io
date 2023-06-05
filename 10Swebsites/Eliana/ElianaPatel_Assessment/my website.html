@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly Donuts New Zealand</title>
+
+    <style>
+      #sale {text-align: center;}
+      #button {text-align: center; color: white;}
+      h1 {font-family: cursive;}
+      #welcomeMessage {text-align: center; font-family: serif;}
+      #squareImages {text-align: center;}
+      #subscription {text-align: center;}
+      #colourChange {text-align: center;}
+      #searchBar {text-align: right;}
+    </style>
+
+</head>
+<body>
+    <nav>
+      <br>
+        <a href="homepage.html"> <img width="8%" src="UD logo.png"></a>
+        <a href="aboutus.html"> <img width="10%" src="NAV about us.png"></a>
+        <a href="menu.html"> <img width="7%" src="NAVmenu.png"> </a>
+        <a href="contactus.html"> <img width="9%" src="NAV contact us.png"> </a>
+        <a href="order.html"><img width="10%" src="NAV order.png"></a>
+    </nav>
+    <br> <br>
+
+   <div id="sale">
+     <img width="42%" src="aestheticdonutAD.png">
+     <img width="49%" src="neoncollectionAD.png">
+     <br> <br>
+   </div>
+
+   <div id="button">
+    <a href="menu.html"> <button> SHOP DONUTS NOW  </button></a>
+   </div>
+<br> <br>
+
+   <div id="welcomeMessage">
+    <h1> Welcome! </h1>
+    <h3> Welcome to Ugly Donuts! Our main branch is in the 10S Neighbourhood, and we <br> are dedicated to giving you the most amazing donuts you have ever tasted! <br> <br> To join our growing Ugly Donuts fam, scroll to the bottom of this page to sign up today!</h3>
+  <br> <br> <br>
+  </div>
+
+   <div id="squareImages">
+    <img width="30%" src="birthdaypartyframe.png">
+    <img width="30%" src="DIYkitAD.png">
+    <img width="30%" src="kids making donuts.png">
+    <h5> Included: 12 Cinnamon donuts, chocolate and glaze icing, <br> multi-coloured sprinkles, neon sprinkles, x2 piping bags.</h5>
+    
+<br>
+    <a href="menu.html"> <button> ORDER KIT NOW </button></a>
+   </div>
+<br> <br> <br> <br>
+
+<div id="subscription">
+  <h3> Want to join the Ugly fam? Put in your name and e-mail address below to join our mailing list <br> and get exclusive UD discounts! </h3>
+    <input  id="userInput" placeholder="Name"> <br> <br>
+    <input id="otherBar" placeholder="E-mail address"> <br> <br>
+    <button onclick="myFunction()"> Join the Fam! </button>
+    <h1  id="message"> </h1>
+
+    <script>
+        function myFunction() {
+        let userInput = document.querySelector("#userInput");
+        let message = document.querySelector("#message");
+
+        alert ("You donut need to worry about a thing! Thanks for subscribing and we'll keep you posted, " + userInput.value +"!")
+        }
+    </script>
+
+</body>
+</html>

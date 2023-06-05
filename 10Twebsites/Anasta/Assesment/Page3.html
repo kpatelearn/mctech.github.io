@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake Seoro</title>
+</head>
+<body>
+    <div id="navi"><nav><a href="Page1.html">Page 1</a>
+        <a href="Page2.html">Page 2</a>
+        <a href="Page3.html">Page 3</a>
+        <a href="Page4.html">Page 4</a>
+    </nav></div>
+
+    <h1>Lake Seoro</h1> <br>
+    <p> <a href="Page3.html">Lake Seoro</a> is the biggest body of water in <a href="Page1.html">Navarei</a>. It covers more than 1,289 km² and is 1,000 m above sea level. It is a great place to go swimming or kayaking in the summer and an even better place to ice skate in the winter. The average depth of the lake is around 180 ft, a good depth for scuba diving. There are also many marine life in <a href="Page2.html">Lake Seoro</a> ranging from colourful fish to aquatic plants. All in all, it's a very good family place and a recommended vacation destination.</p>
+  <br> <br> <br> <img src="Lake.jpg" width="500" height="300" alt="">
+  <h5>Check out this below box, type in a style (aris, georgia, SlabSerif,  etc) to change the text!</h5>
+  <div id="Div1"></div>
+  <input id="U"> 
+        <button onclick="woah()">Go</button>
+    <style>
+        h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: black;}
+        
+        p{color: black; font-family:Georgia, 'Times New Roman', Times, serif; font-size: larger; text-align: left;}
+        body { text-align: center; background-color:rgb(202, 207, 238);}
+        
+        nav {text-align: left; font-size: medium;}
+        #navi {background-color: rgba(183, 223, 171, 0.705);}
+        nav:hover { 
+            color: azure;
+           background-color: lightseagreen ;
+           padding: 7.5px, 7.5px;
+
+        }
+        
+    </style>
+    
+    <script>
+        let userchange = document.querySelector ("#U");
+    
+    
+    
+    function woah() {document.body.style.fontFamily= U.value; 
+        
+    }
+    </script>
+    
+</body>
+</html>

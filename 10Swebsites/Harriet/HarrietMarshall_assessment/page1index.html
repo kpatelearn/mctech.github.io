@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+   
+<style> 
+body{background-color:#f9e3bd;}
+a {color: black ;font-size:x-large;font-family:sans-serif;}
+nav {text-align: center}
+#topnav {text-align: center;}
+#slider
+{overflow: hidden}
+#slider figure { 
+position: relative;
+width: 500%;
+height: 800%;
+margin:0;
+left: 0;
+animation: 16s slider infinite; 
+}
+#slider figure img {
+ float: left ;
+ width: 20%;
+}
+@keyframes slider {
+ 0% {left: 0;}
+ 20% {left: 0;}
+ 25% {left:-100%;}
+ 45%{left: -100%;}
+ 50% {left: -200%;}
+ 70% {left:-200%;}
+ 75% {left: -300%;}
+ 95% {left: -300%;}
+100% {left: -400;}
+}
+
+</style>
+</head>
+<body>
+    <div id="topnav">
+        <br>
+       <a  href="homepageindex.html">home</a>
+       <a   href="page1index.html"> menu</a>
+       <a  href="page2index.html">online orders</a>
+       </div>
+<br>
+<br>
+    <div id="slider">
+        <figure>
+        <img src="bread.png" alt=""
+        width="150" height="400" >
+        <img src="muffins.png" alt=""
+        width="150" height="400">
+        <img src="cookies.png" alt=""
+        width="150" height="400">
+        <img src="others.png" alt=""
+        width="150" height="400">
+       
+        </figure>
+        </div>
+<br>
+<br>
+<div id="menu">
+<img height="750" width="550" src="menu.png" alt="the menu1">
+<img height="750" width="550" src="menu 2.png" alt="the menu2">
+<img height="750" width="530" src="menu 3.png" alt="the menu3">
+</div>
+</body>
+</html>

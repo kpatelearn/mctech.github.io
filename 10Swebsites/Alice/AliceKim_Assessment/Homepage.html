@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperJunior Album Shop</title>
+    <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+
+      ul {
+list-style-type: none;
+margin: 0;
+padding-left: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+
+overflow: hidden;
+background-color: rgb(23, 24, 26);
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: rgb(251, 184, 91);
+text-align: center;
+padding: 24px 26px;
+text-decoration: none;
+font-size: larger;
+font-family: Verdana;
+}
+
+li a:hover {
+background-color: rgb(130, 151, 178);
+}
+
+  </style>
+
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li style="float: left"><a href="Homepage.html">SUPERJUNIOR</a></li>
+    <li><a href="Reviews.html">Reviews</a></li>
+    <li><a href="Albums.html">Albums</a></li>
+    <li><a href="Songs.html">Songs</a></li>
+  </ul>
+</nav>
+   
+</body>
+
+<style>
+    .slider {
+      width: 1300px;
+      height: 300px;
+      background-color: rgb(73, 76, 80);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .image-container {
+      width: 2000px;
+      background-color: rgb(174, 179, 195);
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+    .slide {
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+    #slide-1:target ~ .image-container {
+      left: 0px;
+    }
+    #slide-2:target ~ .image-container {
+      left: -500px;
+    }
+    #slide-3:target ~ .image-container {
+      left: -1000px;
+    }
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+    .buttons a {
+      display: inline-block;
+      height: 17px;
+      width: 17px;
+      border-radius: 50px;
+      background-color: rgb(255, 204, 0);
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <span id="slide-1"></span>
+    <span id="slide-2"></span>
+    <span id="slide-3"></span>
+    <span id="slide-4"></span>
+    <div class="image-container">
+      <img src="Slide1.jpg" class="slide" width="500" height="300" />
+      <img src="Slide3.jpg" class="slide" width="500" height="300" />
+      <img src="Slide2.jpg" class="slide" width="500" height="300" />
+      <img src="Slide4.jpg" class="slide" width="500" height="300" />
+    </div>
+  <div class="buttons">
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+      <a href="#slide-3"></a>
+    </div>
+  </div>
+</body>
+<h1>(click the yellow button to swipe the photos)</h1>
+<h2>Welcome to our Superjunior Album Shop</h2>
+<p>We sell the best SuperJunior Albums in our neighbourhood! Please have a good time💙</p>
+<style>
+    h1{text-align: center;}
+    h1{color:rgb(251, 184, 91);}
+h1{font-size:larger;background-color:  rgb(23, 24, 26);font-family:Verdana;}
+h2{font-size: xx-large;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+h2{text-align: center;color: rgb(0, 0, 0);}
+p{text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: x-large;}
+body{ background-color:  rgb(208, 208, 208);}
+#image1{text-align: center; background-color:rgb(23, 24, 26);}
+</style>
+<body>
+
+<div id="image1"> 
+<img width="454" height="644" src="EEUNHYUK.jpeg">
+</div>
+
+</body>
+
+
+</html>

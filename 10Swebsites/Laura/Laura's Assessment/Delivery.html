@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Delivery</title>
+</head>
+<body>
+    <nav>
+        <a href="homepage.html">Home |</a>
+         <a href="Products.html"> Products |</a>
+         <a href="Delivery.html"> Delivery</a> <br><br>
+         <img width="150" height="150" src="logo 1.png">
+         <h1>Delivery</h1>
+    
+     </nav>
+
+     <style>
+            nav {background-color: rgb(158, 112, 204);text-align: left; font-size: small;}
+            a {color: rgb(45, 61, 61);}
+            h1 {font-size: xx-large; text-align: center;}
+             </style> 
+
+    
+<p1>Product Name</p1>
+<input>
+<br><br>
+
+<p1>Email</p1>
+<input>
+<br><br>
+
+<p1>Address</p1>
+<input>
+<br><br>
+
+<p1>Time and date</p1>
+<input>
+<br><br>
+
+<p1>Name</p1>
+<input id="userInput">
+<br><br>
+<button  onclick="myFunction()"> Submit</button>
+<h1 id="message"> </h1>
+
+<style>
+  body {background-color: hsl(279, 100%, 96%);}
+body {text-align: center; color: rgb(1, 14, 26);}
+</style>
+
+<script>
+function myFunction() {
+let userInput = document.querySelector("#userInput");
+let message = document.querySelector("#message");
+
+message.innerHTML = "Thank you for ordering. Details of the product will be emailed to you, " + userInput.value;
+}
+</script>
+
+</body>
+</html>

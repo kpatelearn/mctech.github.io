@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+</head>
+<body>
+    <nav>
+        <a href="homepageindex.html.html"> Homepage</a>
+        <a href="Page1.html">page 1</a> 
+        <a href="Page2.html">page 2</a>
+    </nav> 
+
+
+    <h1> Hello. Type in your name for a chance to be in our competition to win a free book</h1>
+    <input id="userInput"> <br> <br>
+    <button onclick="myFunction()" >
+        Enter </button>
+    <h1 id="message"> </h1>
+     
+    <style>
+       body {background-color: rgb(236, 152, 116); text-align: center; color: floralwhite ;}
+    </style>
+
+    <script>
+     function myFunction() {
+         let userInput = document.querySelector("#userInput");
+         let message = document.querySelector("#message");
+
+         message.innerHTML = "You are now in to win! Good luck! Thank you for visiting The Wonderful World of Books " + userInput.value;
+         }
+     </script>
+    <nav>
+    <img height="" src="Screenshot 2023-05-24 104549.png" >
+    </nav>
+    
+</body>
+</html>

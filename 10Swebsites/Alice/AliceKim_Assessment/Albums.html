@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperJunior Album Shop</title>
+    <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+
+      ul {
+list-style-type: none;
+margin: 0;
+padding-left: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+
+overflow: hidden;
+background-color: rgb(23, 24, 26);
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: rgb(251, 184, 91);
+text-align: center;
+padding: 24px 26px;
+text-decoration: none;
+font-size: larger;
+font-family: Verdana;
+}
+
+li a:hover {
+background-color: rgb(130, 151, 178);
+}
+
+  </style>
+
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li style="float: left"><a href="Homepage.html">SUPERJUNIOR</a></li>
+    <li><a href="Reviews.html">Reviews</a></li>
+    <li><a href="Albums.html">Albums</a></li>
+    <li><a href="Songs.html">Songs</a></li>
+  </ul>
+</nav>
+<div id="div1">
+</body>
+
+<style>
+    .slider {
+      width: 1500px;
+      height: 300px;
+      background-color: rgb(93, 124, 164);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .image-container {
+      width: 3000px;
+      background-color: rgb(72, 139, 255);
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+    .slide {
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+    #slide-1:target ~ .image-container {
+      left: 0px;
+    }
+    #slide-2:target ~ .image-container {
+      left: -500px;
+    }
+    #slide-3:target ~ .image-container {
+      left: -1000px;
+    }
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+    .buttons a {
+      display: inline-block;
+      height: 17px;
+      width: 17px;
+      border-radius: 50px;
+      background-color: rgb(195, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <span id="slide-1"></span>
+    <span id="slide-2"></span>
+    <span id="slide-3"></span>
+    <span id="slide-4"></span>
+    <div class="image-container">
+      <img src="LEEYESHIN.jpg" class="slide" width="700" height="300" />
+      <img src="EUNHAEE.jpg" class="slide" width="700" height="300" />
+      <img src="SIWOOKKYU.jpg" class="slide" width="700" height="300" />
+    </div>
+    <div class="buttons">
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+      <a href="#slide-3"></a>
+    </div>
+  </div>
+</div>
+<body>
+  <h1>(click the red button to swipe the photos)</h1>
+  <h2>SHOP OUR NEWEST ALBUMS</h2>
+</body>
+
+
+<div id="SHOP">
+  <a onclick="SJ()">
+    <img src="Renaissance ALBUM.png" alt="mr simple album" width="590" height="576">
+  </a>
+  <div id="font">Click to order "RENAISSANCE"</div>
+</div>
+
+<div id="SHOP">
+  <a onclick="SE()">
+    <img src="Sorrysorry.jpg" alt="sorrysorry album" width="590" height="576">
+  </a>
+  <div id="font">Sorry! "SORRYSORRY" is all sold out!</div>
+</div>
+
+<div id="SHOP">
+  <a onclick="SJ()">
+    <img src="Play ALBUM.jpeg" alt="play album" width="590" height="576">
+  </a>
+  <div id="font">Click to order "PLAY"</div>
+</div>
+
+<div id="SHOP">
+  <a onclick="SJ()">
+    <img src="MAMACITA ALBUM.jpeg" alt="mamacita album" width="590" height="576">
+  </a>
+  <div id="font">Click to order "MAMACITA"</div>
+</div>
+
+<div id="SHOP">
+  <a onclick="SJ()">
+    <img src="A-CHA ALBUM.jpeg" alt="a-cha album" width="590" height="576">
+  </a>
+  <div id="font">Click to order "A-CHA"</div>
+</div>
+
+<div id="SHOP">
+  <a onclick="SJ()">
+    <img src="Losiento ALBUM.jpeg" alt="losiento album" width="590" height="576">
+  </a>
+  <div id="font">Click to order "LOSIENTO"</div>
+</div>
+
+  <div id="SHOP">
+    <a onclick="SJ()">
+      <img src="SJ 05 ALBUM.jpeg" alt="sj 05 album" width="590" height="576">
+  </a>
+  <div id="font">Click to order "SUPERJUNIOR05"</div>
+  </div>
+
+  <div id="SHOP">
+    <a onclick="SJ()">
+      <img src="DONTDON.jpeg" alt="don't don album" width="590" height="576">
+    </a>
+    <div id="font">Click to order "DON'T DON"</div>
+  </div>
+  
+  <div id="SHOP">
+    <a onclick="SJ()">
+      <img src="keep on going ALBUM.jpeg" alt="renaissance album" width="590" height="576">
+    </a>
+    <div id="font">Click to order "THE: KEEP ON GOING"</div>
+  </div>
+  
+  <div id="SHOP">
+    <a onclick="SJ()">
+      <img src="SJ magic.jpeg" alt="magic album" width="590" height="576">
+    </a>
+    <div id="font">Click to order "MAGIC"</div>
+  </div>
+ 
+
+  <script>
+    function SJ() {
+    alert("The order is now complete")
+    }
+</script>
+
+<script>
+  function SE() {
+  alert("Sorry this album is out of stock please order other albums")
+  }
+</script>
+
+
+
+<style>
+#SHOP{text-align:center;background-color:aliceblue;}
+#font {font-size: x-large; font-family: Verdana,Tahoma; background-color:rgb(28, 93, 255);color:rgb(174, 250, 255);}
+</style>
+
+
+<style>
+  body {background-color: rgb(142, 204, 255);}
+  h1 {font-size:x-large; font-family:Verdana; text-align: center; background-color: rgb(28, 93, 255); color: rgb(174, 250, 255);}
+  h2 {text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: xx-large;}
+</style>
