@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking App with Email Authentication</title>
+    <link rel="stylesheet" href="year11bookings.css">
+</head>
+<body>
+    <!-- Authentication Form -->
+    <div id="authForm">
+        <h2>Sign Up or Sign In</h2>
+        <input type="text" placeholder="Name" id="userName">
+        <input type="email" placeholder="Email" id="userEmail">
+        <input type="password" placeholder="Password" id="userPassword"><br><br>
+        <button id="signUpButton">Sign Up</button>
+        <button id="signInButton">Sign In</button>
+    </div>
+
+    <!-- Appointment Selection Form -->
+    <div id="appointmentSelection">
+        <h1>Select an Appointment</h1>
+        <form id="appointmentForm">
+            <label for="session">Select Session:</label>
+            <select id="session">
+                <option value="Wed 4th Sept P5">Wed 4th Sept P5</option>
+                <option value="Fri 6th Sept P1">Fri 6th Sept P1</option>
+                <option value="Mon 9th Sept P4">Mon 9th Sept P4</option>
+                <option value="Thur 12th Sept P1">Thur 12th Sept P1</option>
+            </select>
+
+            <label for="appointment">Select Appointment:</label>
+            <select id="appointment">
+                <option value="Appointment 1">Appointment 1</option>
+                <option value="Appointment 2">Appointment 2</option>
+                <option value="Appointment 3">Appointment 3</option>
+                <option value="Appointment 4">Appointment 4</option>
+                <option value="Appointment 5">Appointment 5</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <p id="confirmationMessage"></p>
+        <button id="toggleAppointmentsButton">View Booked Appointments</button>
+        <button id="signOutButton">Sign Out</button>
+
+        <!-- Available/Booked Appointments View -->
+        <div id="bookedAppointments">
+            <h2 id="appointmentsHeading">Available Appointments</h2>
+            <ul id="sessionsList"></ul>
+        </div>
+    </div>
+
+    <!-- Firebase App and Authentication Scripts -->
+    <script type="module" src="year11bookings.js"></script>
+</body>
+</html>
