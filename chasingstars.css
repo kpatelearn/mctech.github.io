@@ -1,126 +1,276 @@
+/* Global Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    line-height: 1.6;
+    color: #F8F8F8; /* Platinum White */
+    background-color: #1C1C1C; /* Deep Charcoal Black */
 }
 
+/* Remove Bullet Points from All Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero Section */
 .hero {
-    background-image: url('cover1w2.jpg'); /* Placeholder image */
-    background-size: cover;
-    background-position: center;
-    height: 400px;
     position: relative;
-    margin-bottom: 20px;
+    background: url('ml.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
-.overlay {
+.hero::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(142, 36, 170, 0.5), rgba(186, 104, 200, 0.5)); /* Gradient overlay */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(
+        to bottom right,
+        rgba(112, 130, 56, 0.7), /* Natural Olive Green */
+        rgba(160, 32, 240, 0.7)  /* Electric Purple */
+    );
+}
+
+.hero .overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }
 
 .hero h1 {
-    color: white;
-    font-size: 48px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 5em;
     margin: 0;
+    color: #D4AF37; /* Royal Gold */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    margin-top: 30px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0 0;
     display: flex;
-    gap: 20px;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #F8F8F8; /* Platinum White */
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-size: 1.2em;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
-    color: #ffccff;
+    color: #D4AF37; /* Royal Gold */
+    border-bottom: 2px solid #D4AF37;
 }
 
+/* Sections */
 section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f3e5f5; /* Soft lavender tone */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 12px;
+    background-color: #1C1C1C; /* Deep Charcoal Black */
+    transition: background-color 0.5s;
 }
 
-#ticket-sales {
-    background-color: #ce93d8; /* Slightly darker lavender for differentiation */
-    background-image: linear-gradient(135deg, #ce93d8, #ab47bc);
-    padding: 80px 20px;
-    border-radius: 12px;
+section:nth-of-type(even) {
+    background-color: #191919; /* Slightly lighter for contrast */
 }
 
-.buy-tickets-button {
-    background-color: #8e24aa; /* Deep purple */
-    background-image: linear-gradient(45deg, #8e24aa, #ba68c8);
-    color: white;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #D4AF37; /* Royal Gold */
+}
+
+p, li {
+    font-size: 1.1em;
+    color: #F8F8F8; /* Platinum White */
+}
+
+a {
+    color: #87F1FF; /* Icy Cyan */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #A020F0; /* Electric Purple */
+    text-decoration: underline;
+}
+
+/* Buttons and CTAs */
+button, .btn {
+    background-color: #708238; /* Natural Olive Green */
+    color: #F8F8F8; /* Platinum White */
+    padding: 15px 30px;
     border: none;
-    padding: 20px 40px;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 50px;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.buy-tickets-button:hover {
+button:hover, .btn:hover {
+    background-color: #A020F0; /* Electric Purple */
+    transform: scale(1.05);
+}
+
+/* Laurels Section */
+#laurels {
+    background-color: #1C1C1C; /* Deep Charcoal Black */
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#laurels::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(112, 130, 56, 0.1),
+        rgba(160, 32, 240, 0.1)
+    );
+    animation: slideBackground 15s linear infinite;
+}
+
+@keyframes slideBackground {
+    from { left: -100%; }
+    to { left: 0%; }
+}
+
+.laurels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.laurels img {
+    max-width: 150px;
+    filter: invert(1) brightness(1.2); /* Make laurels white and slightly brighter */
+    opacity: 0.9;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.laurels img:hover {
     transform: scale(1.1);
-    background-image: linear-gradient(45deg, #ba68c8, #8e24aa);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    filter: invert(1) brightness(1.5);
 }
 
-#dates, #media {
-    background-color: #f3e5f5; /* Consistent soft lavender */
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-#media .media-item {
-    margin: 30px 0;
-}
-
-#media .media-item img, #media .media-item iframe {
-    max-width: 100%;
+.carousel img {
+    width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+/* Carousel Transitions */
+.carousel .slick-slide {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel .slick-active {
+    transform: scale(1.05);
+}
+
+/* Hide Arrows and Dots */
+.slick-arrow, .slick-dots {
+    display: none !important;
+}
+
+/* Video Gallery */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.video-gallery iframe {
+    border: 2px solid #6C757D; /* Steel Gray border */
+    border-radius: 10px;
+    width: 560px;
+    height: 315px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.video-gallery iframe:hover {
+    border-color: #D4AF37; /* Royal Gold */
+    transform: scale(1.02);
+}
+
+/* Footer */
 footer {
-    background-color: #6a1b9a; /* Darker purple for contrast */
-    color: white;
+    background: #1C1C1C; /* Deep Charcoal Black */
+    color: #F8F8F8; /* Platinum White */
+    padding: 30px 20px;
     text-align: center;
-    padding: 20px;
-    border-radius: 0 0 12px 12px;
+    font-size: 0.9em;
 }
 
+footer p {
+    margin: 5px 0;
+}
 
+footer i {
+    color: #6C757D; /* Steel Gray */
+}
+
+/* Hover Transition between Worlds */
+section:hover {
+    background-color: #191919; /* Slightly lighter shade */
+}
+
+section:hover h2, section:hover p, section:hover li {
+    color: #FFB6C1; /* Blush Pink */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .video-gallery iframe {
+        width: 100%;
+        height: auto;
+    }
+}
