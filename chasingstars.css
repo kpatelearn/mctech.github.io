@@ -274,3 +274,103 @@ section:hover h2, section:hover p, section:hover li {
         height: auto;
     }
 }
+/* Existing nav styles */
+nav {
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Navigation Styles */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    /* Hide the regular menu */
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1C1C1C; /* Deep Charcoal Black */
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    /* Show the hamburger icon */
+    .nav-toggle-label {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        z-index: 1000;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #F8F8F8; /* Platinum White */
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+
+    .nav-toggle-label span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-toggle-label span::before {
+        content: '';
+        top: -10px;
+    }
+
+    .nav-toggle-label span::after {
+        content: '';
+        top: 10px;
+    }
+
+    /* Toggle the menu when the checkbox is checked */
+    .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked ~ ul {
+        display: flex;
+    }
+}
