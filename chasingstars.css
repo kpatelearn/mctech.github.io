@@ -45,8 +45,14 @@ ul {
     text-align: center;
 }
 
-.hero h1 h4 {
+.hero h1 {
     font-size: 5em;
+    margin: 0;
+    color: #D4AF37; /* Royal Gold */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero h4 {
     margin: 0;
     color: #D4AF37; /* Royal Gold */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
